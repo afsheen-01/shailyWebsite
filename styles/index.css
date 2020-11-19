@@ -1,0 +1,203 @@
+@font-face{
+    font-family: "didot";
+    src: url('../didot_ssv/Didot_Regular/Didot\ Regular.ttf')
+    format('ttf')
+}
+@font-face{
+    font-family: "Jost";
+    src: url('../Jost/static/JostRegular.ttf')
+}
+@font-face{
+    font-family: "Jost bold";
+    src: url('../Jost/static/JostBold.ttf');
+}
+body{
+    width: 97%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: row;
+    width: inherit;
+    height: inherit;
+}
+
+/*left side*/
+
+.left{
+    padding: .5em 2em;
+    width: 15%;
+    height: 100%;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    background-color: #fff;
+}
+.btn{
+    background-color: #fff;
+    border: none;
+}
+.navBtn{
+    display: none;
+}
+.logo{
+    font-family: 'Jost';
+    text-transform: capitalize;
+}
+.sideNav{
+    margin: auto 0;
+}
+.categories, .subcategories{
+    list-style-type: none;
+}
+.main{
+    line-height: 3em;
+    font-family: 'Jost bold';
+    font-size: 1.1em;
+
+}
+.sub{
+    line-height: 1.5em;
+    font-family: 'Jost';
+    position: relative;
+    bottom: .4em;
+    left: 1.5em;
+}
+.inLi{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000;
+}
+.inLi:hover{
+    color: #696767;
+}
+.inLi:active{
+    color: #666464;
+    text-decoration: underline;
+}
+.iconHolder a{
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.icons{
+    padding: 0 .3em;
+}
+.icons:hover{
+    color: #585656;
+}
+.icons:active{
+    color: #8f8f8f;
+}
+.admin{
+    color: #cecbcb;
+    margin-top: 1em;
+}
+.admin:hover{
+    color: #c3c0c0;
+}
+.admin:active{
+    color: #adaaaa;
+}
+
+/*right*/
+
+.right{
+    width: 83%;
+    padding: 2rem 0;
+    position: relative;
+    left: 20.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imageContainer{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 1em;
+}
+.imageContainer:hover .arrowBtn{
+    visibility: visible;
+}
+.imageHolder{
+    display:flex;
+    flex-direction: column;
+}
+.image{
+     width: 60vw;
+     height: 45vw;
+    object-fit:contain;
+}
+.btnHolder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: 1em 0;
+}
+.btnHolder a{
+    color: #696767;
+    text-decoration: none;
+}
+#as{
+    font-size: .8em;
+    text-transform: capitalize;
+    padding: 0 1.5em;
+    border: 1px solid #000;
+}
+.arrowBtn{
+    width: 3em;
+    height: 3em;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+#btnLeft, #btnRight{
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: .1em .1em #585656;
+}
+.imageText{
+    text-align: center;
+    width: inherit;
+    padding: 1em 1em;
+    display: none;
+}
+.minus{
+    float: right;
+}
+.minus :hover{
+    opacity: .5;
+}
+.fdidot{
+    font-family: 'didot';
+}
+.fjost{
+    font-family: 'Jost';
+}
+.footer{
+    width: 80%;
+    color: #8f8f8f;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 3rem 0;
+    text-transform: capitalize;
+    font-family: 'Jost';
+    font-size: 0.9em;
+    position: relative;
+    left: 17.5rem;
+}
