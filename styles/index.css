@@ -49,6 +49,7 @@ body{
 .logo{
     font-family: 'Jost';
     text-transform: capitalize;
+    /* color: rgb(66, 66, 66); */
 }
 .sideNav{
     margin: auto 0;
@@ -56,12 +57,28 @@ body{
 .categories, .subcategories{
     list-style-type: none;
 }
+.subcategories{
+    list-style-type: none;
+    
+    opacity: 0;
+    animation: slideIn 500ms linear 800ms 1 forwards;
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(-50%);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
 .main{
     line-height: 3em;
     font-family: 'Jost bold';
     font-size: 1.1em;
-
 }
+
 .sub{
     line-height: 1.5em;
     font-family: 'Jost';
@@ -73,7 +90,9 @@ body{
     text-transform: capitalize;
     text-decoration: none;
     color: #000;
+    position: relative;
 }
+
 .inLi:hover{
     color: #696767;
 }
@@ -124,10 +143,21 @@ body{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    left: 1em;
+    left: 1em;  
 }
+
 .imageContainer:hover .arrowBtn{
     visibility: visible;
+    opacity: 0;
+    animation: btnVisibility 500ms ease-out 1 forwards;
+}
+@keyframes btnVisibility{
+    0%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .imageHolder{
     display:flex;
@@ -144,6 +174,19 @@ body{
     justify-content: space-between;
     align-items: space-between;
     padding: 1em 0;
+    position: relative;
+    opacity:0;
+    animation: slideRight 250ms ease-in-out 600ms forwards;
+}
+@keyframes slideRight{
+    0%{
+        /* transform: translateX(100%); */
+        opacity: 0.5;
+    }
+    100%{
+        /* transform: translateX(0%); */
+        opacity: 1;
+    }
 }
 .btnHolder a{
     color: #696767;
@@ -200,4 +243,18 @@ body{
     font-size: 0.9em;
     position: relative;
     left: 17.5rem;
+    opacity: 0;
+    animation: slideUp 500ms linear 100ms 1 forwards;
 }
+@keyframes slideUp{
+    0%{
+        transform: translateY(100%);
+        opacity: 0.3;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@media screen only and ()
