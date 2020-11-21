@@ -347,3 +347,66 @@ const photography = [
         best: 0,
     }
 ];
+
+const leftBtn = document.getElementById('btnLeft');
+const rightBtn = document.getElementById('btnRight');
+const target = document.querySelector('.image');
+const home = document.getElementById('bestWork');
+
+
+// console.log(leftBtn);
+let i = 0;
+length = photography.length;
+const functionalBtns = () => {
+    target.src = photography[i].src;
+    target.alt = photography[i].alt;
+
+    rightBtn.addEventListener('click', () => {
+        if(i > length - 2){
+            i = 0;
+        }
+        else{
+            i++;
+        }
+        target.src = photography[i].src;
+        target.alt = photography[i].alt;
+    });
+
+    leftBtn.addEventListener('click', () => {
+        if(i < 0){
+            i = 0;
+        }
+        else{
+            i--;
+        }
+        target.src = photography[i].src;
+        target.alt = photography[i].alt;
+
+    });
+}
+
+functionalBtns();
+
+//artist statement
+const artistStatement = document.getElementById('as');
+const heading = document.querySelector('.fdidot');
+const text = document.querySelector('.fjost');
+const imageText = document.querySelector('.imageText');
+const minusBtn = document.querySelector('.minus');
+
+artistStatement.addEventListener('click',() => {
+    imageText.style.display = 'block';
+    heading.innerHTML = 'heading';
+    text.innerHTML = 'this is a style for the page. hopefully, this will work';
+    
+});
+minusBtn.addEventListener('click', () => {
+    imageText.style.display = 'none';
+});
+
+//removing underline and putting under photography
+const bestWork = document.getElementById('bestWork');
+const photographyUnderline = document.getElementById('photography');
+
+bestWork.style.textDecoration = 'none';
+photographyUnderline.style.textDecoration = 'underline';

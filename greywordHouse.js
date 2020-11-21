@@ -1,4 +1,4 @@
-const architecture = [
+const greywordHouse = [
     {
         id: 44,
         src: './pictures/Architecture/GreywoodHouse/_SRN1203-Edit.jpg',
@@ -142,110 +142,6 @@ const architecture = [
         category: 'architecture',
         subcategory: 'greywordHouse',
         best: 0,
-    },
-    {
-        id: 62,
-        src: './pictures/Architecture/Arch/2_2.jpg',
-        alt: 'anda1',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 63,
-        src: './pictures/Architecture/Arch/4.jpeg',
-        alt: 'anda2',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 64,
-        src: './pictures/Architecture/Arch/7.jpg',
-        alt: 'anda3',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 65,
-        src: './pictures/Architecture/Arch/09_SRN7153.jpg',
-        alt: 'anda4',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 66,
-        src: './pictures/Architecture/Arch/12.jpg',
-        alt: 'anda5',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 67,
-        src: './pictures/Architecture/Arch/2020_Andalucia_architecture.jpg',
-        alt: 'anda6',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 68,
-        src: './pictures/Architecture/Arch/2020_Andalucia_catreflection.jpg',
-        alt: 'anda7',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 69, 
-        src: './pictures/Architecture/Arch/2020_Andalucia_connection.jpg',
-        alt: 'anda8',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 70,
-        src: './pictures/Architecture/Arch/2020_Andalucia_goldenhour.jpg',
-        alt: 'anda9',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 71,
-        src: './pictures/Architecture/Arch/2020_Andalucia_mosque-church.jpg',
-        alt: 'anda10',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 72,
-        src: './pictures/Architecture/Arch/2020_Andalucia_riverslopes.jpg',
-        alt: 'anda11',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 73,
-        src: './pictures/Architecture/Arch/2020_Andalucia_stained-columns.jpg',
-        alt: 'anda12',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 74,
-        src: './pictures/Architecture/Arch/SRN02794.jpg',
-        alt: 'anda13',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
     }
 ];
 
@@ -257,10 +153,10 @@ const home = document.getElementById('bestWork');
 
 // console.log(leftBtn);
 let i = 0;
-length = architecture.length;
+length = greywordHouse.length;
 const functionalBtns = () => {
-    target.src = architecture[i].src;
-    target.alt = architecture[i].alt;
+    target.src = greywordHouse[i].src;
+    target.alt = greywordHouse[i].alt;
 
     rightBtn.addEventListener('click', () => {
         if(i > length - 2){
@@ -269,8 +165,8 @@ const functionalBtns = () => {
         else{
             i++;
         }
-        target.src = architecture[i].src;
-        target.alt = architecture[i].alt;
+        target.src = greywordHouse[i].src;
+        target.alt = greywordHouse[i].alt;
     });
 
     leftBtn.addEventListener('click', () => {
@@ -280,8 +176,8 @@ const functionalBtns = () => {
         else{
             i--;
         }
-        target.src = architecture[i].src;
-        target.alt = architecture[i].alt;
+        target.src = greywordHouse[i].src;
+        target.alt = greywordHouse[i].alt;
 
     });
 }
@@ -313,6 +209,7 @@ const domesticationUnderline = document.getElementById('domestication');
 const reflectionsUnderline = document.getElementById('reflections');
 const simUnderline = document.getElementById('sheepInMadrid');
 const archUnderline = document.getElementById('architecture');
+const ghUnderline = document.getElementById('greywordHouse');
 
 bestWork.style.textDecoration = 'none';
 photographyUnderline.style.textDecoration = 'none';
@@ -320,4 +217,5 @@ sareeUnderline.style.textDecoration = 'none';
 domesticationUnderline.style.textDecoration = 'none';
 reflectionsUnderline.style.textDecoration = 'none';
 simUnderline.style.textDecoration = 'none';
-archUnderline.style.textDecoration = 'underline';
+archUnderline.style.textDecoration = 'none';
+ghUnderline.style.textDecoration = 'underline';

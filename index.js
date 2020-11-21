@@ -2,90 +2,151 @@ const data = [
     {
         id: 1,
         src: './pictures/bestWork/2020_portfolio_202.jpg',
-        alt: 'red saree',
-        category: 'photography',
-        subcategory: 'saree',
+        alt: 'mosque church',
         best: 0,
 
     },
     {
         id: 2,
         src: './pictures/bestWork/2020_portfolio_203.jpg',
-        alt: 'red saree',
-        category: 'photography',
-        subcategory: 'saree',
+        alt: 'greyword house',
         best: 0,
     },
     {
         id: 3,
         src: './pictures/bestWork/2020_portfolio_204.jpg',
-        alt: 'red saree',
-        category: 'photography',
-        subcategory: 'saree',
+        alt: 'andalucia',
         best: 0,
     },
     {
         id: 4,
         src: './pictures/bestWork/2020_portfolio_205.jpg',
-        alt: 'red saree',
-        category: 'photography',
-        subcategory: 'saree',
+        alt: 'andalucia',
         best: 0,
     },
     {
         id: 5,
         src: './pictures/bestWork/2020_portfolio_206.jpg',
         alt: 'green saree',
-        category: 'photography',
-        subcategory: 'saree',
         best: 0,
     },
     {
         id: 6,
         src: './pictures/bestWork/2020_portfolio_207.jpg',
         alt: 'green saree',
-        category: 'photography',
-        subcategory: 'saree',
         best: 0,
     },
     {
         id: 7,
         src: './pictures/bestWork/2020_portfolio_208.jpg',
         alt: 'yellow saree',
-        category: 'photography',
-        subcategory: 'saree',
         best: 0,
     },
     {
         id: 8,
         src: './pictures/bestWork/2020_portfolio_209.jpg',
         alt: 'yellow saree',
-        category: 'photography',
-        subcategory: 'saree',
         best: 0,
     },
     {
         id: 9,
         src: './pictures/bestWork/2020_portfolio_2010.jpg',
         alt: 'domestication1',
-        category: 'photography',
-        subcategory: 'domestication',
         best: 0,
     },
     {
         id: 10,
         src: './pictures/bestWork/2020_portfolio_2011.jpg',
         alt: 'domestication2',
-        category: 'photography',
-        subcategory: 'domestication',
         best: 0,
     },
     {
         id: 11,
         src: './pictures/bestWork/2020_portfolio_2012.jpg',
         alt: 'domestication3',
-        category: 'photography',
-        subcategory: 'domestication',
         best: 0,
     }
 ];
+
+//back and forth buttons
+const leftBtn = document.getElementById('btnLeft');
+const rightBtn = document.getElementById('btnRight');
+const target = document.querySelector('.image');
+const home = document.getElementById('bestWork');
+
+
+// console.log(leftBtn);
+let i = 0;
+length = data.length;
+const functionalBtns = () => {
+    target.src = data[i].src;
+    target.alt = data[i].alt;
+
+    rightBtn.addEventListener('click', () => {
+        if(i > length){
+            i = 0;
+        }
+        else{
+            i++;
+        }
+        target.src = data[i].src;
+        target.alt = data[i].alt;
+    });
+
+    leftBtn.addEventListener('click', () => {
+        if(i < 0){
+            i = 0;
+        }
+        else{
+            i--;
+        }
+        target.src = data[i].src;
+        target.alt = data[i].alt;
+
+    });
+}
+
+functionalBtns();
+
+// autoscroll
+const playBtn = document.querySelector('.play');
+const pauseBtn = document.querySelector('.pause');
+
+let setInt;
+
+    setInt = setInterval(() => {
+         i > length - 2? i = 0 : i++;
+
+        target.src = data[i].src;
+        target.alt = data[i].alt;
+        // console.log(target);
+        // if(i > length){
+        //     i = 1;
+        //     target.src = data[i].src;
+        //     target.alt = data[i].alt;
+        // }
+    },4000);
+
+pauseBtn.addEventListener('click', () => {
+    // playBtn.style.display = 'block';
+    // pauseBtn.style.display = 'none';
+    clearInterval(setInt);
+});
+
+
+//artist statement
+const artistStatement = document.getElementById('as');
+const heading = document.querySelector('.fdidot');
+const text = document.querySelector('.fjost');
+const imageText = document.querySelector('.imageText');
+const minusBtn = document.querySelector('.minus');
+
+artistStatement.addEventListener('click',() => {
+    imageText.style.display = 'block';
+    heading.innerHTML = 'heading';
+    text.innerHTML = 'this is a style for the page. hopefully, this will work';
+    
+});
+minusBtn.addEventListener('click', () => {
+    imageText.style.display = 'none';
+});
