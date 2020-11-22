@@ -122,8 +122,8 @@ const minusBtn = document.querySelector('.minus');
 
 artistStatement.addEventListener('click',() => {
     imageText.style.display = 'block';
-    heading.innerHTML = 'heading';
-    text.innerHTML = 'this is a style for the page. hopefully, this will work';
+    heading.innerHTML = 'Saree//Sari';
+    text.innerHTML = 'This project is about the saree, <br/>A sari / saree is a women’s garment from the Indian subcontinent that consists of an unstitched drape varying from 5.5 to 9 meters in length and 600 to 1,200 mm in breadth that is typically wrapped around the waist, with one end draped over the shoulder, baring a portion of the midriff.<br/>The series captures the simplicity of the saree and enhances and draws attention to fabric, flow and colour.<br/>This project is very close to home, quite literally. My family has been in the buisness of sarees since 54 years, supporting local craftsmen and traditional techniques. After a few cancelled shoots due to the current circumstances, I convinced my mother to be the model and it was such a lucky decision, she quickly became my muse for this series.<br/>Through this work I want to open a window to the rich Indian culture brimming with colour, tradition and grace.';
     
 });
 minusBtn.addEventListener('click', () => {

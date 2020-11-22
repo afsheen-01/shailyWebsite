@@ -123,8 +123,8 @@ const minusBtn = document.querySelector('.minus');
 
 artistStatement.addEventListener('click',() => {
     imageText.style.display = 'block';
-    heading.innerHTML = 'heading';
-    text.innerHTML = 'this is a style for the page. hopefully, this will work';
+    heading.innerHTML = 'Reflections';
+    text.innerHTML = 'The project is an exploration into reflections led by a fascination of the way light reacts differently to different surfaces in the form of reflections and how the build world interacts with these surfaces. <br/>The series invites the viewer to see the world through unique portals that are juxtaposed to make double exposure like frames. Throughout the project we see the subject as a reflection of itself on another object. The subject and the object on which it casts its reflection are often facing each other. <br/>In this series, I attempt to reflect on architecture through photography, as I review and renew my relationship with the two disciplines.';
     
 });
 minusBtn.addEventListener('click', () => {

@@ -151,29 +151,12 @@ crossBtn.addEventListener('click', () => {
 });
 
 
-//artist statement
-// const artistStatement = document.getElementById('as');
-// const heading = document.querySelector('.fdidot');
-// const text = document.querySelector('.fjost');
-// const imageText = document.querySelector('.imageText');
-// const minusBtn = document.querySelector('.minus');
-
-// artistStatement.addEventListener('click',() => {
-//     imageText.style.display = 'block';
-//     heading.innerHTML = 'heading';
-//     text.innerHTML = 'this is a style for the page. hopefully, this will work';
-    
-// });
-// minusBtn.addEventListener('click', () => {
-//     imageText.style.display = 'none';
-// });
-
 
 //prevent right click
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 //open and close eye
-const openEye = document.querySelector('.openEye');
+/*const openEye = document.querySelector('.openEye');
 const setInter = setInterval( () => {
     // openEye.src = './styles/closeEye.svg'
     // openEye.alt = 'close eye';
@@ -185,5 +168,5 @@ const setInter = setInterval( () => {
         openEye.alt = 'open eye'
     }
 
-}, .5);
+}, .5);*/
 // console.log(openEye);

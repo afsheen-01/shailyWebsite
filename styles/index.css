@@ -15,6 +15,7 @@ body{
     width: 97%;
     height: auto;
     cursor: url(defaultIcon.cur), crosshair;
+    font-family: 'Jost';
 }
 *{
     padding: 0;
@@ -45,6 +46,7 @@ body{
 .btn{
     background-color: transparent;
     border: none;
+    cursor: url('./iconOnHover.cur'), crosshair;
 }
 .navBtn{
     display: none;
@@ -52,6 +54,7 @@ body{
 .logo{
     font-family: 'Jost';
     text-transform: capitalize;
+    /* border: 1px solid #000; */
     display: inline-block;
     /* color: rgb(66, 66, 66); */
 }
@@ -61,6 +64,10 @@ body{
 }
 .sideNav{
     margin: auto 0;
+}
+#inAbout{
+    margin: 4rem 0;
+    border: 1px solid #000;
 }
 .categories, .subcategories{
     list-style-type: none;
@@ -77,13 +84,6 @@ body{
         opacity: 1;
     }
 }
-.subcategories{
-    list-style-type: none;
-    
-    
-    animation: slideIn 500ms linear 800ms 1 forwards;
-}
-
 .main{
     line-height: 3em;
     font-family: 'Jost bold';
@@ -149,6 +149,10 @@ body{
     flex-direction: column;
     align-items: flex-start;
 }
+#inAbout{
+    flex-direction: row;
+    border: none;
+}
 .imageContainer{
     width: auto;
     display: flex;
@@ -158,7 +162,6 @@ body{
     position: relative;
     left: 1em;  
 }
-
 .imageContainer:hover .arrowBtn{
     visibility: visible;
     opacity: 0;
@@ -190,9 +193,27 @@ body{
     object-fit:contain;
     cursor: url('../fontAwesome/svgs/solid/plus.svg');
 }
+
+.myImage{
+    margin: 4rem 4rem;
+    padding: 2rem;
+    width: 40%;
+    height: 70%;
+    border-radius: 50%;
+}
+
+.info{
+    /* border: 1px solid #000; */
+    margin: 2rem 0;
+    /* height: 50%; */
+    padding: 1rem;
+}
+.info h3{
+    font-family: 'didot';
+    text-decoration: underline;
+}
 .btnHolder{
     width: inherit;
-    border: 1px solid #000;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -222,9 +243,11 @@ body{
     color: #8f8f8f;
 }
 #as{
-    font-size: .8em;
+    font-size: .9em;
+    font-weight: 400;
     text-transform: capitalize;
     padding: 0 1.5em;
+    background-color: rgba(116, 111, 111, 0.15);
     border: 1px solid #000;
 }
 .arrowBtn{
@@ -235,6 +258,9 @@ body{
     justify-content: center;
     align-items: center;
     visibility: hidden;
+}
+.pauseBtn{
+    font-size: .2rem;
 }
 #btnLeft, #btnRight{
     font-size: 1.2em;
@@ -254,15 +280,19 @@ body{
 .pause:hover, .play:hover{
     opacity: .5;
 }
-/* .pause{
-    display: none;
-} */
+
+.caption{
+    max-width: 35vw;
+    color: #4e4c4c;
+    opacity: 0.6;
+}
 .imageText{
     text-align: center;
     width: inherit;
     padding: 1em 1em;
     display: none;
     position: relative;
+    background-color: rgba(116, 111, 111, 0.15);
     left: 4.5rem;
 }
 .minus{
@@ -272,7 +302,7 @@ body{
     color: #585656;
     /* padding: auto; */
     position: relative;
-    right: 3.5rem;
+    right: 3.7rem;
 }
 .minus :hover{
     opacity: .5;
@@ -282,6 +312,7 @@ body{
 }
 .fjost{
     font-family: 'Jost';
+    text-align: left;
 }
 .footer{
     width: 80%;
@@ -295,7 +326,7 @@ body{
     font-family: 'Jost';
     font-size: 0.9em;
     position: relative;
-    left: 17rem;
+    left: 14rem;
     opacity: 0;
     animation: slideUp 500ms linear 100ms 1 forwards;
 }
