@@ -114,21 +114,36 @@ const pauseBtn = document.querySelector('.pause');
 
 let setInt;
 
-    setInt = setInterval(() => {
-         i > length - 2? i = 0 : i++;
+setInt = setInterval(() => {
+    i > length - 2? i = 0 : i++;
 
-        target.src = data[i].src;
-        target.alt = data[i].alt;
-    },4000);
+   target.src = data[i].src;
+   target.alt = data[i].alt;
+},4000);
+
+    playBtn.addEventListener('click', () => {
+        setInt = setInterval(() => {
+            i > length - 2? i = 0 : i++;
+   
+           target.src = data[i].src;
+           target.alt = data[i].alt;
+       },2500);
+
+    playBtn.style.display = 'none';
+    pauseBtn.style.display =  'block';
+    });
 
 pauseBtn.addEventListener('click', () => {
     clearInterval(setInt);
+    playBtn.style.display = 'block';
+    pauseBtn.style.display =  'none';
 });
 
 //imageClick event
 const body = document.querySelector('.body');
 const arrowBtns = document.querySelectorAll('.arrowBtn');
 const crossBtn = document.querySelector('.crossBtn');
+const sideNavColor = document.querySelector('.sideNav');
 
 target.addEventListener('click', () => {
     clearInterval(setInt);
@@ -138,6 +153,7 @@ target.addEventListener('click', () => {
     target.style.objectFit = 'contain';
     crossBtn.style.display = 'block';
     body.style.backgroundColor  = 'rgba(25,25,25,.5)';
+    sideNavColor.style.backgroundColor  = 'rgba(25,25,25,.5)';
     console.log(arrowBtns);
     // arrowBtns.style.backgroundColor  = 'rgba(25,25,25,.5)';
 });
@@ -155,18 +171,19 @@ crossBtn.addEventListener('click', () => {
 //prevent right click
 document.addEventListener('contextmenu', event => event.preventDefault());
 
-//open and close eye
-/*const openEye = document.querySelector('.openEye');
-const setInter = setInterval( () => {
-    // openEye.src = './styles/closeEye.svg'
-    // openEye.alt = 'close eye';
-    if(openEye.src == 'styles/openEye.svg'){
-        openEye.src = './styles/closeEye.svg';
-        openEye.alt = 'close eye'
-    } else{
-        openEye.src = './styles/openEye.svg';
-        openEye.alt = 'open eye'
-    }
+const navBtn = document.querySelector('.navBtn');
+const sideNav = document.querySelector('.sideNav');
+const navCloseBtn = document.querySelector('.navCloseBtn');
 
-}, .5);*/
-// console.log(openEye);
+// navBtn.addEventListener('click',() => {
+//     // body.style.color = '#fff';
+//     // body.style.backgroundColor = '#fff';
+//     if(sideNav.style.display === 'block'){
+//         sideNav.style.display = 'none';
+//     }
+//     else{
+//         sideNav.style.display = 'block';
+//     }
+//     // navCloseBtn.style.dsplay = 'block';
+    
+// });

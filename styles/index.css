@@ -29,6 +29,9 @@ body{
     width: inherit;
     height: inherit;
 }
+a{
+    cursor: crosshair;
+}
 
 /*left side*/
 
@@ -48,7 +51,7 @@ body{
     border: none;
     cursor: url('./iconOnHover.cur'), crosshair;
 }
-.navBtn{
+.navBtn, .navCloseBtn{
     display: none;
 }
 .logo{
@@ -281,6 +284,10 @@ body{
     opacity: .5;
 }
 
+.play{
+    display: none;
+}
+
 .caption{
     max-width: 35vw;
     color: #4e4c4c;
@@ -341,6 +348,81 @@ body{
     }
 }
 
-@media only screen  and (max-width: 700){
+@media only screen  and (max-width: 1300px){
+    
+    body{
+        width: 97%;
+        height: auto;
+        cursor: url(defaultIcon.cur), crosshair;
+        font-family: 'Jost';
+    }
+    .container{
+        /* border: 1px solid #000; */
+        display: flex;
+        /* justify-content: space-around; */
+        /* align-content: space-around; */
+        flex-direction: column;
+        width: inherit;
+        height: 100%;
+    }
+    .left, .right{
+        padding: 0;
+        margin: 0;
+    }
+    .left{
+        width: 97%;
+        height: 7rem;
+        margin: 0rem 1rem;
+        /* border: 1px solid #000; */
+        display: flex;
+        flex-direction: row;
+        /* background-color: #fff; */
+        /* z-index: 10; */
+    }
+    .sideNav{
+        display: none;
+        background-color: #fff;
+        position: relative;
+        right: 30rem;
 
+    }
+    .navBtn{
+        display: block;
+        /* border: 1px solid #000; */
+    }
+    .navBtn:hover{
+        opacity: 0.5;
+    }
+    .navBtnContainer, .logoHolder{
+        padding: 3rem;
+        /* border: 1px solid #000; */
+    }
+    .navBtnContainer{
+        float: left;
+    }
+    .logoHolder{
+        /* float: right; */
+        margin: 0 17rem;
+    }
+    .logo{
+        width: 20rem;
+        /* border: 1px solid #000; */
+        float: right;
+    }
+    .right{
+        position: relative;
+        top: 7rem;
+        left: 7rem;
+    }
+    .image{
+        width: 70vw;
+        height: 65vw;
+       object-fit:contain;
+       cursor: url('../fontAwesome/svgs/solid/plus.svg');
+   }
+    .footer{
+        position: relative;
+        left: 7rem;
+        top: 5rem;
+    }
 }
