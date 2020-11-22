@@ -13,6 +13,8 @@
 }
 body{
     width: 97%;
+    height: auto;
+    cursor: url(defaultIcon.cur), crosshair;
 }
 *{
     padding: 0;
@@ -37,10 +39,11 @@ body{
     display: flex;
     flex-direction: column;
     align-content: space-around;
+    /* border: 1px solid #000; */
     /* background-color: #fff; */
 }
 .btn{
-    background-color: #fff;
+    background-color: transparent;
     border: none;
 }
 .navBtn{
@@ -49,7 +52,12 @@ body{
 .logo{
     font-family: 'Jost';
     text-transform: capitalize;
+    display: inline-block;
     /* color: rgb(66, 66, 66); */
+}
+.openEye{
+    height: 3vw;
+    width: 3vw;
 }
 .sideNav{
     margin: auto 0;
@@ -154,7 +162,8 @@ body{
 .imageContainer:hover .arrowBtn{
     visibility: visible;
     opacity: 0;
-    animation: btnVisibility 500ms ease-out 1 forwards;
+    animation: btnVisibility 500ms linear 1 forwards;
+    /* transition: opacity 1s ease-in-out; */
 }
 @keyframes btnVisibility{
     0%{
@@ -168,12 +177,22 @@ body{
     display:flex;
     flex-direction: column;
 }
+.crossBtn{
+    /* transform: rotate(0.5 turn); */
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    /* display: none; */
+}
 .image{
      width: 60vw;
      height: 45vw;
     object-fit:contain;
+    cursor: url('../fontAwesome/svgs/solid/plus.svg');
 }
 .btnHolder{
+    width: inherit;
+    border: 1px solid #000;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -243,10 +262,17 @@ body{
     width: inherit;
     padding: 1em 1em;
     display: none;
+    position: relative;
+    left: 4.5rem;
 }
 .minus{
     float: right;
-    color: #696767;
+    border: none;
+    /* background-color: #fff; */
+    color: #585656;
+    /* padding: auto; */
+    position: relative;
+    right: 3.5rem;
 }
 .minus :hover{
     opacity: .5;
@@ -269,7 +295,7 @@ body{
     font-family: 'Jost';
     font-size: 0.9em;
     position: relative;
-    left: 17.5rem;
+    left: 17rem;
     opacity: 0;
     animation: slideUp 500ms linear 100ms 1 forwards;
 }

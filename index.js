@@ -119,34 +119,71 @@ let setInt;
 
         target.src = data[i].src;
         target.alt = data[i].alt;
-        // console.log(target);
-        // if(i > length){
-        //     i = 1;
-        //     target.src = data[i].src;
-        //     target.alt = data[i].alt;
-        // }
     },4000);
 
 pauseBtn.addEventListener('click', () => {
-    // playBtn.style.display = 'block';
-    // pauseBtn.style.display = 'none';
     clearInterval(setInt);
+});
+
+//imageClick event
+const body = document.querySelector('.body');
+const arrowBtns = document.querySelectorAll('.arrowBtn');
+const crossBtn = document.querySelector('.crossBtn');
+
+target.addEventListener('click', () => {
+    clearInterval(setInt);
+    // console.log('you clicked me:)');
+    target.style.width = '70vw';
+    target.style.height = '65vw';
+    target.style.objectFit = 'contain';
+    crossBtn.style.display = 'block';
+    body.style.backgroundColor  = 'rgba(25,25,25,.5)';
+    console.log(arrowBtns);
+    // arrowBtns.style.backgroundColor  = 'rgba(25,25,25,.5)';
+});
+
+crossBtn.addEventListener('click', () => {
+    target.style.width = '60vw';
+    target.style.height = '45vw';
+    target.style.objectFit = 'contain';
+    body.style.backgroundColor  = '#fff';
+
 });
 
 
 //artist statement
-const artistStatement = document.getElementById('as');
-const heading = document.querySelector('.fdidot');
-const text = document.querySelector('.fjost');
-const imageText = document.querySelector('.imageText');
-const minusBtn = document.querySelector('.minus');
+// const artistStatement = document.getElementById('as');
+// const heading = document.querySelector('.fdidot');
+// const text = document.querySelector('.fjost');
+// const imageText = document.querySelector('.imageText');
+// const minusBtn = document.querySelector('.minus');
 
-artistStatement.addEventListener('click',() => {
-    imageText.style.display = 'block';
-    heading.innerHTML = 'heading';
-    text.innerHTML = 'this is a style for the page. hopefully, this will work';
+// artistStatement.addEventListener('click',() => {
+//     imageText.style.display = 'block';
+//     heading.innerHTML = 'heading';
+//     text.innerHTML = 'this is a style for the page. hopefully, this will work';
     
-});
-minusBtn.addEventListener('click', () => {
-    imageText.style.display = 'none';
-});
+// });
+// minusBtn.addEventListener('click', () => {
+//     imageText.style.display = 'none';
+// });
+
+
+//prevent right click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+//open and close eye
+const openEye = document.querySelector('.openEye');
+const setInter = setInterval( () => {
+    // openEye.src = './styles/closeEye.svg'
+    // openEye.alt = 'close eye';
+    if(openEye.src == 'styles/openEye.svg'){
+        openEye.src = './styles/closeEye.svg';
+        openEye.alt = 'close eye'
+    } else{
+        openEye.src = './styles/openEye.svg';
+        openEye.alt = 'open eye'
+    }
+
+}, .5);
+// console.log(openEye);
