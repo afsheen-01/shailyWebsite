@@ -131,10 +131,6 @@ minusBtn.addEventListener('click', () => {
 });
 
 //removing underline and putting under photography
-const bestWork = document.getElementById('bestWork');
-const photographyUnderline = document.getElementById('photography');
 const sareeUnderline = document.getElementById('saree');
 
-bestWork.style.textDecoration = 'none';
-photographyUnderline.style.textDecoration = 'none';
 sareeUnderline.style.textDecoration = 'underline';

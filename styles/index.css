@@ -8,8 +8,8 @@
     src: url('../Jost/static/JostRegular.ttf')
 }
 @font-face{
-    font-family: "Jost bold";
-    src: url('../Jost/static/JostBold.ttf');
+    font-family: "Jost light";
+    src: url('../Jost/static/Jost-LightItalic.ttf');
 }
 body{
     width: 97%;
@@ -61,6 +61,10 @@ a{
     display: inline-block;
     /* color: rgb(66, 66, 66); */
 }
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
 .openEye{
     height: 3vw;
     width: 3vw;
@@ -74,10 +78,10 @@ a{
 }
 .categories, .subcategories{
     list-style-type: none;
-    opacity: 0;
-    animation: slideIn 500ms linear 800ms 1 forwards;
+    /* opacity: 0; */
+    /* animation: slideIn 500ms linear 800ms 1 forwards; */
 }
-@keyframes slideIn{
+/* @keyframes slideIn{
     0%{
         transform: translateX(-50%);
         opacity: 0.5;
@@ -86,16 +90,17 @@ a{
         transform: translateX(0%);
         opacity: 1;
     }
-}
+} */
 .main{
     line-height: 3em;
-    font-family: 'Jost bold';
+    font-family: 'Jost';
     font-size: 1.1em;
+    text-transform: capitalize;
 }
 
 .sub{
     line-height: 1.5em;
-    font-family: 'Jost';
+    font-family: 'Jost light';
     position: relative;
     bottom: .4em;
     left: 1.5em;
@@ -130,16 +135,7 @@ a{
 .icons:active{
     color: #8f8f8f;
 }
-.admin{
-    color: #cecbcb;
-    margin-top: 1em;
-}
-.admin:hover{
-    color: #c3c0c0;
-}
-.admin:active{
-    color: #adaaaa;
-}
+
 
 /*right*/
 
@@ -167,18 +163,18 @@ a{
 }
 .imageContainer:hover .arrowBtn{
     visibility: visible;
-    opacity: 0;
-    animation: btnVisibility 500ms linear 1 forwards;
+    /* opacity: 0; */
+    /* animation: btnVisibility 500ms linear 1 forwards; */
     /* transition: opacity 1s ease-in-out; */
 }
-@keyframes btnVisibility{
+/* @keyframes btnVisibility{
     0%{
         opacity: .5;
     }
     100%{
         opacity: 1;
     }
-}
+} */
 .imageHolder{
     display:flex;
     flex-direction: column;
@@ -223,10 +219,10 @@ a{
     align-items: space-between;
     padding: 1em 0;
     position: relative;
-    opacity:0;
-    animation: slideRight 250ms ease-in-out 600ms forwards;
+    /* opacity:0; */
+    /* animation: slideRight 250ms ease-in-out 600ms forwards; */
 }
-@keyframes slideRight{
+/* @keyframes slideRight{
     0%{
         
         opacity: 0.5;
@@ -234,7 +230,7 @@ a{
     100%{
         opacity: 1;
     }
-}
+} */
 .btnHolder a{
     color: #696767;
     text-decoration: none;
@@ -334,10 +330,10 @@ a{
     font-size: 0.9em;
     position: relative;
     left: 14rem;
-    opacity: 0;
-    animation: slideUp 500ms linear 100ms 1 forwards;
+    /* opacity: 0; */
+    /* animation: slideUp 500ms linear 100ms 1 forwards; */
 }
-@keyframes slideUp{
+/* @keyframes slideUp{
     0%{
         transform: translateY(100%);
         opacity: 0.3;
@@ -346,7 +342,7 @@ a{
         transform: translateY(0%);
         opacity: 1;
     }
-}
+} */
 
 @media only screen  and (max-width: 1300px){
     

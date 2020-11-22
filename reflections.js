@@ -132,14 +132,10 @@ minusBtn.addEventListener('click', () => {
 });
 
 //removing underline and putting under photography
-const bestWork = document.getElementById('bestWork');
-const photographyUnderline = document.getElementById('photography');
 const sareeUnderline = document.getElementById('saree');
 const domesticationUnderline = document.getElementById('domestication');
 const reflectionsUnderline = document.getElementById('reflections');
 
-bestWork.style.textDecoration = 'none';
-photographyUnderline.style.textDecoration = 'none';
 sareeUnderline.style.textDecoration = 'none';
 domesticationUnderline.style.textDecoration = 'none';
 reflectionsUnderline.style.textDecoration = 'underline';
