@@ -143,7 +143,6 @@ pauseBtn.addEventListener('click', () => {
 const body = document.querySelector('.body');
 const arrowBtns = document.querySelectorAll('.arrowBtn');
 const crossBtn = document.querySelector('.crossBtn');
-const sideNavColor = document.querySelector('.sideNav');
 
 target.addEventListener('click', () => {
     clearInterval(setInt);
@@ -153,7 +152,6 @@ target.addEventListener('click', () => {
     target.style.objectFit = 'contain';
     crossBtn.style.display = 'block';
     body.style.backgroundColor  = 'rgba(25,25,25,.5)';
-    sideNavColor.style.backgroundColor  = 'rgba(25,25,25,.5)';
     console.log(arrowBtns);
     // arrowBtns.style.backgroundColor  = 'rgba(25,25,25,.5)';
 });
@@ -175,15 +173,13 @@ const navBtn = document.querySelector('.navBtn');
 const sideNav = document.querySelector('.sideNav');
 const navCloseBtn = document.querySelector('.navCloseBtn');
 
-// navBtn.addEventListener('click',() => {
-//     // body.style.color = '#fff';
-//     // body.style.backgroundColor = '#fff';
-//     if(sideNav.style.display === 'block'){
-//         sideNav.style.display = 'none';
-//     }
-//     else{
-//         sideNav.style.display = 'block';
-//     }
-//     // navCloseBtn.style.dsplay = 'block';
+navBtn.addEventListener('click',() => {
+    if(sideNav.style.display === 'block'){
+        sideNav.style.display = 'none';
+    }
+    else{
+        sideNav.style.display = 'block';
+    }
+    // navCloseBtn.style.dsplay = 'block';
     
-// });
+});
