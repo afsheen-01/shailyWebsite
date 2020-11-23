@@ -136,12 +136,13 @@ setInt = setInterval(() => {
 pauseBtn.addEventListener('click', () => {
     clearInterval(setInt);
     playBtn.style.display = 'block';
+    playBtn.style.textAlign = 'center';
     pauseBtn.style.display =  'none';
 });
 
 //imageClick event
 const body = document.querySelector('.body');
-const arrowBtns = document.querySelectorAll('.arrowBtn');
+// const arrowBtns = document.querySelectorAll('.arrowBtn');
 const crossBtn = document.querySelector('.crossBtn');
 
 target.addEventListener('click', () => {
@@ -152,7 +153,7 @@ target.addEventListener('click', () => {
     target.style.objectFit = 'contain';
     crossBtn.style.display = 'block';
     body.style.backgroundColor  = 'rgba(25,25,25,.5)';
-    console.log(arrowBtns);
+    // console.log(arrowBtns);
     // arrowBtns.style.backgroundColor  = 'rgba(25,25,25,.5)';
 });
 

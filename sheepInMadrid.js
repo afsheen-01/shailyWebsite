@@ -145,7 +145,6 @@ const minusBtn = document.querySelector('.minus');
 
 artistStatement.addEventListener('click',() => {
     imageText.style.display = 'block';
-    heading.innerHTML = 'heading';
     text.innerHTML = 'this is a style for the page. hopefully, this will work';
     
 });

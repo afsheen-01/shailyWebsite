@@ -144,23 +144,6 @@ const functionalBtns = () => {
 
 functionalBtns();
 
-//artist statement
-// const artistStatement = document.getElementById('as');
-// const heading = document.querySelector('.fdidot');
-// const text = document.querySelector('.fjost');
-// const imageText = document.querySelector('.imageText');
-// const minusBtn = document.querySelector('.minus');
-
-// artistStatement.addEventListener('click',() => {
-//     imageText.style.display = 'block';
-//     heading.innerHTML = 'heading';
-//     text.innerHTML = 'this is a style for the page. hopefully, this will work';
-    
-// });
-// minusBtn.addEventListener('click', () => {
-//     imageText.style.display = 'none';
-// });
-
 //removing underline and putting under photography
 const sareeUnderline = document.getElementById('saree');
 const domesticationUnderline = document.getElementById('domestication');
