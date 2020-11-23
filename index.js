@@ -111,12 +111,13 @@ functionalBtns();
 // autoscroll
 const playBtn = document.querySelector('.play');
 const pauseBtn = document.querySelector('.pause');
+const fullScreenImg = document.querySelector('.fullScreenImg');
 
 let setInt;
 
 setInt = setInterval(() => {
     i > length - 2? i = 0 : i++;
-
+    fullScreenImg.href = data[i].src;
    target.src = data[i].src;
    target.alt = data[i].alt;
 },4000);
@@ -142,19 +143,12 @@ pauseBtn.addEventListener('click', () => {
 
 //imageClick event
 const body = document.querySelector('.body');
-// const arrowBtns = document.querySelectorAll('.arrowBtn');
 const crossBtn = document.querySelector('.crossBtn');
 
 target.addEventListener('click', () => {
     clearInterval(setInt);
-    // console.log('you clicked me:)');
-    target.style.width = '70vw';
-    target.style.height = '65vw';
-    target.style.objectFit = 'contain';
+    // body.innerHTML = target;
     crossBtn.style.display = 'block';
-    body.style.backgroundColor  = 'rgba(25,25,25,.5)';
-    // console.log(arrowBtns);
-    // arrowBtns.style.backgroundColor  = 'rgba(25,25,25,.5)';
 });
 
 crossBtn.addEventListener('click', () => {
@@ -164,8 +158,6 @@ crossBtn.addEventListener('click', () => {
     body.style.backgroundColor  = '#fff';
 
 });
-
-
 
 //prevent right click
 document.addEventListener('contextmenu', event => event.preventDefault());
@@ -181,6 +173,5 @@ navBtn.addEventListener('click',() => {
     else{
         sideNav.style.display = 'block';
     }
-    // navCloseBtn.style.dsplay = 'block';
     
 });

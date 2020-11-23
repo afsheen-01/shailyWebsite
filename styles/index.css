@@ -154,7 +154,7 @@ a{
 }
 .crossBtn{
     /* color: ; */
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 2em;
     width: 2em;
@@ -190,10 +190,8 @@ a{
     flex-direction:column;
     justify-content: center;
     /* text-align: center; */
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
-
-
 .arrowBtn{
     width: 3em;
     height: 3em;
@@ -237,13 +235,14 @@ a{
 }
 .inArtAndThumb{
     width: 20%;
-    padding: .3em;
+    margin: .3em;
     font-size: .9em;
     font-weight: 400;
     text-transform: capitalize;
     padding: 0 1.5em;
     background-color: rgba(116,111, 111, 0.15);
     border: 1px solid #000;
+    /* float: right; */
 }
 
 .caption{
