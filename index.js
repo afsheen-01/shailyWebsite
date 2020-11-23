@@ -72,13 +72,14 @@ const data = [
 const leftBtn = document.getElementById('btnLeft');
 const rightBtn = document.getElementById('btnRight');
 const target = document.querySelector('.image');
-const home = document.getElementById('bestWork');
+const fullScreenImg = document.querySelector('.fullScreenImg')
 
 
 // console.log(leftBtn);
 let i = 0;
 length = data.length;
 const functionalBtns = () => {
+    fullScreenImg.href = data[i].src;
     target.src = data[i].src;
     target.alt = data[i].alt;
 
@@ -89,6 +90,7 @@ const functionalBtns = () => {
         else{
             i++;
         }
+        fullScreenImg.href = data[i].src;
         target.src = data[i].src;
         target.alt = data[i].alt;
     });
@@ -100,6 +102,7 @@ const functionalBtns = () => {
         else{
             i--;
         }
+        fullScreenImg.href = data[i].src;
         target.src = data[i].src;
         target.alt = data[i].alt;
 
@@ -110,8 +113,7 @@ functionalBtns();
 
 // autoscroll
 const playBtn = document.querySelector('.play');
-const pauseBtn = document.querySelector('.pause');
-const fullScreenImg = document.querySelector('.fullScreenImg');
+const pauseBtn = document.querySelector('.pause');;
 
 let setInt;
 
