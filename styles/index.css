@@ -8,8 +8,12 @@
     src: url('../Jost/static/JostRegular.ttf')
 }
 @font-face{
-    font-family: "Jost light";
+    font-family: "Jost light italic";
     src: url('../Jost/static/Jost-LightItalic.ttf');
+}
+@font-face{
+    font-family: "Jost light";
+    src: url('../Jost/static/Jost-Light.ttf');
 }
 body{
     width: 97%;
@@ -133,50 +137,56 @@ a{
     align-items: flex-start;
 }
 #inAbout{
+    /* margin: auto 0; */
     flex-direction: row;
     border: none;
+    top: 5rem;
+    right: 5rem;
 }
 .imageContainer{
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    left: 1em;  
+    left: 1em; 
+    /* border: 1px solid #000; */
 }
 .imageContainer:hover .arrowBtn{
     visibility: visible;
 }
-.imageHolder{
-    display:flex;
-    flex-direction: column;
-}
-.crossBtn{
-    /* color: ; */
-    display: none;
-    flex-direction: column;
-    height: 2em;
-    width: 2em;
-}
 .image{
      width: 60vw;
      height: 45vw;
+     /* border: 1px solid #000; */
+     padding: none;
+     margin: none;
+     /* position: relative */
     object-fit:contain;
     cursor: url('../fontAwesome/svgs/solid/plus.svg');
 }
+/* #imgContainer, .infoContainer{
+    border: 1px solid #000;
+    width: 30%;
+} */
 
 .myImage{
-    margin: 4rem 4rem;
+    margin: 7rem 2rem 4rem;
     padding: 2rem;
     width: 40%;
     height: 70%;
     border-radius: 50%;
 }
-
-.info{
-    margin: 2rem 0;
-    padding: 1rem;
+.infoContainer{
+    position: relative;
+    right: 5em;
+}
+.info{ 
+    width: 80%;
+    /* border: 1px solid #000; */
+    -webkit-margin-before: 8.5rem;
+    padding: 0 1rem;
 }
 .info h3{
     font-family: 'didot';
@@ -189,17 +199,22 @@ a{
     display:flex;
     flex-direction:column;
     justify-content: center;
+    /* border: 1px solid #000; */
     /* text-align: center; */
     /* border: 1px solid #000; */
 }
 .arrowBtn{
-    width: 3em;
-    height: 3em;
-    margin: 1rem;
+    /* width: 3em;
+    height: 3em; */
+    /* margin: 1rem; */
+    /* padding:  0 0 0 1rem; */
     display: flex;
     justify-content: center;
     align-items: center;
     visibility: hidden;
+}
+.thumbnails{
+    display: none;
 }
 .pauseBtn{
     height: 2rem;
@@ -209,10 +224,6 @@ a{
 .newArrow{
     height: 2rem;
     width: 2rem;
-}
-#btnLeft, #btnRight{
-    color: #fff;
-    text-shadow: .1em .1em #585656;
 }
 /*preventing border*/
 :focus {
@@ -228,20 +239,26 @@ a{
     display: none;
 }
 .artAndThumb{
+    width: 61vw;
+    position: relative;
+    left: 8rem;
     /* border: 1px solid #000; */
     display:flex;
     flex-direction: column;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 .inArtAndThumb{
     width: 20%;
-    margin: .3em;
+    margin: .3em 0;
     font-size: .9em;
     font-weight: 400;
     text-transform: capitalize;
-    padding: 0 1.5em;
-    background-color: rgba(116,111, 111, 0.15);
-    border: 1px solid #000;
+    font-family: 'Jost light';
+    /* padding: 0 1.5em; */
+    /* background-color: rgba(116,111, 111, 0.15); */
+    /* border: 1px solid #000; */
+    text-align: right;
     /* float: right; */
 }
 
@@ -253,25 +270,25 @@ a{
 }
 .imageText{
     text-align: center;
-    width: inherit;
+    width: 45vw;
     padding: 1em 1em;
     display: none;
     position: relative;
-    background-color: rgba(116, 111, 111, 0.15);
+    /* background-color: rgba(116, 111, 111, 0.15); */
     left: 4.5rem;
 }
 .minus{
     float: right;
+    /* margin: .4em; */
+    /* padding: 1em; */
     border: none;
     color: #585656;
     position: relative;
     right: 3.7rem;
+    display: none;
 }
 .minus :hover{
     opacity: .5;
-}
-.fdidot{
-    font-family: 'didot';
 }
 .fjost{
     font-family: 'Jost';
@@ -285,20 +302,23 @@ a{
     align-items:center;
     flex-direction: column;
     padding: 3rem 0;
+    margin: 3rem 0;
     text-transform: capitalize;
     font-family: 'Jost';
     font-size: 0.9em;
     position: relative;
-    left: 14rem;
+    left: 18rem;
     bottom: 3em;
+    /* border: 1px solid #000; */
 }
 .btnLinks{
+    margin: 2rem 0;
+    padding: 0;
     width: inherit;
+    /* border: 1px solid #000; */
     display: flex;
     justify-content: space-between;
     align-content: space-between;
-    margin: 1em;
-    padding: 1em;
     font-size: 1.1em;
 }
 .link{
@@ -309,7 +329,7 @@ a{
     color:#4e4c4c;
 }
 
-@media only screen  and (max-width: 1300px){
+/* @media only screen  and (max-width: 1300px){
     
     body{
         width: 97%;
@@ -376,4 +396,4 @@ a{
         left: 7rem;
         top: 5rem;
     }
-}
+} */

@@ -144,26 +144,16 @@ pauseBtn.addEventListener('click', () => {
 });
 
 //imageClick event
-const body = document.querySelector('.body');
-const crossBtn = document.querySelector('.crossBtn');
 
 target.addEventListener('click', () => {
     clearInterval(setInt);
-    // body.innerHTML = target;
-    crossBtn.style.display = 'block';
 });
 
-crossBtn.addEventListener('click', () => {
-    target.style.width = '60vw';
-    target.style.height = '45vw';
-    target.style.objectFit = 'contain';
-    body.style.backgroundColor  = '#fff';
-
-});
 
 //prevent right click
 document.addEventListener('contextmenu', event => event.preventDefault());
 
+//on smaller screen - not working right now -.
 const navBtn = document.querySelector('.navBtn');
 const sideNav = document.querySelector('.sideNav');
 const navCloseBtn = document.querySelector('.navCloseBtn');
