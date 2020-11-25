@@ -3,88 +3,68 @@ const artwork = [
         id: 75,
         src: './pictures/Artworks/Churchgate-station-mumbai.jpg',
         alt: 'artworks1',
-        category: 'artworks',
-        subcategory: '',
-        best: 0,
+        caption:''
     },
     {
         id: 76,
         src: './pictures/Artworks/Darkroom-for-housing.jpg',
         alt: 'artworks2',
-        category: 'artworks',
-        subcategory: '',
-        best: 0,
+        caption:'Darkroom architecture'
     },
     {
         id: 77,
         src: './pictures/Artworks/Ducktails.jpg',
         alt: 'artworks3',
-        category: 'artworks',
-        subcategory: '',
-        best: 0,
+        caption:'Getting my ducks in a row'
     },
     {
         id: 78,
         src: './pictures/Artworks/Exospheres.jpg',
         alt: 'artworks4',
-        category: 'artworks',
-        subcategory: '',
-        best: 0,
+        caption:'Microscopic - macroscopic'
     },
     {
         id: 79,
         src: './pictures/Artworks/Next-door-stangers-.jpg',
         alt: 'artworks5',
-        category: 'artworks',
-        subcategory: '',
-        best: 0,
+        caption:'Next door stangers'
     },
     {
         id: 80,
         src: './pictures/Artworks/Postcard_of_a_figmental_biosphere.jpg',
         alt: 'artworks6',
-        category: 'artworks',
-        subcategory: '',
-        best: 0,
+        caption:'Postcards from a  gmental biosphere'
     },
     {
         id: 81,
         src: './pictures/Artworks/Time-capsule-of-mumbai.jpg',
         alt: 'artworks7',
-        category: 'artworks',
-        subcategory: '',
-        best: 0,
+        caption:'An exercise in time capsuling'
     },
     {
         id: 82,
         src: './pictures/Artworks/Time-travel.png',
         alt: 'artworks8',
-        category: 'artworks',
-        subcategory: '',
-        best: 0,
+        caption:'Time-traveling tourists.'
     },
     {
         id: 83,
         src: './pictures/Artworks/When-pigs-fly.png',
         alt: 'artworks9',
-        category: 'artworks',
-        subcategory: '',
-        best: 0,
+        caption:''
     },
     {
         id: 84,
         src: './pictures/Artworks/Whirlpool-mind.jpg',
         alt: 'artworks10',
-        category: 'artworks',
-        subcategory: '',
-        best: 0,
+        caption:'Brainwashing'
     }
 ];
 
 const leftBtn = document.getElementById('btnLeft');
 const rightBtn = document.getElementById('btnRight');
 const target = document.querySelector('.image');
-const home = document.getElementById('bestWork');
+const caption = document.getElementById('caption');
 
 
 // console.log(leftBtn);
@@ -103,6 +83,7 @@ const functionalBtns = () => {
         }
         target.src = artwork[i].src;
         target.alt = artwork[i].alt;
+        caption.innerHTML = artwork[i].caption;
     });
 
     leftBtn.addEventListener('click', () => {
@@ -114,6 +95,7 @@ const functionalBtns = () => {
         }
         target.src = artwork[i].src;
         target.alt = artwork[i].alt;
+        caption.innerHTML = artwork[i].caption;
 
     });
 }
@@ -127,15 +109,6 @@ const text = document.querySelector('.fjost');
 const imageText = document.querySelector('.imageText');
 const minusBtn = document.querySelector('.minus');
 
-// artistStatement.addEventListener('click',() => {
-//     imageText.style.display = 'block';
-//     heading.innerHTML = 'heading';
-//     text.innerHTML = 'this is a style for the page. hopefully, this will work';
-    
-// });
-// minusBtn.addEventListener('click', () => {
-//     imageText.style.display = 'none';
-// });
 
 //removing underline and putting under photography
 const sareeUnderline = document.getElementById('saree');

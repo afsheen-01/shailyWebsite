@@ -157,13 +157,16 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 const navBtn = document.querySelector('.navBtn');
 const sideNav = document.querySelector('.sideNav');
 const navCloseBtn = document.querySelector('.navCloseBtn');
+const rightSection = document.querySelector('.right');
 
 navBtn.addEventListener('click',() => {
     if(sideNav.style.display === 'block'){
         sideNav.style.display = 'none';
+        // rightSection.style.display = 'block';
     }
     else{
         sideNav.style.display = 'block';
+        // rightSection.style.display = 'none';
     }
     
 });

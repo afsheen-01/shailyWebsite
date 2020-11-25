@@ -61,7 +61,8 @@ a{
     display: none;
 }
 .bars{
-    color: #252222;
+    height: 7em;
+    width: 7em;
 }
 .logo{
     font-family: 'Jost';
@@ -203,13 +204,13 @@ a{
 .thumbnails{
     display: none;
 }
-.pauseBtn{
-    height: 2rem;
-    width: 2rem;
+.pauseBtn, .playBtn{
+    height: 5rem;
+    width: 5rem;
 }
 .newArrow{
-    height: 2rem;
-    width: 2rem;
+    height: 4rem;
+    width: 4rem;
 }
 /*preventing border*/
 :focus {
@@ -285,7 +286,7 @@ a{
     font-family: 'Jost';
     font-size: 0.9em;
     position: relative;
-    left: 18rem;
+    left: 8rem;
     bottom: 3em;
 }
 .btnLinks{
@@ -323,24 +324,24 @@ a{
     .left, .right{
         padding: 0;
         margin: 0;
+    }.left{
+        width: inherit;
+        height: auto;
+        background-color: #fff;
+        z-index: 100;
     }
-    /* .left{
-        border: 1px solid #000;
-    } */
     .header{
         width: 97%;
         height: 7rem;
         margin: 0rem 1rem;
         display: flex;
         flex-direction: row;
-        /* border: 1px solid #000; */
+        justify-content: flex-start;
     }
     .sideNav{
         display: none;
-        /* background-color: #fff;
-        position: relative;
-        right: 30rem; */
-
+        margin: 0 2em;
+        /* padding: 3em; */
     }
     .navBtn{
         display: block;
@@ -348,40 +349,44 @@ a{
     .navBtn:hover{
         opacity: 0.5;
     }
-    .navBtnContainer, .logoHolder{
-        padding: 3rem;
-    }
     .navBtnContainer{
-        float: left;
+        display: flex;
+        align-items: center;
     }
     .logoHolder{
         margin: 0 17rem;
-        /* border: 1px solid #000; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .logo{
         width: 20rem;
-        float: right;
-        /* font-size: 2.7em; */
+        text-align: center;
+    }
+    .subcategories{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: center;
     }
     .right{
-        position: relative;
+        left: 5%;
         margin: 7rem 0;
         /* border: 1px solid #000; */
         /* overflow: scroll; */
     }
     .image{
         /* border: 1px solid #000; */
-        width: 70vw;
-        height: 55vw;
+        width: 75vw;
+        height: 60vw;
         /* margin: 0 3em; */
         object-fit:contain;
         cursor: url('../fontAwesome/svgs/solid/plus.svg');
         /* position: relative;
         right: 3em; */
    }
-    .footer{
-        position: relative;
-        left: 7rem;
-        top: 5rem;
-    }
+   .footer{
+       left: 12em;
+   }
 }
