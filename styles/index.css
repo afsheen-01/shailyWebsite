@@ -60,6 +60,9 @@ a{
 .navBtn, .navCloseBtn{
     display: none;
 }
+.bars{
+    color: #252222;
+}
 .logo{
     font-family: 'Jost';
     text-transform: capitalize;
@@ -363,11 +366,11 @@ a{
     .right{
         position: relative;
         margin: 7rem 0;
-        border: 1px solid #000;
+        /* border: 1px solid #000; */
         /* overflow: scroll; */
     }
     .image{
-        border: 1px solid #000;
+        /* border: 1px solid #000; */
         width: 70vw;
         height: 55vw;
         /* margin: 0 3em; */
