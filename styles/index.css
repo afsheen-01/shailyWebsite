@@ -69,10 +69,6 @@ a{
     text-decoration: none;
     color: #000;
 }
-.openEye{
-    height: 3vw;
-    width: 3vw;
-}
 .sideNav{
     margin: auto 0;
 }
@@ -313,6 +309,7 @@ a{
         height: auto;
         cursor: url(defaultIcon.cur), crosshair;
         font-family: 'Jost';
+        object-fit: contain;
     }
     .container{
         display: flex;
@@ -324,12 +321,16 @@ a{
         padding: 0;
         margin: 0;
     }
+    /* .left{
+        border: 1px solid #000;
+    } */
     .header{
         width: 97%;
         height: 7rem;
         margin: 0rem 1rem;
         display: flex;
         flex-direction: row;
+        /* border: 1px solid #000; */
     }
     .sideNav{
         display: none;
@@ -352,21 +353,28 @@ a{
     }
     .logoHolder{
         margin: 0 17rem;
+        /* border: 1px solid #000; */
     }
     .logo{
         width: 20rem;
         float: right;
+        /* font-size: 2.7em; */
     }
     .right{
         position: relative;
-        top: 7rem;
-        left: 7rem;
+        margin: 7rem 0;
+        border: 1px solid #000;
+        /* overflow: scroll; */
     }
     .image{
+        border: 1px solid #000;
         width: 70vw;
-        height: 65vw;
-       object-fit:contain;
-       cursor: url('../fontAwesome/svgs/solid/plus.svg');
+        height: 55vw;
+        /* margin: 0 3em; */
+        object-fit:contain;
+        cursor: url('../fontAwesome/svgs/solid/plus.svg');
+        /* position: relative;
+        right: 3em; */
    }
     .footer{
         position: relative;
