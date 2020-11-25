@@ -18,7 +18,7 @@
 body{
     width: 97%;
     height: auto;
-    cursor: url(defaultIcon.cur), crosshair;
+    cursor: url('./defaultIcon.cur'), crosshair;
     font-family: 'Jost';
 }
 *{
@@ -47,6 +47,10 @@ a{
     display: flex;
     flex-direction: column;
     align-content: space-around;
+}
+.header{
+    padding: 0;
+    margin: 0;
 }
 .btn{
     background-color: transparent;
@@ -137,7 +141,6 @@ a{
     align-items: flex-start;
 }
 #inAbout{
-    /* margin: auto 0; */
     flex-direction: row;
     border: none;
     top: 5rem;
@@ -151,7 +154,6 @@ a{
     align-items: center;
     position: relative;
     left: 1em; 
-    /* border: 1px solid #000; */
 }
 .imageContainer:hover .arrowBtn{
     visibility: visible;
@@ -159,17 +161,11 @@ a{
 .image{
      width: 60vw;
      height: 45vw;
-     /* border: 1px solid #000; */
      padding: none;
      margin: none;
-     /* position: relative */
     object-fit:contain;
     cursor: url('../fontAwesome/svgs/solid/plus.svg');
 }
-/* #imgContainer, .infoContainer{
-    border: 1px solid #000;
-    width: 30%;
-} */
 
 .myImage{
     margin: 7rem 2rem 4rem;
@@ -184,7 +180,6 @@ a{
 }
 .info{ 
     width: 80%;
-    /* border: 1px solid #000; */
     -webkit-margin-before: 8.5rem;
     padding: 0 1rem;
 }
@@ -199,15 +194,8 @@ a{
     display:flex;
     flex-direction:column;
     justify-content: center;
-    /* border: 1px solid #000; */
-    /* text-align: center; */
-    /* border: 1px solid #000; */
 }
 .arrowBtn{
-    /* width: 3em;
-    height: 3em; */
-    /* margin: 1rem; */
-    /* padding:  0 0 0 1rem; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +207,6 @@ a{
 .pauseBtn{
     height: 2rem;
     width: 2rem;
-    /* border: 1px solid #000; */
 }
 .newArrow{
     height: 2rem;
@@ -242,7 +229,6 @@ a{
     width: 61vw;
     position: relative;
     left: 8rem;
-    /* border: 1px solid #000; */
     display:flex;
     flex-direction: column;
     align-items: flex-end;
@@ -255,11 +241,7 @@ a{
     font-weight: 400;
     text-transform: capitalize;
     font-family: 'Jost light';
-    /* padding: 0 1.5em; */
-    /* background-color: rgba(116,111, 111, 0.15); */
-    /* border: 1px solid #000; */
     text-align: right;
-    /* float: right; */
 }
 
 .caption{
@@ -274,13 +256,10 @@ a{
     padding: 1em 1em;
     display: none;
     position: relative;
-    /* background-color: rgba(116, 111, 111, 0.15); */
     left: 4.5rem;
 }
 .minus{
     float: right;
-    /* margin: .4em; */
-    /* padding: 1em; */
     border: none;
     color: #585656;
     position: relative;
@@ -309,13 +288,11 @@ a{
     position: relative;
     left: 18rem;
     bottom: 3em;
-    /* border: 1px solid #000; */
 }
 .btnLinks{
     margin: 2rem 0;
     padding: 0;
     width: inherit;
-    /* border: 1px solid #000; */
     display: flex;
     justify-content: space-between;
     align-content: space-between;
@@ -329,7 +306,7 @@ a{
     color:#4e4c4c;
 }
 
-/* @media only screen  and (max-width: 1300px){
+@media only screen  and (max-width: 1300px){
     
     body{
         width: 97%;
@@ -347,7 +324,7 @@ a{
         padding: 0;
         margin: 0;
     }
-    .left{
+    .header{
         width: 97%;
         height: 7rem;
         margin: 0rem 1rem;
@@ -356,9 +333,9 @@ a{
     }
     .sideNav{
         display: none;
-        background-color: #fff;
+        /* background-color: #fff;
         position: relative;
-        right: 30rem;
+        right: 30rem; */
 
     }
     .navBtn{
@@ -396,4 +373,4 @@ a{
         left: 7rem;
         top: 5rem;
     }
-} */
+}
