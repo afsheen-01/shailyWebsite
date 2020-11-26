@@ -89,7 +89,6 @@ a{
     font-size: 1.1em;
     text-transform: capitalize;
 }
-
 .sub{
     line-height: 1.5em;
     font-family: 'Jost light';
@@ -203,6 +202,7 @@ a{
 }
 .thumbnails{
     display: none;
+    /* flex-direction: row; */
 }
 .pauseBtn, .playBtn{
     height: 5rem;
@@ -226,7 +226,7 @@ a{
     display: none;
 }
 .artAndThumb{
-    width: 61vw;
+    width: 60vw;
     position: relative;
     left: 8rem;
     display:flex;
@@ -341,7 +341,6 @@ a{
     .sideNav{
         display: none;
         margin: 0 2em;
-        /* padding: 3em; */
     }
     .navBtn{
         display: block;
@@ -373,20 +372,57 @@ a{
     .right{
         left: 5%;
         margin: 7rem 0;
-        /* border: 1px solid #000; */
-        /* overflow: scroll; */
     }
     .image{
-        /* border: 1px solid #000; */
         width: 75vw;
         height: 60vw;
-        /* margin: 0 3em; */
         object-fit:contain;
         cursor: url('../fontAwesome/svgs/solid/plus.svg');
-        /* position: relative;
-        right: 3em; */
+   }
+   .artAndThumb{
+       width: 70vw;
    }
    .footer{
        left: 12em;
    }
+}
+
+
+@media only screen  and (max-width: 900px){
+    body{
+        object-fit: contain;
+    }
+    .logoHolder{
+        width: 30%;
+    }
+    .image{
+        width: 80vw;
+        height: 65vw;
+    }
+    .right{
+        left: 0;
+    }
+    .artAndThumb{
+        width: 73vw;
+    }
+    .inArtAndThumb{
+        width: 30%;
+    }
+    .footer{
+        left: 10em;
+    }
+}
+
+@media only screen  and (max-width: 600px){
+    .logoHolder{
+        width: 40%;
+        position: relative;
+        right: 6em;
+    }
+    .right{
+        left: -3%;
+    }
+    .image{
+        object-fit: contain;
+    }   
 }

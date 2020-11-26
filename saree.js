@@ -141,6 +141,30 @@ minusBtn.addEventListener('click', () => {
     minusBtn.style.display = 'none';
 });
 
+//thumbnail attempt 100110010010001110010
+const thumbnail = document.getElementById('thumbnail');
+const thumbnailContainer = document.querySelector('.thumbnails');
+
+
+thumbnail.addEventListener('click', () => {
+    thumbnailContainer.style.display = 'block';
+    imageHolder.style.display = "none"
+
+    tempArrayHolder = saree.map(item => {
+        return `<a href = "${item.src}" target = "_self">
+                <img src = "${item.src}" alt = "${item.alt}" style = "height: 15vw; width: 30vw; object-fit: contain" />
+                </a>`
+
+    });
+    console.log(tempArrayHolder);
+    tempArrayHolder = tempArrayHolder.join("");
+    
+
+   thumbnailContainer.innerHTML =  tempArrayHolder;
+
+
+});
+
 //removing underline and putting under photography
 const sareeUnderline = document.getElementById('saree');
 
