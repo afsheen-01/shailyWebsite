@@ -9,17 +9,19 @@
     <body>
         <div class = "container">
             <div class = "left">
-                <div class = "navBtnContainer">
-                    <button class = "navBtn btn">
-                        <i class = "fas fa-bars fa-2x"></i>
-                    </button>
-                </div>
-                <div class = "logoHolder">
-                    <h1 class = "logo">
-                        <a href = "./index.html" target = "_self">
-                            shaily nandu
-                        </a>
-                    </h1>
+                <div class="header">
+                    <div class = "navBtnContainer">
+                        <button class = "navBtn btn">
+                            <img src = "./styles/svg/bars.svg" alt = "bars.svg" class = "bars" />
+                        </button>
+                    </div>
+                    <div class = "logoHolder">
+                        <h1 class = "logo"> 
+                            <a href = "./index.html" target = "_self">
+                                shaily nandu
+                            </a>
+                        </h1> 
+                    </div>
                 </div>
 
                 <nav class = "sideNav">
@@ -96,47 +98,68 @@
                 
             </div>
 
-            <div class="right">
+            <div class="right bottom">
 
                 <div class="imageContainer">
                     <div class="arrowBtn">
                         <button class = "btn" id = "btnLeft">
-                            <i class = " aBtn fas fa-chevron-left fa-2x"></i>
+                            <img src = "./styles/svg/prev.svg" class = "newArrow" />
                         </button>
                     </div>
-                    <div class="imageHolder">
-                        <img src = "pictures/Photography/Saree/2020_Saree_Red-1.jpg" alt = "red saree" class = "image" />
-
-                        <div class = "btnHolder">
-                            <a class = "link" id = "prev" href = "./greywordHouse.html">
-                                <i class = "fas fa-angle-double-left fa-2x"></i>
+                    <div class="imageAndContent">
+                        <div class="imageHolder">
+                            <a href = "" target = "_self" class = "fullScreenImg">
+                                <img src = "" alt = "" class = "image" />
                             </a>
-
-                            <!-- <button id = "as" class = "btn">
-                                artist statement
-                            </button> -->
-
-                            <a class = "link" id = "next" href = "./artworks.html">
-                                <i class = "fas fa-angle-double-right fa-2x"></i>
-                            </a>
-                        </div>    
+        
+                        </div>
+    
+                        <div class = "imageText">
+                        
+                            <button class = "minus btn">
+                                <i class = "fas fa-minus fa-2x"></i>
+                            </button>
+                            <br/>
+                            <p class = "fjost"></p>
+                        </div>
+    
+                        <div class = "thumbnails"></div>
                     </div>
+
                     <div class="arrowBtn">
                         <button class = "btn" id="btnRight">
-                            <i class = "aBtn fas fa-chevron-right  fa-2x"></i>
+                            <img src = "./styles/svg/next.svg" class = "newArrow" />
                         </button>
                     </div>
                 </div>
+
+                <!-- <div class = "btnHolder"> -->
+                    <div class = "artAndThumb">
+                        <button class = "btn inArtAndThumb" id = "as">
+                            aritst statement
+                        </button>
+                        <button class = "btn inArtAndThumb" id = "thumbnail">
+                            thumbnails
+                        </button>
+                    </div>
+                <!-- </div> -->
+
+                <footer class = "footer" style = "left:10em">
+                    <div class="btnLinks">
+                        <a class = "link" id = "prev" href = "./greywordHouse.html">
+                            previous page
+                        </a>
+                        <a class = "link" id = "next" href = "./artworks.html">
+                            next page
+                        </a>
+                    </div>
+                    <br/>
+                    <p>all rights reserved by shaily Nandu</p>
+                     <p>all images &copy; 2018-2020 shaily nandu</p>
+                </footer>
+
             </div>
-
         </div>
-
-
-        <footer class = "footer">
-            <p>all rights reserved by shaily Nandu</p>
-            <p>all images &copy; 2018-2020 shaily nandu</p>
-        </footer>
-
 
         
         <script src = "./andalucia.js" async ></script>

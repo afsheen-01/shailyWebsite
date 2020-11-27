@@ -137,7 +137,7 @@ a{
     left: 19%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start
 }
 #inAbout{
     flex-direction: row;
@@ -150,19 +150,17 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
-    left: 1em; 
+    align-items: center; 
 }
-.imageContainer:hover .arrowBtn{
+.imageHolder:hover+.arrowBtn{
     visibility: visible;
 }
 .image{
-     width: 60vw;
-     height: 45vw;
-     padding: none;
-     margin: none;
+    height: 45vw;
+    padding: none;
+    margin: none;
     object-fit:contain;
+    width: 60vw;
     cursor: url('../fontAwesome/svgs/solid/plus.svg');
 }
 
@@ -204,6 +202,13 @@ a{
     display: none;
     /* flex-direction: row; */
 }
+.thumbnailsGrid{
+    background-color: rgb(240, 221, 204, .3);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-gap: 4% 4%; */
+
+}
 .pauseBtn, .playBtn{
     height: 5rem;
     width: 5rem;
@@ -226,9 +231,10 @@ a{
     display: none;
 }
 .artAndThumb{
-    width: 60vw;
+    width: inherit;
+    height: inherit;
     position: relative;
-    left: 8rem;
+    left: 3rem;
     display:flex;
     flex-direction: column;
     align-items: flex-end;
@@ -253,15 +259,16 @@ a{
 .imageText{
     text-align: center;
     width: 45vw;
-    padding: 1em 1em;
-    display: none;
-    position: relative;
-    left: 4.5rem;
+}
+.indent{
+    display: inline-block;
+    margin-left: 2.5rem;
 }
 .minus{
+    width: 2rem;
+    height: 2rem;
     float: right;
     border: none;
-    color: #585656;
     position: relative;
     right: 3.7rem;
     display: none;
@@ -270,7 +277,7 @@ a{
     opacity: .5;
 }
 .fjost{
-    font-family: 'Jost';
+    font-family: 'Jost light';
     text-align: left;
 }
 .footer{
@@ -283,7 +290,7 @@ a{
     padding: 3rem 0;
     margin: 3rem 0;
     text-transform: capitalize;
-    font-family: 'Jost';
+    font-family: 'Jost light';
     font-size: 0.9em;
     position: relative;
     left: 8rem;
@@ -296,6 +303,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-content: space-between;
+    font-family: 'Jost light';
     font-size: 1.1em;
 }
 .link{
@@ -362,13 +370,13 @@ a{
         width: 20rem;
         text-align: center;
     }
-    .subcategories{
+    /* .subcategories{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-content: space-between;
         align-items: center;
-    }
+    } */
     .right{
         left: 5%;
         margin: 7rem 0;

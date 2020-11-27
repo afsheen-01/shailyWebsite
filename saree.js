@@ -112,7 +112,7 @@ const functionalBtns = () => {
 }
 
 //artist statement
-const text = 'This project is about the saree, <br/>A sari / saree is a women’s garment from the Indian subcontinent that consists of an unstitched drape varying from 5.5 to 9 meters in length and 600 to 1,200 mm in breadth that is typically wrapped around the waist, with one end draped over the shoulder, baring a portion of the midriff.<br/>The series captures the simplicity of the saree and enhances and draws attention to fabric, flow and colour.<br/>This project is very close to home, quite literally. My family has been in the buisness of sarees since 54 years, supporting local craftsmen and traditional techniques. After a few cancelled shoots due to the current circumstances, I convinced my mother to be the model and it was such a lucky decision, she quickly became my muse for this series.<br/>Through this work I want to open a window to the rich Indian culture brimming with colour, tradition and grace.';
+const text = 'This project is about the saree, <br/><div class = "indent">A sari / saree is a women’s garment from the Indian subcontinent that consists of an unstitched drape varying from 5.5 to 9 meters in length and 600 to 1,200 mm in breadth that is typically wrapped around the waist, with one end draped over the shoulder, baring a portion of the midriff.</div><br/>The series captures the simplicity of the saree and enhances and draws attention to fabric, flow and colour.<br/>This project is very close to home, quite literally. My family has been in the buisness of sarees since 54 years, supporting local craftsmen and traditional techniques. After a few cancelled shoots due to the current circumstances, I convinced my mother to be the model and it was such a lucky decision, she quickly became my muse for this series.<br/>Through this work I want to open a window to the rich Indian culture brimming with colour, tradition and grace.';
     
 //DOM elements
 const imageHolder = document.querySelector('.imageHolder');
@@ -121,15 +121,19 @@ const rightSide = document.querySelector('.right');
 const imageText = document.querySelector('.imageText');
 const textElement = document.querySelector('.fjost');
 const minusBtn = document.querySelector('.minus');
+const arrowBtns = document.querySelectorAll('.newArrow');
 
 as.addEventListener('click', () => {
     artistStatement.style.textDecoration = 'underline';
     imageHolder.style.display = 'none';
+    thumbnailContainer.style.display = 'none';
+    thumbnail.style.textDecoration = 'none';
     textElement.innerHTML = text;
     imageText.style.display = 'block';
     rightSide.style.margin = '17.5vw 0';
     imageHolder.style.width = '45vw';
     minusBtn.style.display = 'block';
+    arrowBtns.style.visibility = 'hidden';
 });
 
 minusBtn.addEventListener('click', () => {
@@ -143,24 +147,27 @@ minusBtn.addEventListener('click', () => {
 
 //thumbnail attempt 100110010010001110010
 const thumbnail = document.getElementById('thumbnail');
-const thumbnailContainer = document.querySelector('.thumbnails');
+const thumbnailContainer = document.querySelector('.thumbnailsContainer');
+const thumbnailsGrid = document.querySelector('.thumbnailsGrid');
 
 
 thumbnail.addEventListener('click', () => {
     thumbnailContainer.style.display = 'block';
-    imageHolder.style.display = "none"
+    imageHolder.style.display = 'none';
+    imageText.style.display = 'none';
+    thumbnail.style.textDecoration = 'underline';
+    as.style.textDecoration = 'none';
+
 
     tempArrayHolder = saree.map(item => {
-        return `<a href = "${item.src}" target = "_self">
-                <img src = "${item.src}" alt = "${item.alt}" style = "height: 15vw; width: 30vw; object-fit: contain" />
-                </a>`
+        return `<a href = "${item.src}"><img src = "${item.src}" alt = "${item.alt}" style = "height: 10vw; width: 15vw; object-fit: contain; margin: 1em;" /></a>`
 
     });
     console.log(tempArrayHolder);
     tempArrayHolder = tempArrayHolder.join("");
     
 
-   thumbnailContainer.innerHTML =  tempArrayHolder;
+   thumbnailsGrid.innerHTML =  tempArrayHolder;
 
 
 });
@@ -171,6 +178,23 @@ const sareeUnderline = document.getElementById('saree');
 sareeUnderline.style.textDecoration = 'underline';
 // sareeUnderline.style.textDecorationColor = '#e68a00';
 
+//three bars
+const navBtn = document.querySelector('.navBtn');
+const sideNav = document.querySelector('.sideNav');
+const navCloseBtn = document.querySelector('.navCloseBtn');
+const rightSection = document.querySelector('.right');
+
+navBtn.addEventListener('click',() => {
+    if(sideNav.style.display === 'block'){
+        sideNav.style.display = 'none';
+        // rightSection.style.display = 'block';
+    }
+    else{
+        sideNav.style.display = 'block';
+        // rightSection.style.display = 'none';
+    }
+    
+});
 
 //function call for buttons
 functionalBtns();
