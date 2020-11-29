@@ -154,7 +154,7 @@ minusBtn.addEventListener('click', () => {
 //fucking asshole you hover element. you've been a big fucking pain in my ass since the beginning.
 const arrowBtns = document.querySelectorAll('.newArrow');
 imageHolder.addEventListener('mouseover', () => {
-    console.log('you hovered over me:):)');
+    // console.log('you hovered over me:):)');
     // e.preventDefault();
     arrowBtns.forEach(arrow => {
         arrow.style.visibility = 'visible';
@@ -186,10 +186,13 @@ thumbnail.addEventListener('click', () => {
     imageText.style.display = 'none';
     thumbnail.style.textDecoration = 'underline';
     as.style.textDecoration = 'none';
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
 
 
     tempArrayHolder = saree.map(item => {
-        return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" style = "height: 10vw; width: 15vw; object-fit: contain; margin: 1em;" />`
+        return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" />`
 
     });
     // console.log(tempArrayHolder);
@@ -213,6 +216,7 @@ thumbnail.addEventListener('click', () => {
                         target.id = saree[i].id;
                         imageHolder.style.display = 'block';
                         thumbnailContainer.style.display = 'none';
+                        thumbnail.style.textDecoration = 'none';
                         // console.log(target);
                     }
                 });

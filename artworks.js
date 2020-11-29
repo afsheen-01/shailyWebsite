@@ -1,60 +1,60 @@
 const artwork = [
     {
-        id: 75,
+        id: 1,
         src: './pictures/Artworks/Churchgate-station-mumbai.jpg',
         alt: 'artworks1',
         caption:''
     },
     {
-        id: 76,
+        id: 2,
         src: './pictures/Artworks/Darkroom-for-housing.jpg',
         alt: 'artworks2',
         caption:'Darkroom architecture'
     },
     {
-        id: 77,
+        id: 3,
         src: './pictures/Artworks/Ducktails.jpg',
         alt: 'artworks3',
         caption:'Getting my ducks in a row'
     },
     {
-        id: 78,
+        id: 4,
         src: './pictures/Artworks/Exospheres.jpg',
         alt: 'artworks4',
         caption:'Microscopic - macroscopic'
     },
     {
-        id: 79,
+        id: 5,
         src: './pictures/Artworks/Next-door-stangers-.jpg',
         alt: 'artworks5',
         caption:'Next door stangers'
     },
     {
-        id: 80,
+        id: 6,
         src: './pictures/Artworks/Postcard_of_a_figmental_biosphere.jpg',
         alt: 'artworks6',
-        caption:'Postcards from a  gmental biosphere'
+        caption:'Postcards from figmental biosphere'
     },
     {
-        id: 81,
+        id: 7,
         src: './pictures/Artworks/Time-capsule-of-mumbai.jpg',
         alt: 'artworks7',
         caption:'An exercise in time capsuling'
     },
     {
-        id: 82,
+        id: 8,
         src: './pictures/Artworks/Time-travel.png',
         alt: 'artworks8',
         caption:'Time-traveling tourists.'
     },
     {
-        id: 83,
+        id: 9,
         src: './pictures/Artworks/When-pigs-fly.png',
         alt: 'artworks9',
         caption:''
     },
     {
-        id: 84,
+        id: 10,
         src: './pictures/Artworks/Whirlpool-mind.jpg',
         alt: 'artworks10',
         caption:'Brainwashing'
@@ -64,7 +64,7 @@ const artwork = [
 const leftBtn = document.getElementById('btnLeft');
 const rightBtn = document.getElementById('btnRight');
 const target = document.querySelector('.image');
-const caption = document.getElementById('caption');
+const caption = document.querySelector('.caption');
 
 
 // console.log(leftBtn);
@@ -102,13 +102,6 @@ const functionalBtns = () => {
 
 functionalBtns();
 
-//artist statement
-const artistStatement = document.getElementById('as');
-const heading = document.querySelector('.fdidot');
-const text = document.querySelector('.fjost');
-const imageText = document.querySelector('.imageText');
-const minusBtn = document.querySelector('.minus');
-
 
 //removing underline and putting under photography
 const sareeUnderline = document.getElementById('saree');
@@ -126,6 +119,87 @@ simUnderline.style.textDecoration = 'none';
 ghUnderline.style.textDecoration = 'none';
 andaUnderline.style.textDecoration = 'none';
 artworkUnderline.style.textDecoration = 'underline';
+
+
+const imageHolder = document.querySelector('.imageHolder');
+
+//imageHolder fuckign css not working after click!
+//somebody please fucking kill me!!
+
+
+const arrowBtns = document.querySelectorAll('.newArrow');
+imageHolder.addEventListener('mouseover', () => {
+    // console.log('you hovered over me:):)');
+    // e.preventDefault();
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'visible';
+    });
+});
+
+//thumbnail attempt 100110010010001110010
+const thumbnail = document.getElementById('thumbnail');
+const thumbnailContainer = document.querySelector('.thumbnailsContainer');
+const thumbnailsGrid = document.querySelector('.thumbnailsGrid');
+const crossBtn = document.querySelector('.crossBtn');
+
+
+thumbnail.addEventListener('click', () => {
+    thumbnailContainer.style.display = 'block';
+    imageHolder.style.display = 'none';
+    // imageText.style.display = 'none';
+    thumbnail.style.textDecoration = 'underline';
+    // as.style.textDecoration = 'none';
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
+
+
+    tempArrayHolder = artwork.map(item => {
+        return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" style = "height: 10vw; width: 15vw; object-fit: contain; margin: 1em;" />`
+
+    });
+    // console.log(tempArrayHolder);
+    tempArrayHolder = tempArrayHolder.join("");
+
+   thumbnailsGrid.innerHTML =  tempArrayHolder;
+
+    thumbImg = document.querySelectorAll('.thumbImg');
+    // console.log(thumbImg);
+
+        thumbImg.forEach(element => {
+            element.addEventListener('click', () => {
+                // console.log(element.id);
+                artwork.forEach(item => {
+                    if(item.id == element.id){
+                        // console.log('hey, same id');
+                        i = item.id - 1;
+                        // console.log(i);
+                        target.src = artwork[i].src;
+                        target.alt = artwork[i].alt;
+                        caption.innerHTML = artwork[i].caption;
+                        // target.id = artwork[i].id;
+                        imageHolder.style.display = 'block';
+                        thumbnailContainer.style.display = 'none';
+                        thumbnail.style.textDecoration = 'none';
+                        // console.log(target);
+                        imageHolder.style.display = 'flex';
+                        imageHolder.style.flexDirection = 'column';
+                        imageHolder.style.justifyContent = 'center';
+                        imageHolder.style.alignItems = 'center';
+                    }
+                });
+            });
+        });
+
+});
+
+crossBtn.addEventListener('click', () => {
+    thumbnailContainer.style.display = 'none';
+    imageHolder.style.display = 'block';
+    // imageText.style.display = 'block';
+});
+
+
 
 //three bars
 const navBtn = document.querySelector('.navBtn');

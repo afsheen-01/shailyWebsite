@@ -139,7 +139,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+
 }
 .thumbnailDiv{
     width: inherit;
@@ -220,6 +220,12 @@ a{
     /* grid-gap: 4% 4%; rgb(240, 221, 204, .3);*/
     -webkit-backdrop-filter: contrast(.9);
 }
+.thumbImg{
+    width: 15vw;
+    height: 10vw;
+    object-fit: contain;
+    margin: 1em;
+}
 .pauseBtn, .playBtn{
     height: 5rem;
     width: 5rem;
@@ -277,6 +283,15 @@ a{
     font-size: .9em;
     color: #4e4c4c;
     opacity: 0.6;
+    /* border: 1px solid #000; */
+    
+}
+.imageHolder{
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .imageText{
     text-align: center;
@@ -398,7 +413,7 @@ a{
     }
     .image{
         width: 75vw;
-        height: 60vw;
+        height: 52vw;
         object-fit:contain;
         cursor: url('../fontAwesome/svgs/solid/plus.svg');
    }
@@ -426,6 +441,15 @@ a{
     }
     .right{
         left: 0;
+    }
+    .thumbnailsGrid{
+    
+        /* display: grid; */
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .thumbImg{
+        width: 40vw;
+        height: 30vw;
     }
     .artAndThumb{
         width: 73vw;
@@ -458,7 +482,7 @@ a{
         visibility: visible;
     }
     .footer{
-        left: 8em;
+        left: 3em;
     }
 }
 @media only screen and ( max-width: 500px ) {

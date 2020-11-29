@@ -1,6 +1,6 @@
 const andalucia = [
     {
-        id: 62,
+        id: 1,
         src: './pictures/Architecture/Arch/2_2.jpg',
         alt: 'anda1',
         category: 'architecture',
@@ -8,7 +8,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 63,
+        id: 2,
         src: './pictures/Architecture/Arch/4.jpeg',
         alt: 'anda2',
         category: 'architecture',
@@ -16,7 +16,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 64,
+        id: 3,
         src: './pictures/Architecture/Arch/7.jpg',
         alt: 'anda3',
         category: 'architecture',
@@ -24,7 +24,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 65,
+        id: 4,
         src: './pictures/Architecture/Arch/09_SRN7153.jpg',
         alt: 'anda4',
         category: 'architecture',
@@ -32,7 +32,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 66,
+        id: 5,
         src: './pictures/Architecture/Arch/12.jpg',
         alt: 'anda5',
         category: 'architecture',
@@ -40,7 +40,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 67,
+        id: 6,
         src: './pictures/Architecture/Arch/2020_Andalucia_architecture.jpg',
         alt: 'anda6',
         category: 'architecture',
@@ -48,7 +48,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 68,
+        id: 7,
         src: './pictures/Architecture/Arch/2020_Andalucia_catreflection.jpg',
         alt: 'anda7',
         category: 'architecture',
@@ -56,7 +56,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 69, 
+        id: 8, 
         src: './pictures/Architecture/Arch/2020_Andalucia_connection.jpg',
         alt: 'anda8',
         category: 'architecture',
@@ -64,7 +64,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 70,
+        id: 9,
         src: './pictures/Architecture/Arch/2020_Andalucia_goldenhour.jpg',
         alt: 'anda9',
         category: 'architecture',
@@ -72,7 +72,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 71,
+        id: 10,
         src: './pictures/Architecture/Arch/2020_Andalucia_mosque-church.jpg',
         alt: 'anda10',
         category: 'architecture',
@@ -80,7 +80,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 72,
+        id: 11,
         src: './pictures/Architecture/Arch/2020_Andalucia_riverslopes.jpg',
         alt: 'anda11',
         category: 'architecture',
@@ -88,7 +88,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 73,
+        id: 12,
         src: './pictures/Architecture/Arch/2020_Andalucia_stained-columns.jpg',
         alt: 'anda12',
         category: 'architecture',
@@ -96,7 +96,7 @@ const andalucia = [
         best: 0,
     },
     {
-        id: 74,
+        id: 13,
         src: './pictures/Architecture/Arch/SRN02794.jpg',
         alt: 'anda13',
         category: 'architecture',
@@ -158,6 +158,91 @@ reflectionsUnderline.style.textDecoration = 'none';
 simUnderline.style.textDecoration = 'none';
 ghUnderline.style.textDecoration = 'none';
 andaUnderline.style.textDecoration = 'underline';
+
+//artist statement
+const artistStatement = document.getElementById('as');
+const heading = document.querySelector('.fdidot');
+const text = document.querySelector('.fjost');
+const imageText = document.querySelector('.imageText');
+const minusBtn = document.querySelector('.minus');
+
+// artistStatement.addEventListener('click',() => {
+//     imageText.style.display = 'block';
+//     text.innerHTML = 'this is a style for the page. hopefully, this will work';
+    
+// });
+// minusBtn.addEventListener('click', () => {
+//     imageText.style.display = 'none';
+// });
+const imageHolder = document.querySelector('.imageHolder');
+const arrowBtns = document.querySelectorAll('.newArrow');
+imageHolder.addEventListener('mouseover', () => {
+    // console.log('you hovered over me:):)');
+    // e.preventDefault();
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'visible';
+    });
+});
+
+//thumbnail attempt 100110010010001110010
+const thumbnail = document.getElementById('thumbnail');
+const thumbnailContainer = document.querySelector('.thumbnailsContainer');
+const thumbnailsGrid = document.querySelector('.thumbnailsGrid');
+const crossBtn = document.querySelector('.crossBtn');
+
+
+thumbnail.addEventListener('click', () => {
+    thumbnailContainer.style.display = 'block';
+    imageHolder.style.display = 'none';
+    imageText.style.display = 'none';
+    thumbnail.style.textDecoration = 'underline';
+    as.style.textDecoration = 'none';
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
+
+
+    tempArrayHolder = andalucia.map(item => {
+        return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" style = "height: 10vw; width: 15vw; object-fit: contain; margin: 1em;" />`
+
+    });
+    // console.log(tempArrayHolder);
+    tempArrayHolder = tempArrayHolder.join("");
+
+   thumbnailsGrid.innerHTML =  tempArrayHolder;
+
+    thumbImg = document.querySelectorAll('.thumbImg');
+    // console.log(thumbImg);
+
+        thumbImg.forEach(element => {
+            element.addEventListener('click', () => {
+                // console.log(element.id);
+                andalucia.forEach(item => {
+                    if(item.id == element.id){
+                        // console.log('hey, same id');
+                        i = item.id - 1;
+                        // console.log(i);
+                        target.src = andalucia[i].src;
+                        target.alt = andalucia[i].alt;
+                        target.id = andalucia[i].id;
+                        imageHolder.style.display = 'block';
+                        thumbnailContainer.style.display = 'none';
+                        thumbnail.style.textDecoration = 'none';
+                        // console.log(target);
+                    }
+                });
+            });
+        });
+
+});
+
+crossBtn.addEventListener('click', () => {
+    thumbnailContainer.style.display = 'none';
+    imageHolder.style.display = 'block';
+    // imageText.style.display = 'block';
+});
+
+
 
 //three bars
 const navBtn = document.querySelector('.navBtn');
