@@ -198,7 +198,26 @@ thumbnail.addEventListener('click', () => {
    thumbnailsGrid.innerHTML =  tempArrayHolder;
 
     thumbImg = document.querySelectorAll('.thumbImg');
-    console.log(thumbImg);
+    // console.log(thumbImg);
+
+        thumbImg.forEach(element => {
+            element.addEventListener('click', () => {
+                // console.log(element.id);
+                saree.forEach(item => {
+                    if(item.id == element.id){
+                        // console.log('hey, same id');
+                        i = item.id - 1;
+                        // console.log(i);
+                        target.src = saree[i].src;
+                        target.alt = saree[i].alt;
+                        target.id = saree[i].id;
+                        imageHolder.style.display = 'block';
+                        thumbnailContainer.style.display = 'none';
+                        // console.log(target);
+                    }
+                });
+            });
+        });
 
 });
 
