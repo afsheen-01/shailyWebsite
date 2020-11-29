@@ -133,11 +133,16 @@ a{
 .right{
     width: 83%;
     padding: 2rem 0;
+    margin: 0;
     position: relative;
     left: 19%;
     display: flex;
     flex-direction: column;
     align-items: flex-start
+}
+.thumbnailDiv{
+    width: inherit;
+    height: auto;
 }
 #inAbout{
     flex-direction: row;
@@ -152,9 +157,7 @@ a{
     justify-content: space-between;
     align-items: center; 
 }
-.imageHolder:hover+.arrowBtn{
-    visibility: visible;
-}
+
 .image{
     height: 45vw;
     padding: none;
@@ -198,16 +201,23 @@ a{
     align-items: center;
     visibility: hidden;
 }
-.thumbnails{
+.thumbnailsContainer{
     display: none;
+    background-color: rgb(240, 221, 204, .3);
     /* flex-direction: row; */
 }
+.thumbnailFlex{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 .thumbnailsGrid{
-    background-color: rgb(240, 221, 204, .3);
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-gap: 4% 4%; */
-
+    /* grid-gap: 4% 4%; rgb(240, 221, 204, .3);*/
+    -webkit-backdrop-filter: contrast(.9);
 }
 .pauseBtn, .playBtn{
     height: 5rem;
@@ -216,6 +226,7 @@ a{
 .newArrow{
     height: 4rem;
     width: 4rem;
+    /* position: sticky; */
 }
 /*preventing border*/
 :focus {
@@ -249,7 +260,17 @@ a{
     font-family: 'Jost light';
     text-align: right;
 }
-
+.crossBtn{
+    width: inherit;
+    height: 2rem;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: flex-end;
+}
+.thumbnailClose{
+    width: 2em;
+    height: 2em;
+}
 .caption{
     max-width: 35vw;
     font-size: .9em;
@@ -370,13 +391,6 @@ a{
         width: 20rem;
         text-align: center;
     }
-    /* .subcategories{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: space-between;
-        align-items: center;
-    } */
     .right{
         left: 5%;
         margin: 7rem 0;
@@ -399,13 +413,15 @@ a{
 @media only screen  and (max-width: 900px){
     body{
         object-fit: contain;
+        cursor: url(defaultIcon.cur), crosshair;
     }
     .logoHolder{
-        width: 30%;
+        width: 40%;
     }
     .image{
         width: 80vw;
         height: 65vw;
+        cursor: url(defaultIcon.cur), crosshair;
     }
     .right{
         left: 0;
@@ -423,14 +439,51 @@ a{
 
 @media only screen  and (max-width: 600px){
     .logoHolder{
-        width: 40%;
+        width: 50%;
         position: relative;
         right: 6em;
     }
     .right{
+        margin-top: 10em;
         left: -3%;
     }
     .image{
+        width: 77vw;
+        height: 70;
+        cursor: url(defaultIcon.cur), crosshair;
         object-fit: contain;
-    }   
+    } 
+    .newArrow{
+        visibility: visible;
+    }
+    .footer{
+        left: 8em;
+    }
+}
+@media only screen and ( max-width: 500px ) {
+    body{
+        margin: .5;
+        padding: 0;
+        object-fit: contain;
+    }
+    .logoHolder{
+        width: 37%;
+        font-size: .8em;
+        right: 8em;
+        padding: 0;
+    }
+    .image{
+        width: 74vw;
+        height: 67vw;
+        object-fit: contain;
+    }
+    .right{
+        left: 0%;
+    }
+    .newArrow{
+        visibility: visible;
+    }
+    .footer{
+        width: 70%;
+    }
 }

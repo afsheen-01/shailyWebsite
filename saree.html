@@ -91,6 +91,8 @@
 
             <div class="right bottom">
 
+                <!-- <div id="thumbnailDiv"></div> -->
+
                 <div class="imageContainer">
                     <div class="arrowBtn">
                         <button class = "btn" id = "btnLeft">
@@ -100,7 +102,7 @@
                     <div class="imageAndContent">
                         <div class="imageHolder">
                             <a href = "" target = "_self" class = "fullScreenImg">
-                                <img src = "" alt = "" class = "image" />
+                                <img src = "" alt = "" class = "image" id = "" />
                             </a>
         
                         </div>
@@ -115,8 +117,16 @@
                         </div>
     
                         <div class = "thumbnailsContainer">
-                            <div class = "thumbnailsGrid"></div>
+
+                            <div class="thumbnailFlex">
+                                <button class = "crossBtn btn">
+                                    <img src = "styles/svg/cross.svg" class = "thumbnailClose" />
+                                </button>
+                                <div class = "thumbnailsGrid">
+                                </div>
+                            </div>
                         </div>
+
                     </div>
 
                     <div class="arrowBtn">

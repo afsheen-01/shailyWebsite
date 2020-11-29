@@ -160,6 +160,8 @@ minusBtn.addEventListener('click', () => {
     imageText.style.display = 'none';
 });
 
+
+
 //removing underline and putting under photography
 const sareeUnderline = document.getElementById('saree');
 const domesticationUnderline = document.getElementById('domestication');

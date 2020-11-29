@@ -1,77 +1,77 @@
 const saree = [
     {
         id: 1,
-            src: './pictures/Photography/Saree/2020_Saree_Red-1.jpg',
-            alt: 'red saree',
-            category: 'photography',
-            subcategory: 'saree',
-            best: 0,
+        src: './pictures/Photography/Saree/2020_Saree_Red-1.jpg',
+        alt: 'red saree',
+        category: 'photography',
+        subcategory: 'saree',
+        best: 0,
     
-        },
-        {
-        id: 2,
-            src: './pictures/Photography/Saree/2020_Saree_Red-2.jpg',
-            alt: 'red saree',
-            category: 'photography',
-            subcategory: 'saree',
-            best: 0,
-        },
-        {
-        id: 3,
-            src: './pictures/Photography/Saree/2020_Saree_Red-3.jpg',
-            alt: 'red saree',
-            category: 'photography',
-            subcategory: 'saree',
-            best: 0,
-        },
-        {
-        id: 4,
-            src: './pictures/Photography/Saree/2020_Saree_Red-4.jpg',
-            alt: 'red saree',
-            category: 'photography',
-            subcategory: 'saree',
-            best: 0,
     },
-        {
+    {
+        id: 2,
+        src: './pictures/Photography/Saree/2020_Saree_Red-2.jpg',
+        alt: 'red saree',
+        category: 'photography',
+        subcategory: 'saree',
+        best: 0,
+    },
+    {
+        id: 3,
+        src: './pictures/Photography/Saree/2020_Saree_Red-3.jpg',
+        alt: 'red saree',
+        category: 'photography',
+        subcategory: 'saree',
+        best: 0,
+    },
+    {
+        id: 4,
+        src: './pictures/Photography/Saree/2020_Saree_Red-4.jpg',
+        alt: 'red saree',
+        category: 'photography',
+        subcategory: 'saree',
+        best: 0,
+    },
+    {
         id: 5,
-            src: './pictures/Photography/Saree/2020_Saree_Green-5.jpg',
-            alt: 'green saree',
-            category: 'photography',
-            subcategory: 'saree',
-            best: 0,
-        },
-        {
+        src: './pictures/Photography/Saree/2020_Saree_Green-5.jpg',
+        alt: 'green saree',
+        category: 'photography',
+        subcategory: 'saree',
+        best: 0,
+    },
+    {
         id: 6,
-            src: './pictures/Photography/Saree/2020_Saree_Green-6.jpg',
-            alt: 'green saree',
-            category: 'photography',
-            subcategory: 'saree',
-            best: 0,
-        },
-        {
+        src: './pictures/Photography/Saree/2020_Saree_Green-6.jpg',
+        alt: 'green saree',
+        category: 'photography',
+        subcategory: 'saree',
+        best: 0,
+    },
+    {
         id: 7,
-            src: './pictures/Photography/Saree/2020_Saree_Green-7-.jpg',
-            alt: 'green saree',
-            category: 'photography',
-            subcategory: 'saree',
-            best: 0,
-        },
-        {
+        src: './pictures/Photography/Saree/2020_Saree_Green-7-.jpg',
+        alt: 'green saree',
+        category: 'photography',
+        subcategory: 'saree',
+        best: 0,
+    },
+    {
         id: 8,
-            src: './pictures/Photography/Saree/2020_Saree_Yellow-8.jpg',
-            alt: 'yellow saree',
-            category: 'photography',
-            subcategory: 'saree',
-            best: 0,
-        },
-        {
+        src: './pictures/Photography/Saree/2020_Saree_Yellow-8.jpg',
+        alt: 'yellow saree',
+        category: 'photography',
+        subcategory: 'saree',
+        best: 0,
+    },
+    {
         id: 9,
-            src: './pictures/Photography/Saree/2020_Saree_Yellow-9.jpg',
-            alt: 'yellow saree',
-            category: 'photography',
-            subcategory: 'saree',
-            best: 0,
-        }
+        src: './pictures/Photography/Saree/2020_Saree_Yellow-9.jpg',
+        alt: 'yellow saree',
+        category: 'photography',
+        subcategory: 'saree',
+        best: 0,
+    }
 ];
 
 const leftBtn = document.getElementById('btnLeft');
@@ -86,6 +86,7 @@ length = saree.length;
 const functionalBtns = () => {
     target.src = saree[i].src;
     target.alt = saree[i].alt;
+    target.id = saree[i].id;
 
     rightBtn.addEventListener('click', () => {
         if(i > length - 2){
@@ -96,6 +97,7 @@ const functionalBtns = () => {
         }
         target.src = saree[i].src;
         target.alt = saree[i].alt;
+        target.id = saree[i].id;
     });
 
     leftBtn.addEventListener('click', () => {
@@ -107,6 +109,7 @@ const functionalBtns = () => {
         }
         target.src = saree[i].src;
         target.alt = saree[i].alt;
+        target.id = saree[i].id;
 
     });
 }
@@ -121,7 +124,7 @@ const rightSide = document.querySelector('.right');
 const imageText = document.querySelector('.imageText');
 const textElement = document.querySelector('.fjost');
 const minusBtn = document.querySelector('.minus');
-const arrowBtns = document.querySelectorAll('.newArrow');
+
 
 as.addEventListener('click', () => {
     artistStatement.style.textDecoration = 'underline';
@@ -130,10 +133,13 @@ as.addEventListener('click', () => {
     thumbnail.style.textDecoration = 'none';
     textElement.innerHTML = text;
     imageText.style.display = 'block';
-    rightSide.style.margin = '17.5vw 0';
-    imageHolder.style.width = '45vw';
+    rightSide.style.margin = '17vw 0';
+    // imageHolder.style.width = '45vw';
     minusBtn.style.display = 'block';
-    arrowBtns.style.visibility = 'hidden';
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
+    // arrowBtns.style.visibility = 'hidden';
 });
 
 minusBtn.addEventListener('click', () => {
@@ -145,10 +151,33 @@ minusBtn.addEventListener('click', () => {
     minusBtn.style.display = 'none';
 });
 
+//fucking asshole you hover element. you've been a big fucking pain in my ass since the beginning.
+const arrowBtns = document.querySelectorAll('.newArrow');
+imageHolder.addEventListener('mouseover', () => {
+    console.log('you hovered over me:):)');
+    // e.preventDefault();
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'visible';
+    });
+});
+
+
+//proved to be pretty fucking useless as a piece of code!
+// const imageContainer = document.querySelector('.imageContainer');
+
+// rightSide.addEventListener('mouseout', (e) => {
+//     console.log('you hovered out of me:):)');
+//     e.preventDefault();
+//     arrowBtns.forEach(arrow => {
+//         arrow.style.visibility = 'hidden';
+//     });
+// });
+
 //thumbnail attempt 100110010010001110010
 const thumbnail = document.getElementById('thumbnail');
 const thumbnailContainer = document.querySelector('.thumbnailsContainer');
 const thumbnailsGrid = document.querySelector('.thumbnailsGrid');
+const crossBtn = document.querySelector('.crossBtn');
 
 
 thumbnail.addEventListener('click', () => {
@@ -160,17 +189,25 @@ thumbnail.addEventListener('click', () => {
 
 
     tempArrayHolder = saree.map(item => {
-        return `<a href = "${item.src}"><img src = "${item.src}" alt = "${item.alt}" style = "height: 10vw; width: 15vw; object-fit: contain; margin: 1em;" /></a>`
+        return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" style = "height: 10vw; width: 15vw; object-fit: contain; margin: 1em;" />`
 
     });
-    console.log(tempArrayHolder);
+    // console.log(tempArrayHolder);
     tempArrayHolder = tempArrayHolder.join("");
-    
 
    thumbnailsGrid.innerHTML =  tempArrayHolder;
 
+    thumbImg = document.querySelectorAll('.thumbImg');
+    console.log(thumbImg);
 
 });
+
+crossBtn.addEventListener('click', () => {
+    thumbnailContainer.style.display = 'none';
+    imageHolder.style.display = 'block';
+    // imageText.style.display = 'block';
+});
+
 
 //removing underline and putting under photography
 const sareeUnderline = document.getElementById('saree');
