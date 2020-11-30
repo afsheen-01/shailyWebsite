@@ -133,7 +133,8 @@ as.addEventListener('click', () => {
     thumbnail.style.textDecoration = 'none';
     textElement.innerHTML = text;
     imageText.style.display = 'block';
-    rightSide.style.margin = '17vw 0';
+    /* please remove the 2 of us from all files :):(*/
+    // rightSide.style.margin = '17vw 0';
     // imageHolder.style.width = '45vw';
     minusBtn.style.display = 'block';
     arrowBtns.forEach(arrow => {
@@ -146,8 +147,9 @@ minusBtn.addEventListener('click', () => {
     artistStatement.style.textDecoration = 'none';
     imageHolder.style.display = 'block';
     imageText.style.display = 'none';
-    rightSide.style.margin = '0';
-    imageHolder.style.width = '60vw';
+    /* please remove the 2 of us from all files :):(*/
+    // rightSide.style.margin = '0';
+    // imageHolder.style.width = '60vw';
     minusBtn.style.display = 'none';
 });
 
@@ -242,15 +244,16 @@ sareeUnderline.style.textDecoration = 'underline';
 const navBtn = document.querySelector('.navBtn');
 const sideNav = document.querySelector('.sideNav');
 const navCloseBtn = document.querySelector('.navCloseBtn');
-const rightSection = document.querySelector('.right');
+// const leftSection = document.querySelector('.left');
 
 navBtn.addEventListener('click',() => {
     if(sideNav.style.display === 'block'){
         sideNav.style.display = 'none';
-        // rightSection.style.display = 'block';
+        // leftSection.style.boxShadow = '.5px .5px #000';
     }
     else{
         sideNav.style.display = 'block';
+        // leftSection.style.boxShadow = 'none';
         // rightSection.style.display = 'none';
     }
     

@@ -1,0 +1,255 @@
+/*About page*/
+
+#inAbout{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    /* -moz-padding: 3em; */
+    border: none;
+    /* border: 2px solid #000; */
+}
+#imgContainer{
+    width: 40%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: space-between;
+    /* border: 3px solid #000; */
+}
+.myImage{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    bottom: 10em;
+}
+.infoContainer{
+    margin: 7em 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* border: 3px solid #000; */
+}
+.info{ 
+    width: 80%;
+    padding: 5rem 0;
+    /* border: 1px solid #000; */
+}
+.info h3{
+    font-family: 'didot';
+    text-decoration: underline;
+}
+
+@media only screen  and (max-width: 1300px){
+    
+    body{
+        width: 97%;
+        height: auto;
+        cursor: url(defaultIcon.cur), crosshair;
+        font-family: 'Jost';
+        object-fit: contain;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        height: 100%;
+    }
+    .left, .right{
+        padding: 0;
+        margin: 0;
+    }.left{
+        width: inherit;
+        height: auto;
+        background-color: #fff;
+        z-index: 100;
+    }
+    .header{
+        width: 97%;
+        height: 7rem;
+        margin: 0rem 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .sideNav{
+        display: none;
+        margin: 0 2em;
+    }
+    .navBtn{
+        display: block;
+    }
+    .navBtn:hover{
+        opacity: 0.5;
+    }
+    .navBtnContainer{
+        display: flex;
+        align-items: center;
+    }
+    .logoHolder{
+        margin: 0 17rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 20rem;
+        text-align: center;
+    }
+    .right{
+        left: 5%;
+        margin: 7rem 0;
+    }
+    .image{
+        width: 75vw;
+        height: 52vw;
+        object-fit:contain;
+        cursor: url('../fontAwesome/svgs/solid/plus.svg');
+   }
+   .artAndThumb{
+       width: 70vw;
+   }
+   .footer{
+       left: 12em;
+   }
+}
+
+@media only screen  and (max-width: 900px){
+    body{
+        object-fit: contain;
+        cursor: url(defaultIcon.cur), crosshair;
+    }
+    .logoHolder{
+        width: 40%;
+    }
+    .image{
+        width: 80vw;
+        height: 65vw;
+        cursor: url(defaultIcon.cur), crosshair;
+    }
+    .right{
+        left: 0;
+    }
+    .thumbnailsGrid{
+    
+        /* display: grid; */
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .thumbImg{
+        width: 40vw;
+        height: 30vw;
+    }
+    .artAndThumb{
+        width: 73vw;
+    }
+    .inArtAndThumb{
+        width: 30%;
+    }
+    .footer{
+        left: 10em;
+    }
+}
+
+@media only screen  and (max-width: 600px){
+    .logoHolder{
+        width: 50%;
+        position: relative;
+        right: 6em;
+    }
+    .right{
+        margin-top: 10em;
+        left: -3%;
+    }
+    .image{
+        width: 77vw;
+        height: 70;
+        cursor: url(defaultIcon.cur), crosshair;
+        object-fit: contain;
+    } 
+    .newArrow{
+        visibility: visible;
+    }
+    .footer{
+        left: 3em;
+    }
+}
+@media only screen and ( max-width: 500px ) {
+    body{
+        margin: .5;
+        padding: 0;
+        object-fit: contain;
+    }
+    .container{
+        width: inherit;
+        height: inherit;
+    }
+    .logoHolder{
+        width: 37%;
+        font-size: .8em;
+        right: 8em;
+        padding: 0;
+    }
+    .image{
+        width: 74vw;
+        height: 67vw;
+        object-fit: contain;
+    }
+    .right{
+        left: 0%;
+    }
+    .newArrow{
+        visibility: visible;
+    }
+    .footer{
+        width: 70%;
+    }
+}
+@media only screen and ( max-width: 465px ) {
+    body{
+        margin: .5;
+        padding: 0;
+        object-fit: contain;
+    }
+    .image{
+        width: 70vw;
+        height: 67vw;
+        object-fit: contain;
+    }
+}
+@media only screen and ( max-width: 435px ) {
+    body{
+        margin: .5;
+        padding: 0;
+        object-fit: contain;
+    }
+    .image{
+        width: 67vw;
+        height: 67vw;
+        object-fit: contain;
+    }
+}
+@media only screen and ( max-width: 420px ) {
+    body{
+        width: 88%;
+        margin: .5;
+        padding: 0;
+        object-fit: contain;
+    }
+    .left{
+        padding: 0;
+    }
+    .logoHolder{
+        width: 40%;
+        font-size: .7em;
+        right: 8em;
+        padding: 0;
+    }
+    .image{
+        width: 67vw;
+        height: 67vw;
+        object-fit: contain;
+    }
+}

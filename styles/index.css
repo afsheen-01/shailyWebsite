@@ -139,24 +139,21 @@ a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    /* border: 1px solid #000; */
 
 }
 .thumbnailDiv{
     width: inherit;
     height: auto;
 }
-#inAbout{
-    flex-direction: row;
-    border: none;
-    top: 5rem;
-    right: 5rem;
-}
+
 .imageContainer{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
+    
 }
 
 .image{
@@ -166,23 +163,47 @@ a{
     object-fit:contain;
     width: 60vw;
     cursor: url('../fontAwesome/svgs/solid/plus.svg');
+    
 }
+/*About page*/
 
-.myImage{
-    margin: 7rem 2rem 4rem;
-    padding: 2rem;
+#inAbout{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    /* -moz-padding: 3em; */
+    border: none;
+    /* border: 2px solid #000; */
+}
+#imgContainer{
     width: 40%;
-    height: 70%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: space-between;
+    /* border: 3px solid #000; */
+}
+.myImage{
+    width: 50%;
+    height: auto;
     border-radius: 50%;
+    position: relative;
+    bottom: 10em;
 }
 .infoContainer{
-    position: relative;
-    right: 5em;
+    margin: 7em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* border: 3px solid #000; */
 }
 .info{ 
     width: 80%;
-    -webkit-margin-before: 8.5rem;
-    padding: 0 1rem;
+    padding: 5rem 0;
+    /* border: 1px solid #000; */
 }
 .info h3{
     font-family: 'didot';
@@ -201,6 +222,11 @@ a{
     justify-content: center;
     align-items: center;
     visibility: hidden;
+    /* border: 1px solid #000; */
+}
+.forIndex{
+    position: relative;
+    bottom: 4em;
 }
 .thumbnailsContainer{
     display: none;
@@ -233,7 +259,6 @@ a{
 .newArrow{
     height: 4rem;
     width: 4rem;
-    /* position: sticky; */
 }
 /*preventing border*/
 :focus {
@@ -317,6 +342,13 @@ a{
     font-family: 'Jost light';
     text-align: left;
 }
+.keywords{
+    visibility: hidden;
+    font-family: 'Jost light';
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline ;
+}
 .footer{
     width: 80%;
     color: #8f8f8f;
@@ -350,16 +382,50 @@ a{
 .link:hover{
     color:#4e4c4c;
 }
-
 @media only screen  and (max-width: 1300px){
-    
-    body{
-        width: 97%;
-        height: auto;
-        cursor: url(defaultIcon.cur), crosshair;
-        font-family: 'Jost';
-        object-fit: contain;
+    .left{
+        width: 30em;
     }
+    .logo{
+        text-align: center;
+    }
+    .right{
+        margin: 4em 2.5em;
+    }
+    .myImage{
+        bottom: 12em;
+    }
+    .infoContainer{
+        margin: 3em;
+    }
+    #footerStyle{
+        position: relative;
+        left: 6em;
+        margin: 2em 0;
+        padding: 2em 0;
+    }
+}
+@media only screen and (max-width: 1040){
+    .left{
+        width: 25%;
+    }
+    #imgContainer{
+        width: 60%;
+    }
+    .myImage{
+        width: 100%;
+        height: auto;
+        bottom: 14em;
+    }
+}
+@media only screen and (max-width: 1009){
+        
+    .myImage{
+        width: 100%;
+        bottom: 18em;
+    }
+}
+@media only screen and (max-width: 960px){
     .container{
         display: flex;
         flex-direction: column;
@@ -376,7 +442,7 @@ a{
         z-index: 100;
     }
     .header{
-        width: 97%;
+        width: 95%;
         height: 7rem;
         margin: 0rem 1rem;
         display: flex;
@@ -398,7 +464,7 @@ a{
         align-items: center;
     }
     .logoHolder{
-        margin: 0 17rem;
+        margin: 0 15rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -409,7 +475,16 @@ a{
     }
     .right{
         left: 5%;
-        margin: 7rem 0;
+        margin: 5rem 0;
+        object-fit: contain;
+    }
+    .arrowBtn{
+        position: relative;
+        bottom: 1em;
+    }
+    .imageContainer{
+        width: 85%;
+        height: auto;
     }
     .image{
         width: 75vw;
@@ -417,101 +492,29 @@ a{
         object-fit:contain;
         cursor: url('../fontAwesome/svgs/solid/plus.svg');
    }
+   .imageText{
+       margin: 3em 10em;
+   }
+   .thumbnailsContainer{
+       margin: 3rem;
+   }
+   .thumbnailsGrid{
+        width: 70vw;
+        height: 55vw;
+   }
+   .thumbImg{
+       width: 20vw;
+       height: 15vw;
+       margin: .5em 1em;
+   }
    .artAndThumb{
        width: 70vw;
    }
-   .footer{
-       left: 12em;
-   }
-}
-
-
-@media only screen  and (max-width: 900px){
-    body{
-        object-fit: contain;
-        cursor: url(defaultIcon.cur), crosshair;
-    }
-    .logoHolder{
-        width: 40%;
-    }
-    .image{
-        width: 80vw;
-        height: 65vw;
-        cursor: url(defaultIcon.cur), crosshair;
-    }
-    .right{
-        left: 0;
-    }
-    .thumbnailsGrid{
-    
-        /* display: grid; */
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .thumbImg{
-        width: 40vw;
-        height: 30vw;
-    }
-    .artAndThumb{
-        width: 73vw;
-    }
-    .inArtAndThumb{
-        width: 30%;
-    }
-    .footer{
-        left: 10em;
-    }
-}
-
-@media only screen  and (max-width: 600px){
-    .logoHolder{
-        width: 50%;
-        position: relative;
-        right: 6em;
-    }
-    .right{
-        margin-top: 10em;
-        left: -3%;
-    }
-    .image{
-        width: 77vw;
-        height: 70;
-        cursor: url(defaultIcon.cur), crosshair;
-        object-fit: contain;
-    } 
-    .newArrow{
-        visibility: visible;
-    }
-    .footer{
-        left: 3em;
-    }
-}
-@media only screen and ( max-width: 500px ) {
-    body{
-        margin: .5;
-        padding: 0;
-        object-fit: contain;
-    }
-    .logoHolder{
-        width: 37%;
-        font-size: .8em;
-        right: 8em;
-        padding: 0;
-    }
-    .image{
-        width: 74vw;
-        height: 67vw;
-        object-fit: contain;
-    }
-    .right{
-        left: 0%;
-    }
-    .newArrow{
-        visibility: visible;
-    }
-    .footer{
+    .myImage{
         width: 70%;
+        bottom: 13em;
+    }
+    #footerStyle{
+        left: 11em;
     }
 }
-/* @media only screen and ( max-width: 400px ) {
-    
-} */

@@ -149,6 +149,16 @@ target.addEventListener('click', () => {
     clearInterval(setInt);
 });
 
+//fucking asshole you hover element. you've been a big fucking pain in my ass since the beginning.
+const imageHolder = document.querySelector('.imageHolder');
+const arrowBtns = document.querySelectorAll('.newArrow');
+imageHolder.addEventListener('mouseover', () => {
+    // console.log('you hovered over me:):)');
+    // e.preventDefault();
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'visible';
+    });
+});
 
 //prevent right click
 document.addEventListener('contextmenu', event => event.preventDefault());
