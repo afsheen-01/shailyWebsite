@@ -163,7 +163,7 @@ as.addEventListener('click', () => {
     thumbnail.style.textDecoration = 'none';
     textElement.innerHTML = text;
     imageText.style.display = 'block';
-    rightSide.style.margin = '17vw 0';
+    // rightSide.style.margin = '17vw 0';
     // imageHolder.style.width = '45vw';
     minusBtn.style.display = 'block';
     arrowBtns.forEach(arrow => {
@@ -176,8 +176,8 @@ minusBtn.addEventListener('click', () => {
     artistStatement.style.textDecoration = 'none';
     imageHolder.style.display = 'block';
     imageText.style.display = 'none';
-    rightSide.style.margin = '0';
-    imageHolder.style.width = '60vw';
+    // rightSide.style.margin = '0';
+    // imageHolder.style.width = '60vw';
     minusBtn.style.display = 'none';
 });
 

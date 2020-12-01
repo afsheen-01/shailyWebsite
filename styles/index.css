@@ -464,7 +464,7 @@ a{
         align-items: center;
     }
     .logoHolder{
-        margin: 0 15rem;
+        margin: 0 13rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -515,6 +515,10 @@ a{
         bottom: 13em;
     }
     #footerStyle{
-        left: 11em;
+        left: 9em;
     }
+}
+
+@media only screen and (max-width: 866px) {
+
 }

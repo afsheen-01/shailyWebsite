@@ -79,7 +79,7 @@ const fullScreenImg = document.querySelector('.fullScreenImg')
 let i = 0;
 length = data.length;
 const functionalBtns = () => {
-    fullScreenImg.href = data[i].src;
+    // fullScreenImg.href = data[i].src;
     target.src = data[i].src;
     target.alt = data[i].alt;
 
@@ -90,7 +90,7 @@ const functionalBtns = () => {
         else{
             i++;
         }
-        fullScreenImg.href = data[i].src;
+        // fullScreenImg.href = data[i].src;
         target.src = data[i].src;
         target.alt = data[i].alt;
     });
@@ -102,7 +102,7 @@ const functionalBtns = () => {
         else{
             i--;
         }
-        fullScreenImg.href = data[i].src;
+        // fullScreenImg.href = data[i].src;
         target.src = data[i].src;
         target.alt = data[i].alt;
 
@@ -119,7 +119,7 @@ let setInt;
 
 setInt = setInterval(() => {
     i > length - 2? i = 0 : i++;
-    fullScreenImg.href = data[i].src;
+    // fullScreenImg.href = data[i].src;
    target.src = data[i].src;
    target.alt = data[i].alt;
 },4000);
@@ -147,14 +147,27 @@ pauseBtn.addEventListener('click', () => {
 
 target.addEventListener('click', () => {
     clearInterval(setInt);
+    target.requestFullscreen()
+        // .then(() => {
+        //     target.fullscreenchange(() => {
+        //         let elHolder = target.fullscreenElement();
+        //         if(elHolder === null){
+        //             console.log('going back out.');
+        //         }
+        //         else{
+
+        //         }
+        //     });
+        // })
+        .catch(err => {
+            console.log(err);
+        });
 });
 
 //fucking asshole you hover element. you've been a big fucking pain in my ass since the beginning.
 const imageHolder = document.querySelector('.imageHolder');
 const arrowBtns = document.querySelectorAll('.newArrow');
 imageHolder.addEventListener('mouseover', () => {
-    // console.log('you hovered over me:):)');
-    // e.preventDefault();
     arrowBtns.forEach(arrow => {
         arrow.style.visibility = 'visible';
     });
@@ -180,3 +193,12 @@ navBtn.addEventListener('click',() => {
     }
     
 });
+
+/* I WILL GET BACK TO YOU IN 20 MINS */
+
+// window.addEventListener('keydown',() => {
+//     console.log('did you press a key?');
+// });
+// window.addEventListener('keyup',() => {
+//     console.log('did you unpress a key?');
+// });
