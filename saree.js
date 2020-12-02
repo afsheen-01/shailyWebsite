@@ -123,7 +123,27 @@ target.addEventListener('click', (e) => {
         target.webkitRequestFullscreen();
     } else if (target.msRequestFullscreen) { 
         target.msRequestFullscreen();
-      }
+    }
+});
+
+//going back and forth with arrow keys
+window.addEventListener('keydown', (e) => {
+    let keycode = e.keyCode;
+    console.log(keycode);
+    if(keycode === 37){
+        console.log('left arrow was pressed');
+        i--;
+        target.src = saree[i].src;
+        target.alt = saree[i].alt;
+        target.id = saree[i].id;
+    } 
+    if(keycode === 39){
+        console.log('right arrow was pressed');
+        i++;
+        target.src = saree[i].src;
+        target.alt = saree[i].alt;
+        target.id = saree[i].id;
+    }
 });
 
 //artist statement
