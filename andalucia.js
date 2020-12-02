@@ -142,6 +142,18 @@ const functionalBtns = () => {
     });
 }
 
+//fullscreen 
+target.addEventListener('click', (e) => {
+    e.preventDefault();
+    if(target.requestFullscreen){
+        target.requestFullscreen();
+    } else if(target.webkitRequestFullscreen) {
+        target.webkitRequestFullscreen();
+    } else if (target.msRequestFullscreen) { 
+        target.msRequestFullscreen();
+      }
+});
+
 functionalBtns();
 
 //removing underline and putting under photography

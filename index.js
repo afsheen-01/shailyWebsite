@@ -145,23 +145,22 @@ pauseBtn.addEventListener('click', () => {
 
 //imageClick event
 
-target.addEventListener('click', () => {
-    clearInterval(setInt);
-    target.requestFullscreen()
-        // .then(() => {
-        //     target.fullscreenchange(() => {
-        //         let elHolder = target.fullscreenElement();
-        //         if(elHolder === null){
-        //             console.log('going back out.');
-        //         }
-        //         else{
+// console.log(target.documentElement);
 
-        //         }
-        //     });
-        // })
-        .catch(err => {
-            console.log(err);
-        });
+//fullscreen 
+target.addEventListener('click', (e) => {
+    clearInterval(setInt);
+    playBtn.style.display = 'block';
+    playBtn.style.textAlign = 'center';
+    pauseBtn.style.display =  'none';
+    e.preventDefault();
+    if(target.requestFullscreen){
+        target.requestFullscreen();
+    } else if(target.webkitRequestFullscreen) {
+        target.webkitRequestFullscreen();
+    } else if (target.msRequestFullscreen) { 
+        target.msRequestFullscreen();
+      }
 });
 
 //fucking asshole you hover element. you've been a big fucking pain in my ass since the beginning.

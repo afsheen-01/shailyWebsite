@@ -134,6 +134,17 @@ const functionalBtns = () => {
     });
 }
 
+//fullscreen 
+target.addEventListener('click', (e) => {
+    e.preventDefault();
+    if(target.requestFullscreen){
+        target.requestFullscreen();
+    } else if(target.webkitRequestFullscreen) {
+        target.webkitRequestFullscreen();
+    } else if (target.msRequestFullscreen) { 
+        target.msRequestFullscreen();
+      }
+});
 
 //artist statement
 const artistStatement = document.getElementById('as');
