@@ -112,6 +112,36 @@ target.addEventListener('click', (e) => {
       }
 });
 
+//going back and forth with arrow keys
+window.addEventListener('keydown', (e) => {
+    let keycode = e.keyCode;
+    // console.log(keycode);
+    if(keycode === 37){
+        // console.log('left arrow was pressed');
+        if(i <= 0){
+            i = 0;
+        }
+        else{
+            i--;
+        }
+        target.src = artwork[i].src;
+        target.alt = artwork[i].alt;
+        target.id = artwork[i].id;
+
+    } 
+    if(keycode === 39){
+        // console.log('right arrow was pressed');
+        if(i > length - 2){
+            i = 0;
+        }
+        else{
+            i++;
+        }
+        target.src = artwork[i].src;
+        target.alt = artwork[i].alt;
+        target.id = artwork[i].id;
+    }
+});
 
 functionalBtns();
 
