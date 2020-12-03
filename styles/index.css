@@ -132,6 +132,7 @@ a{
 
 .right{
     width: 83%;
+    height: auto;
     padding: 2rem 0;
     margin: 0;
     position: relative;
@@ -142,13 +143,14 @@ a{
     /* border: 1px solid #000; */
 
 }
-.thumbnailDiv{
+/* .thumbnailDiv{
     width: inherit;
-    height: auto;
-}
+    height: inherit;
+} */
 
 .imageContainer{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -230,7 +232,8 @@ a{
 }
 .thumbnailsContainer{
     display: none;
-    background-color: rgb(240, 221, 204, .3);
+    background-color: rgba(161, 161, 154, 0.3);
+    height: auto;
     /* flex-direction: row; */
 }
 .thumbnailFlex{
@@ -245,6 +248,8 @@ a{
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-gap: 4% 4%; rgb(240, 221, 204, .3);*/
     -webkit-backdrop-filter: contrast(.9);
+    /* object-fit: contain; */
+    overflow: scroll;
 }
 .thumbImg{
     width: 15vw;
@@ -259,6 +264,8 @@ a{
 .newArrow{
     height: 4rem;
     width: 4rem;
+    position: relative;
+    bottom: 2em;
 }
 /*preventing border*/
 :focus {
@@ -277,7 +284,7 @@ a{
     width: inherit;
     height: inherit;
     position: relative;
-    left: 3rem;
+    left: 4vw;
     display:flex;
     flex-direction: column;
     align-items: flex-end;
@@ -286,11 +293,16 @@ a{
 .inArtAndThumb{
     width: 20%;
     margin: .3em 0;
+    padding: .3em;
     font-size: .9em;
     font-weight: 400;
     text-transform: capitalize;
     font-family: 'Jost light';
     text-align: right;
+    /* border: 1px solid #000; */
+}
+.inArtAndThumb:hover{
+    opacity: .5;
 }
 .crossBtn{
     width: inherit;
@@ -343,7 +355,7 @@ a{
     text-align: left;
 }
 .keywords{
-    visibility: hidden;
+    visibility: visible;
     font-family: 'Jost light';
     display: flex;
     justify-content: baseline;
@@ -450,6 +462,7 @@ a{
         justify-content: flex-start;
     }
     .sideNav{
+        /* border: 1px solid #000; */
         display: none;
         margin: 0 2em;
     }
@@ -475,16 +488,11 @@ a{
     }
     .right{
         left: 5%;
-        margin: 5rem 0;
+        margin: 9rem 0;
         object-fit: contain;
-    }
-    .arrowBtn{
-        position: relative;
-        bottom: 1em;
     }
     .imageContainer{
         width: 85%;
-        height: auto;
     }
     .image{
         width: 75vw;
@@ -495,30 +503,219 @@ a{
    .imageText{
        margin: 3em 10em;
    }
-   .thumbnailsContainer{
+    .thumbnailsContainer{
        margin: 3rem;
+       height: auto;
    }
    .thumbnailsGrid{
         width: 70vw;
-        height: 55vw;
+        height: 47vw;
    }
-   .thumbImg{
+   /*.thumbImg{
        width: 20vw;
        height: 15vw;
        margin: .5em 1em;
    }
    .artAndThumb{
        width: 70vw;
-   }
+   } */
+   .newArrow{
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    bottom: 4em;
+    }
+    .artAndThumb{
+        left: 15vw;
+    }
     .myImage{
         width: 70%;
-        bottom: 13em;
+        top: 14vw;
+        /* bottom: 13em; */
     }
     #footerStyle{
         left: 9em;
     }
 }
 
-@media only screen and (max-width: 866px) {
+@media only screen and (max-width: 890px) {
+    .container{
+        /* margin-bottom: 0; */
+        height: 800px;
+    }
+    .right{
+        width: 97%;
+        left: 4%;
+        /* border: 1px solid #000; */
+        padding: 0;
+        /* margin-bottom: 0; */
+    }
+    .arrowBtn{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        visibility: visible;
+        position: relative;
+        /* bottom: 3em; */
+        /* border: 1px solid #000; */
+    }
+    /* .newArrow{
+        margin: 0;
+        padding: 0;
+    } */
+    .imageContainer{
+        justify-content: flex-start;
+        width: 95%;
+        position: relative;
+        right: 2.7vw;
+    }
+    /* .image{
+        border: 1px solid #000;
+    } */
+    .thumbImg{
+        width: 17vw;
+        height: 13vw;
+        margin: .5em 1em;
+    }
+    .artAndThumb{
+        /* border: 1px solid #000; */
+        position: relative;
+        /* bottom: 6vw; */
+        left: -10vw;
+    }
+    #footerStyle{
+        /* border: 1px solid #000; */
+        left: 10vw;
+    }
+    #aboutContainer{
+        position: relative;
+        bottom: 20vw;
+    }
+    .myImage{
+        position: relative;
+        top: -18vw;
+    }
 
+}
+
+@media only  screen and (max-width: 843px) {
+    .right{
+        width: 95%;
+        left: 2%;
+    }
+}
+
+@media only  screen and (max-width: 803px) {
+    .logoHolder{
+        position: relative;
+        left: 19vw;
+    }
+    .right{
+        width: 88%;
+        left: 2%;
+    }
+    .imageContainer{
+        width: 55%;
+    }
+    .artAndThumb{
+        left: 4vw;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 97%;
+    }
+    
+    .imageContainer{
+        width: 97%;
+        left: .1vw;
+        /* border: 1px solid #000; */
+        align-items: stretch;
+        /* object-fit: contain; */
+    }
+    .artAndThumb{
+        left: -5vw;
+    }
+    .arrowBtn{
+        margin: 0;
+        padding: 0;
+        bottom: 2.5vw;
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+        /* border: 1px solid #000; */
+    }
+    #btnLeftContainer{
+        position: relative;
+        left: 5vw;
+    }
+    #btnRightContainer{
+        position: relative;
+        right: 5vw;
+    }
+    .image{
+        width: 60vw;
+        height: 45vw;
+        object-fit: contain;
+    }
+    #imgContainer{
+        width: 50%;
+        display:flex;
+        justify-content: flex-end;
+        align-items: space-between;
+    }
+    .myImage{
+        width: 50%;
+        height: 18%;
+        border-radius: 50%;
+        position: relative;
+        top: 8em;
+    }
+    .infoContainer{
+        width: 50%;
+    }   
+}
+@media only screen and (max-width: 784px){
+    .right{
+        width: 95%;
+    }
+    .imageContainer{
+        position: relative;
+        left: -4vw;
+    }
+    .thumbImg{
+        width: 20vw;
+        height: 15vw;
+        margin: .5em .4em;
+    }
+    .myImage{
+        height: 16%;
+    }
+}
+
+@media only screen and (max-width: 733px) {
+    .left{
+        width: 100%;
+    }
+    .logoHolder{
+        position: relative;
+        left: 15vw;
+    }
+    .right{
+        width: 98%;
+    }
+    .imageContainer{
+        width: inherit;
+        height: auto;
+    }
+    .imageAndContent{
+        width: inherit;
+    }
+    .image{
+        width: 75vw;
+        height: 55vw;
+        object-fit: contain;
+    }
 }

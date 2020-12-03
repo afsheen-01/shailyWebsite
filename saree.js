@@ -272,6 +272,7 @@ thumbnail.addEventListener('click', () => {
 
 crossBtn.addEventListener('click', () => {
     thumbnailContainer.style.display = 'none';
+    thumbnail.style.textDecoration = 'none';
     imageHolder.style.display = 'block';
     // imageText.style.display = 'block';
 });
@@ -279,7 +280,6 @@ crossBtn.addEventListener('click', () => {
 
 //removing underline and putting under photography
 const sareeUnderline = document.getElementById('saree');
-
 sareeUnderline.style.textDecoration = 'underline';
 // sareeUnderline.style.textDecorationColor = '#e68a00';
 
