@@ -202,21 +202,39 @@ ghUnderline.style.textDecoration = 'none';
 andaUnderline.style.textDecoration = 'underline';
 
 //artist statement
+const text = "Travel photos from the autonomous regions of Andalucia in the south of Spain. The region has a great amalgamation of Moorish influences, that reflect in its architecture such as Alcazar castle in Seville, Córdoba’s Mesquite Mosque-Cathedral and Granada’s Alambra Palace.";
+
+//DOM elements
+const imageHolder = document.querySelector('.imageHolder');
 const artistStatement = document.getElementById('as');
-const heading = document.querySelector('.fdidot');
-const text = document.querySelector('.fjost');
+const rightSide = document.querySelector('.right');
 const imageText = document.querySelector('.imageText');
+const textElement = document.querySelector('.fjost');
 const minusBtn = document.querySelector('.minus');
 
-// artistStatement.addEventListener('click',() => {
-//     imageText.style.display = 'block';
-//     text.innerHTML = 'this is a style for the page. hopefully, this will work';
-    
-// });
-// minusBtn.addEventListener('click', () => {
-//     imageText.style.display = 'none';
-// });
-const imageHolder = document.querySelector('.imageHolder');
+
+as.addEventListener('click', () => {
+    artistStatement.style.textDecoration = 'underline';
+    imageHolder.style.display = 'none';
+    thumbnailContainer.style.display = 'none';
+    thumbnail.style.textDecoration = 'none';
+    textElement.innerHTML = text;
+    imageText.style.display = 'block';
+    minusBtn.style.display = 'block';
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
+    // arrowBtns.style.visibility = 'hidden';
+});
+
+minusBtn.addEventListener('click', () => {
+    artistStatement.style.textDecoration = 'none';
+    imageHolder.style.display = 'block';
+    imageText.style.display = 'none';
+    minusBtn.style.display = 'none';
+});
+
+//imageHolder
 const arrowBtns = document.querySelectorAll('.newArrow');
 imageHolder.addEventListener('mouseover', () => {
     // console.log('you hovered over me:):)');

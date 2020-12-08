@@ -282,7 +282,7 @@ a{
 }
 .artAndThumb{
     width: inherit;
-    height: inherit;
+    height: 20%;
     position: relative;
     left: 4vw;
     display:flex;
@@ -292,6 +292,7 @@ a{
 }
 .inArtAndThumb{
     width: 20%;
+    /* border: 1px solid #000; */
     margin: .3em 0;
     padding: .3em;
     font-size: .9em;

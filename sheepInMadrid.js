@@ -178,28 +178,42 @@ window.addEventListener('keydown', (e) => {
 });
 
 //artist statement
+const text = 'Every year in October, Madrid’s streets get taken over by thousands of sheep, as shepherds steer their flocks through the heart of the Spanish capital, following ancient migratory routes. The animals cross from northern Spain to southern pastures for winter grazing. This marks the beginning of winter, the sheep leave the city that day but their wool remains, worn by people to keep themselves warm though the winter.';
+    
+//DOM elements
+const imageHolder = document.querySelector('.imageHolder');
 const artistStatement = document.getElementById('as');
-const heading = document.querySelector('.fdidot');
-const text = document.querySelector('.fjost');
+const rightSide = document.querySelector('.right');
 const imageText = document.querySelector('.imageText');
+const textElement = document.querySelector('.fjost');
 const minusBtn = document.querySelector('.minus');
 
-// artistStatement.addEventListener('click',() => {
-//     imageText.style.display = 'block';
-//     text.innerHTML = 'this is a style for the page. hopefully, this will work';
-    
-// });
-// minusBtn.addEventListener('click', () => {
-//     imageText.style.display = 'none';
-// });
-const imageHolder = document.querySelector('.imageHolder');
-const arrowBtns = document.querySelectorAll('.newArrow');
-imageHolder.addEventListener('mouseover', () => {
-    // console.log('you hovered over me:):)');
-    // e.preventDefault();
+
+as.addEventListener('click', () => {
+    artistStatement.style.textDecoration = 'underline';
+    imageHolder.style.display = 'none';
+    thumbnailContainer.style.display = 'none';
+    thumbnail.style.textDecoration = 'none';
+    textElement.innerHTML = text;
+    imageText.style.display = 'block';
+    /* please remove the 2 of us from all files :):(*/
+    // rightSide.style.margin = '17vw 0';
+    // imageHolder.style.width = '45vw';
+    minusBtn.style.display = 'block';
     arrowBtns.forEach(arrow => {
-        arrow.style.visibility = 'visible';
+        arrow.style.visibility = 'hidden';
     });
+    // arrowBtns.style.visibility = 'hidden';
+});
+
+minusBtn.addEventListener('click', () => {
+    artistStatement.style.textDecoration = 'none';
+    imageHolder.style.display = 'block';
+    imageText.style.display = 'none';
+    /* please remove the 2 of us from all files :):(*/
+    // rightSide.style.margin = '0';
+    // imageHolder.style.width = '60vw';
+    minusBtn.style.display = 'none';
 });
 
 //thumbnail attempt 100110010010001110010
