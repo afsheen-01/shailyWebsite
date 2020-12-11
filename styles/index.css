@@ -98,10 +98,12 @@ a{
 }
 #inSpaces{
     display: none;
+    -webkit-display: none;
 }
 
 #inPeople{
     display: none;
+    -webkit-display: none;
 }
 .inLi{
     text-transform: capitalize;
@@ -191,14 +193,15 @@ a{
     display:flex;
     justify-content: flex-end;
     align-items: space-between;
-    /* border: 3px solid #000; */
+    padding: 1.5em 0;
 }
 .myImage{
     width: 50%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 10px;
+    object-fit: contain;
     position: relative;
-    bottom: 10em;
+    bottom: 3vw;
 }
 .infoContainer{
     margin: 7em 0;
