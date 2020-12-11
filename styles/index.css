@@ -96,6 +96,13 @@ a{
     bottom: .4em;
     left: 1.5em;
 }
+#inSpaces{
+    display: none;
+}
+
+#inPeople{
+    display: none;
+}
 .inLi{
     text-transform: capitalize;
     text-decoration: none;

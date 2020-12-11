@@ -9,7 +9,7 @@ const data = [
     {
         id: 2,
         src: './pictures/bestWork/2020_portfolio_203.jpg',
-        alt: 'greyword house',
+        alt: 'greywood house',
         best: 0,
     },
     {
@@ -224,11 +224,22 @@ navBtn.addEventListener('click',() => {
     
 });
 
-/* I WILL GET BACK TO YOU IN 20 MINS */
 
-// window.addEventListener('keydown',() => {
-//     console.log('did you press a key?');
-// });
-// window.addEventListener('keyup',() => {
-//     console.log('did you unpress a key?');
-// });
+//spaces and peopel (apparently).
+
+const spaces = document.getElementById('spaces');
+const inSpaces = document.getElementById('inSpaces');
+const people = document.getElementById('people');
+const inPeople = document.getElementById('inPeople');
+
+spaces.addEventListener('click', () => {
+    inSpaces.style.display = 'block';
+    inPeople.style.display = 'none';
+    // console.log('do something!');
+});
+
+people.addEventListener('click', () => {
+    inSpaces.style.display = 'none';
+    inPeople.style.display = 'block';
+    // console.log('do something!');
+});

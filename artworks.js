@@ -151,7 +151,7 @@ const sareeUnderline = document.getElementById('saree');
 const domesticationUnderline = document.getElementById('domestication');
 const reflectionsUnderline = document.getElementById('reflections');
 const simUnderline = document.getElementById('sheepInMadrid');
-const ghUnderline = document.getElementById('greywordHouse');
+const ghUnderline = document.getElementById('greywoodHouse');
 const andaUnderline = document.getElementById('andalucia');
 const artworkUnderline = document.getElementById('artworks');
 
@@ -260,4 +260,23 @@ navBtn.addEventListener('click',() => {
         // rightSection.style.display = 'none';
     }
     
+});
+
+//spaces and peopel (apparently).
+
+const spaces = document.getElementById('spaces');
+const inSpaces = document.getElementById('inSpaces');
+const people = document.getElementById('people');
+const inPeople = document.getElementById('inPeople');
+
+spaces.addEventListener('click', () => {
+    inSpaces.style.display = 'block';
+    inPeople.style.display = 'none';
+    // console.log('do something!');
+});
+
+people.addEventListener('click', () => {
+    inSpaces.style.display = 'none';
+    inPeople.style.display = 'block';
+    // console.log('do something!');
 });

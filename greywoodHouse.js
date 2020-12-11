@@ -336,3 +336,23 @@ navBtn.addEventListener('click',() => {
     }
     
 });
+
+
+//spaces and peopel (apparently).
+
+const spaces = document.getElementById('spaces');
+const inSpaces = document.getElementById('inSpaces');
+const people = document.getElementById('people');
+const inPeople = document.getElementById('inPeople');
+
+spaces.addEventListener('click', () => {
+    inSpaces.style.display = 'block';
+    inPeople.style.display = 'none';
+    // console.log('do something!');
+});
+
+people.addEventListener('click', () => {
+    inSpaces.style.display = 'none';
+    inPeople.style.display = 'block';
+    // console.log('do something!');
+});
