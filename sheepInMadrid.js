@@ -216,6 +216,16 @@ minusBtn.addEventListener('click', () => {
     minusBtn.style.display = 'none';
 });
 
+//fucking asshole you hover element. you've been a big fucking pain in my ass since the beginning.
+const arrowBtns = document.querySelectorAll('.newArrow');
+imageHolder.addEventListener('mouseover', () => {
+    // console.log('you hovered over me:):)');
+    // e.preventDefault();
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'visible';
+    });
+});
+
 //thumbnail attempt 100110010010001110010
 const thumbnail = document.getElementById('thumbnail');
 const thumbnailContainer = document.querySelector('.thumbnailsContainer');
@@ -235,7 +245,7 @@ thumbnail.addEventListener('click', () => {
 
 
     tempArrayHolder = sheepInMadrid.map(item => {
-        return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" style = "height: 10vw; width: 15vw; object-fit: contain; margin: 1em;" />`
+        return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" />`
 
     });
     // console.log(tempArrayHolder);

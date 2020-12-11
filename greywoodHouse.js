@@ -276,7 +276,7 @@ thumbnail.addEventListener('click', () => {
 
 
     tempArrayHolder = greywoodHouse.map(item => {
-        return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" style = "height: 10vw; width: 15vw; object-fit: contain; margin: 1em;" />`
+        return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" />`
 
     });
     // console.log(tempArrayHolder);

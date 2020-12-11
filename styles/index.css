@@ -242,7 +242,7 @@ a{
 }
 .thumbnailsContainer{
     display: none;
-    background-color: rgba(161, 161, 154, 0.3);
+    /* background-color: rgba(161, 161, 154, 0.3); */
     height: auto;
     /* flex-direction: row; */
 }
@@ -256,8 +256,8 @@ a{
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-gap: 4% 4%; rgb(240, 221, 204, .3);*/
-    /* object-fit: contain; */
+    grid-gap: 20px 20px;
+    align-items: center;
     overflow: scroll;
 }
 .thumbImg{

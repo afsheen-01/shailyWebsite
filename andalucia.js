@@ -49,40 +49,8 @@ const andalucia = [
     },
     {
         id: 7,
-        src: './pictures/Architecture/Arch/2020_Andalucia_catreflection.jpg',
-        alt: 'anda7',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 8, 
-        src: './pictures/Architecture/Arch/2020_Andalucia_connection.jpg',
-        alt: 'anda8',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 9,
-        src: './pictures/Architecture/Arch/2020_Andalucia_goldenhour.jpg',
-        alt: 'anda9',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 10,
         src: './pictures/Architecture/Arch/2020_Andalucia_riverslopes.jpg',
         alt: 'anda10',
-        category: 'architecture',
-        subcategory: 'andalucia',
-        best: 0,
-    },
-    {
-        id: 11,
-        src: './pictures/Architecture/Arch/2020_Andalucia_riverslopes.jpg',
-        alt: 'anda11',
         category: 'architecture',
         subcategory: 'andalucia',
         best: 0,
@@ -263,7 +231,7 @@ thumbnail.addEventListener('click', () => {
 
 
     tempArrayHolder = andalucia.map(item => {
-        return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" style = "height: 10vw; width: 15vw; object-fit: contain; margin: 1em;" />`
+        return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" />`
 
     });
     // console.log(tempArrayHolder);
