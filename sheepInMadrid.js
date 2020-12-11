@@ -232,19 +232,11 @@ const thumbnailContainer = document.querySelector('.thumbnailsContainer');
 const thumbnailsGrid = document.querySelector('.thumbnailsGrid');
 const crossBtn = document.querySelector('.crossBtn');
 
+const functionToDisplayGrid = () => {
 
-thumbnail.addEventListener('click', () => {
-    thumbnailContainer.style.display = 'block';
-    imageHolder.style.display = 'none';
-    imageText.style.display = 'none';
-    thumbnail.style.textDecoration = 'underline';
-    as.style.textDecoration = 'none';
-    arrowBtns.forEach(arrow => {
-        arrow.style.visibility = 'hidden';
-    });
+    imageHolder.style.display  = 'none';
 
-
-    tempArrayHolder = sheepInMadrid.map(item => {
+    let tempArrayHolder = sheepInMadrid.map(item => {
         return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" />`
 
     });
@@ -276,6 +268,21 @@ thumbnail.addEventListener('click', () => {
             });
         });
 
+}
+
+
+thumbnail.addEventListener('click', () => {
+    thumbnailContainer.style.display = 'block';
+    imageHolder.style.display = 'none';
+    imageText.style.display = 'none';
+    thumbnail.style.textDecoration = 'underline';
+    as.style.textDecoration = 'none';
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
+
+    functionToDisplayGrid();
+    
 });
 
 crossBtn.addEventListener('click', () => {
@@ -286,7 +293,7 @@ crossBtn.addEventListener('click', () => {
 
 //function call for buttons
 functionalBtns();
-
+window.addEventListener('load', functionToDisplayGrid());
 
 //three bars
 const navBtn = document.querySelector('.navBtn');

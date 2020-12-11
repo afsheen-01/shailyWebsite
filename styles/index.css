@@ -163,10 +163,8 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center; 
 }
-
 .image{
     height: 45vw;
     padding: none;
@@ -241,7 +239,7 @@ a{
     bottom: 4em;
 }
 .thumbnailsContainer{
-    display: none;
+    display: block;
     /* background-color: rgba(161, 161, 154, 0.3); */
     height: auto;
     /* flex-direction: row; */
@@ -584,11 +582,11 @@ a{
     /* .image{
         border: 1px solid #000;
     } */
-    .thumbImg{
+    /* .thumbImg{
         width: 17vw;
         height: 13vw;
         margin: .5em 1em;
-    }
+    } */
     .artAndThumb{
         /* border: 1px solid #000; */
         position: relative;

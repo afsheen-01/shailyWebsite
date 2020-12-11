@@ -55,22 +55,6 @@ const andalucia = [
         subcategory: 'andalucia',
         best: 0,
     },
-    // {
-    //     id: 12,
-    //     src: './pictures/Architecture/Arch/2020_Andalucia_stained-columns.jpg',
-    //     alt: 'anda12',
-    //     category: 'architecture',
-    //     subcategory: 'andalucia',
-    //     best: 0,
-    // },
-    // {
-    //     id: 13,
-    //     src: './pictures/Architecture/Arch/SRN02794.jpg',
-    //     alt: 'anda13',
-    //     category: 'architecture',
-    //     subcategory: 'andalucia',
-    //     best: 0,
-    // }
 ];
 
 const leftBtn = document.getElementById('btnLeft');
@@ -218,19 +202,10 @@ const thumbnailContainer = document.querySelector('.thumbnailsContainer');
 const thumbnailsGrid = document.querySelector('.thumbnailsGrid');
 const crossBtn = document.querySelector('.crossBtn');
 
-
-thumbnail.addEventListener('click', () => {
-    thumbnailContainer.style.display = 'block';
+const functionToDisplayGrid = () => {
     imageHolder.style.display = 'none';
-    imageText.style.display = 'none';
-    thumbnail.style.textDecoration = 'underline';
-    as.style.textDecoration = 'none';
-    arrowBtns.forEach(arrow => {
-        arrow.style.visibility = 'hidden';
-    });
 
-
-    tempArrayHolder = andalucia.map(item => {
+    let tempArrayHolder = andalucia.map(item => {
         return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" />`
 
     });
@@ -261,7 +236,19 @@ thumbnail.addEventListener('click', () => {
                 });
             });
         });
+}
 
+
+thumbnail.addEventListener('click', () => {
+    thumbnailContainer.style.display = 'block';
+    imageHolder.style.display = 'none';
+    imageText.style.display = 'none';
+    thumbnail.style.textDecoration = 'underline';
+    as.style.textDecoration = 'none';
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
+    functionToDisplayGrid();
 });
 
 crossBtn.addEventListener('click', () => {
@@ -269,6 +256,8 @@ crossBtn.addEventListener('click', () => {
     imageHolder.style.display = 'block';
     // imageText.style.display = 'block';
 });
+
+window.addEventListener('load', functionToDisplayGrid());
 
 
 

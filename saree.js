@@ -224,28 +224,19 @@ const thumbnailContainer = document.querySelector('.thumbnailsContainer');
 const thumbnailsGrid = document.querySelector('.thumbnailsGrid');
 const crossBtn = document.querySelector('.crossBtn');
 
+const functionToDisplayGrid = () => {
 
-thumbnail.addEventListener('click', () => {
-    thumbnailContainer.style.display = 'block';
     imageHolder.style.display = 'none';
-    imageText.style.display = 'none';
-    thumbnail.style.textDecoration = 'underline';
-    as.style.textDecoration = 'none';
-    arrowBtns.forEach(arrow => {
-        arrow.style.visibility = 'hidden';
-    });
 
-
-    tempArrayHolder = saree.map(item => {
+    let tempArrayHolder = saree.map(item => {
         return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" />`
-
     });
     // console.log(tempArrayHolder);
     tempArrayHolder = tempArrayHolder.join("");
 
    thumbnailsGrid.innerHTML =  tempArrayHolder;
 
-    thumbImg = document.querySelectorAll('.thumbImg');
+   thumbImg = document.querySelectorAll('.thumbImg');
     // console.log(thumbImg);
 
         thumbImg.forEach(element => {
@@ -267,7 +258,20 @@ thumbnail.addEventListener('click', () => {
                 });
             });
         });
+}
 
+
+thumbnail.addEventListener('click', () => {
+    thumbnailContainer.style.display = 'block';
+    imageHolder.style.display = 'none';
+    imageText.style.display = 'none';
+    thumbnail.style.textDecoration = 'underline';
+    as.style.textDecoration = 'none';
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
+
+    functionToDisplayGrid();
 });
 
 crossBtn.addEventListener('click', () => {
@@ -277,6 +281,8 @@ crossBtn.addEventListener('click', () => {
     // imageText.style.display = 'block';
 });
 
+
+window.addEventListener('load', functionToDisplayGrid() );
 
 //removing underline and putting under photography
 const sareeUnderline = document.getElementById('saree');
