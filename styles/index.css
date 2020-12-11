@@ -208,7 +208,7 @@ a{
     /* border: 1px solid #000; */
 }
 .info h3{
-    font-family: 'didot';
+    font-family: 'Jost light';
     text-decoration: underline;
 }
 .btnHolder{
@@ -247,15 +247,14 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-gap: 4% 4%; rgb(240, 221, 204, .3);*/
-    -webkit-backdrop-filter: contrast(.9);
     /* object-fit: contain; */
     overflow: scroll;
 }
 .thumbImg{
-    width: 15vw;
-    height: 10vw;
+    width: 100%;
+    max-height: 100%;
     object-fit: contain;
-    margin: 1em;
+    /* margin: 1em; */
 }
 .pauseBtn, .playBtn{
     height: 5rem;
@@ -338,6 +337,8 @@ a{
 .indent{
     display: inline-block;
     margin-left: 2.5rem;
+    font-size: .9em;
+    font-family: 'Jost light';
 }
 .minus{
     width: 2rem;

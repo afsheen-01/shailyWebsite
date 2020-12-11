@@ -1,7 +1,7 @@
 const reflections = [
     {
         id: 1,
-        src: './pictures/Photography/Reflection/Reflection_bees.jpg',
+        src: './pictures/Photography/Reflection/Reflection_Bridge-Lamp.jpg',
         alt: 'reflection1',
         category: 'photography',
         subcategory: 'reflection',
@@ -9,7 +9,7 @@ const reflections = [
     },
     {
         id: 2,
-        src: './pictures/Photography/Reflection/Reflection_Bridge-Lamp.jpg',
+        src: './pictures/Photography/Reflection/Reflection_Plaza-Colon-diptic.jpg',
         alt: 'reflection2',
         category: 'photography',
         subcategory: 'reflection',
@@ -17,7 +17,7 @@ const reflections = [
     },
     {
         id: 3,
-        src: './pictures/Photography/Reflection/Reflection_framed-window.jpg',
+        src: './pictures/Photography/Reflection/Reflection_Woman-crossing.jpg',
         alt: 'reflection3',
         category: 'photography',
         subcategory: 'reflection',
@@ -25,7 +25,7 @@ const reflections = [
     },
     {
         id: 4,
-        src: './pictures/Photography/Reflection/Reflection_Plant-in-window.jpg',
+        src: './pictures/Photography/Reflection/Reflection_framed-window.jpg',
         alt: 'reflection4',
         category: 'photography',
         subcategory: 'reflection',
@@ -33,7 +33,7 @@ const reflections = [
     },
     {
         id: 5,
-        src: './pictures/Photography/Reflection/Reflection_Plaza-100blocks.jpg',
+        src: './pictures/Photography/Reflection/Reflection_portal.jpg',
         alt: 'reflection5',
         height: '',
         width:'',
@@ -43,7 +43,7 @@ const reflections = [
     },
     {
         id: 6,
-        src: './pictures/Photography/Reflection/Reflection_Plaza-Colon-diptic.jpg',
+        src: './pictures/Photography/Reflection/Reflection_Plant-in-window.jpg',
         alt: 'reflection6',
         category: 'photography',
         subcategory: 'reflection',
@@ -51,7 +51,7 @@ const reflections = [
     },
     {
         id: 7,
-        src: './pictures/Photography/Reflection/Reflection_portal.jpg',
+        src: './pictures/Photography/Reflection/Reflection_Plaza-100blocks.jpg',
         alt: 'reflection7',
         category: 'photography',
         subcategory: 'reflection',
@@ -59,7 +59,7 @@ const reflections = [
     },
     {
         id: 8,
-        src: './pictures/Photography/Reflection/Reflection_Water-angles-diptic.jpg',
+        src: './pictures/Photography/Reflection/Reflection_bees.jpg',
         alt: 'reflection8',
         category: 'photography',
         subcategory: 'reflection',
@@ -67,7 +67,7 @@ const reflections = [
     },
     {
         id: 9,
-        src: './pictures/Photography/Reflection/Reflection_Woman-crossing.jpg',
+        src: './pictures/Photography/Reflection/Reflection_Water-angles-diptic.jpg',
         alt: 'reflection9',
         category: 'photography',
         subcategory: 'reflection',

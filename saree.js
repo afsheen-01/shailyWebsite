@@ -1,7 +1,7 @@
 const saree = [
     {
         id: 1,
-        src: './pictures/Photography/Saree/2020_Saree_Red-1.jpg',
+        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-3.jpg',
         alt: 'red saree',
         category: 'photography',
         subcategory: 'saree',
@@ -10,7 +10,7 @@ const saree = [
     },
     {
         id: 2,
-        src: './pictures/Photography/Saree/2020_Saree_Red-2.jpg',
+        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-4.jpg',
         alt: 'red saree',
         category: 'photography',
         subcategory: 'saree',
@@ -18,7 +18,7 @@ const saree = [
     },
     {
         id: 3,
-        src: './pictures/Photography/Saree/2020_Saree_Red-3.jpg',
+        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-5.jpg',
         alt: 'red saree',
         category: 'photography',
         subcategory: 'saree',
@@ -26,7 +26,7 @@ const saree = [
     },
     {
         id: 4,
-        src: './pictures/Photography/Saree/2020_Saree_Red-4.jpg',
+        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-6.jpg',
         alt: 'red saree',
         category: 'photography',
         subcategory: 'saree',
@@ -34,7 +34,7 @@ const saree = [
     },
     {
         id: 5,
-        src: './pictures/Photography/Saree/2020_Saree_Green-5.jpg',
+        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-7.jpg',
         alt: 'green saree',
         category: 'photography',
         subcategory: 'saree',
@@ -42,7 +42,7 @@ const saree = [
     },
     {
         id: 6,
-        src: './pictures/Photography/Saree/2020_Saree_Green-6.jpg',
+        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-8.jpg',
         alt: 'green saree',
         category: 'photography',
         subcategory: 'saree',
@@ -50,7 +50,7 @@ const saree = [
     },
     {
         id: 7,
-        src: './pictures/Photography/Saree/2020_Saree_Green-7-.jpg',
+        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-9.jpg',
         alt: 'green saree',
         category: 'photography',
         subcategory: 'saree',
@@ -58,7 +58,7 @@ const saree = [
     },
     {
         id: 8,
-        src: './pictures/Photography/Saree/2020_Saree_Yellow-8.jpg',
+        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-10.jpg',
         alt: 'yellow saree',
         category: 'photography',
         subcategory: 'saree',
@@ -66,7 +66,7 @@ const saree = [
     },
     {
         id: 9,
-        src: './pictures/Photography/Saree/2020_Saree_Yellow-9.jpg',
+        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-11-50op.jpg',
         alt: 'yellow saree',
         category: 'photography',
         subcategory: 'saree',
@@ -158,7 +158,7 @@ window.addEventListener('keydown', (e) => {
 });
 
 //artist statement
-const text = 'This project is about the saree, <br/><div class = "indent">A sari / saree is a women’s garment from the Indian subcontinent that consists of an unstitched drape varying from 5.5 to 9 meters in length and 600 to 1,200 mm in breadth that is typically wrapped around the waist, with one end draped over the shoulder, baring a portion of the midriff.</div><br/>The series captures the simplicity of the saree and enhances and draws attention to fabric, flow and colour.<br/>This project is very close to home, quite literally. My family has been in the buisness of sarees since 54 years, supporting local craftsmen and traditional techniques. After a few cancelled shoots due to the current circumstances, I convinced my mother to be the model and it was such a lucky decision, she quickly became my muse for this series.<br/>Through this work I want to open a window to the rich Indian culture brimming with colour, tradition and grace.';
+const text = 'This project is about the saree, <br/><div class = "indent">A sari / saree is a women’s garment from the Indian subcontinent that consists of an unstitched drape varying from 5.5 to 9 meters in length and 600 to 1,200 mm in breadth that is typically wrapped around the waist, with one end draped over the shoulder, baring a portion of the midriff.</div><br/><br />The series captures the simplicity of the saree and enhances and draws attention to fabric, flow and colour.<br/>This project is very close to home, quite literally. My family has been in the buisness of sarees since 54 years, supporting local craftsmen and traditional techniques. After a few cancelled shoots due to the current circumstances, I convinced my mother to be the model and it was such a lucky decision, she quickly became my muse for this series.<br/>Through this work I want to open a window to the rich Indian culture brimming with colour, tradition and grace.';
     
 //DOM elements
 const imageHolder = document.querySelector('.imageHolder');

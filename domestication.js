@@ -1,7 +1,7 @@
 const domestication = [
     {
         id: 1,
-        src: './pictures/Photography/Domestication/_SRN6803.jpg',
+        src: './pictures/Photography/Domestication/_SRN8338-3.jpg',
         alt: 'domestication1',
         category: 'photography',
         subcategory: 'domestication',
@@ -9,7 +9,7 @@ const domestication = [
     },
     {
         id: 2,
-        src: './pictures/Photography/Domestication/_SRN7354.jpg',
+        src: './pictures/Photography/Domestication/_SRN8656.jpg',
         alt: 'domestication2',
         category: 'photography',
         subcategory: 'domestication',
@@ -17,7 +17,7 @@ const domestication = [
     },
     {
         id: 3,
-        src: './pictures/Photography/Domestication/_SRN8092.jpg',
+        src: './pictures/Photography/Domestication/13.jpg',
         alt: 'domestication3',
         category: 'photography',
         subcategory: 'domestication',
@@ -25,7 +25,7 @@ const domestication = [
     },
     {
         id: 4,
-        src: './pictures/Photography/Domestication/_SRN8338.jpg',
+        src: './pictures/Photography/Domestication/_SRN9146-2-5.jpg',
         alt: 'domestication4',
         category: 'photography',
         subcategory: 'domestication',
@@ -33,7 +33,7 @@ const domestication = [
     },
     {
         id: 5,
-        src: './pictures/Photography/Domestication/_SRN8352.jpg',
+        src: './pictures/Photography/Domestication/_SRN8920.jpg',
         alt: 'domestication5',
         category: 'photography',
         subcategory: 'domestication',
@@ -41,7 +41,7 @@ const domestication = [
     },
     {
         id: 6,
-        src: './pictures/Photography/Domestication/_SRN8377.jpg',
+        src: './pictures/Photography/Domestication/SRN01229.jpg',
         alt: 'domestication6',
         category: 'photography',
         subcategory: 'domestication',
@@ -49,7 +49,7 @@ const domestication = [
     },
     {
         id: 7,
-        src: './pictures/Photography/Domestication/_SRN8656.jpg',
+        src: './pictures/Photography/Domestication/_SRN8996.jpg',
         alt: 'domestication7',
         category: 'photography',
         subcategory: 'domestication',
@@ -57,7 +57,7 @@ const domestication = [
     },
     {
         id: 8,
-        src: './pictures/Photography/Domestication/_SRN8677-2.jpg',
+        src: './pictures/Photography/Domestication/_SRN7354.jpg',
         alt: 'domestication8',
         category: 'photography',
         subcategory: 'domestication',
@@ -65,7 +65,7 @@ const domestication = [
     },
     {
         id: 9,
-        src: './pictures/Photography/Domestication/_SRN8920.jpg',
+        src: './pictures/Photography/Domestication/_SRN8677-2.jpg',
         alt: 'domestication9',
         category: 'photography',
         subcategory: 'domestication',
@@ -73,7 +73,7 @@ const domestication = [
     },
     {
         id: 10,
-        src: './pictures/Photography/Domestication/_SRN8996.jpg',
+        src: './pictures/Photography/Domestication/_SRN8352.jpg',
         alt: 'domestication10',
         category: 'photography',
         subcategory: 'domestication',
@@ -81,7 +81,7 @@ const domestication = [
     },
     {
         id: 11,
-        src: './pictures/Photography/Domestication/_SRN9032.jpg',
+        src: './pictures/Photography/Domestication/_SRN8092.jpg',
         alt: 'domestication11',
         category: 'photography',
         subcategory: 'domestication',
@@ -97,12 +97,20 @@ const domestication = [
     },
     {
         id: 13,
-        src: './pictures/Photography/Domestication/13.jpg',
+        src: './pictures/Photography/Domestication/_SRN6803.jpg',
         alt: 'domestication13',
         category: 'photography',
         subcategory: 'domestication',
         best: 0,
-    }
+    },
+    {
+        id: 14,
+        src: './pictures/Photography/Domestication/IMG_9704.mp4',
+        alt: 'domestication14',
+        category: 'photography',
+        subcategory: 'domestication',
+        best: 0,
+    },
 ];
 
 const leftBtn = document.getElementById('btnLeft');
