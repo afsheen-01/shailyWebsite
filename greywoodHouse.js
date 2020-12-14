@@ -118,31 +118,7 @@ const greywoodHouse = [
         category: 'architecture',
         subcategory: 'greywoodHouse',
         best: 0,
-    },
-    // {
-    //     id: 16,
-    //     src: './pictures/Architecture/GreywoodHouse/cover_SRN1261.jpg',
-    //     alt: 'gh16',
-    //     category: 'architecture',
-    //     subcategory: 'greywoodHouse',
-    //     best: 0,
-    // },
-    // {
-    //     id: 17,
-    //     src: './pictures/Architecture/GreywoodHouse/WickerBasket.gif',
-    //     alt: 'gh17',
-    //     category: 'architecture',
-    //     subcategory: 'greywoodHouse',
-    //     best: 0,
-    // },
-    // {
-    //     id: 18,
-    //     src: './pictures/Architecture/GreywoodHouse/_SRN1234.jpg',
-    //     alt: 'gh18',
-    //     category: 'architecture',
-    //     subcategory: 'greywoodHouse',
-    //     best: 0,
-    // }
+    }
 ];
 
 const leftBtn = document.getElementById('btnLeft');

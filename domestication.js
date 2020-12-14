@@ -109,6 +109,7 @@ const domestication = [
         alt: 'domestication14',
         category: 'photography',
         subcategory: 'domestication',
+        type: 'mp4',
         best: 0,
     },
 ];
@@ -251,6 +252,9 @@ const functionToDisplayGrid = () => {
     imageHolder.style.display = 'none';
 
     let tempArrayHolder = domestication.map(item => {
+        // if(item.type === 'mp4') {
+        //     return `<video controls loop><source src = "${item.src}" class = "thumbImg" id = "${item.id}"></video>`
+        // }
         return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" />`
 
     });
