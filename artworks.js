@@ -155,20 +155,8 @@ functionalBtns();
 
 
 //removing underline and putting under photography
-const sareeUnderline = document.getElementById('saree');
-const domesticationUnderline = document.getElementById('domestication');
-const reflectionsUnderline = document.getElementById('reflections');
-const simUnderline = document.getElementById('sheepInMadrid');
-const ghUnderline = document.getElementById('greywoodHouse');
-const andaUnderline = document.getElementById('andalucia');
 const artworkUnderline = document.getElementById('artworks');
 
-sareeUnderline.style.textDecoration = 'none';
-domesticationUnderline.style.textDecoration = 'none';
-reflectionsUnderline.style.textDecoration = 'none';
-simUnderline.style.textDecoration = 'none';
-ghUnderline.style.textDecoration = 'none';
-andaUnderline.style.textDecoration = 'none';
 artworkUnderline.style.textDecoration = 'underline';
 
 

@@ -214,16 +214,10 @@ const minusBtn = document.querySelector('.minus');
 
 
 //removing underline and putting under photography
-const sareeUnderline = document.getElementById('saree');
-const domesticationUnderline = document.getElementById('domestication');
-const reflectionsUnderline = document.getElementById('reflections');
-const simUnderline = document.getElementById('sheepInMadrid');
 const ghUnderline = document.getElementById('greywoodHouse');
+const spacesUnderline = document.getElementById('spaces');
 
-sareeUnderline.style.textDecoration = 'none';
-domesticationUnderline.style.textDecoration = 'none';
-reflectionsUnderline.style.textDecoration = 'none';
-simUnderline.style.textDecoration = 'none';
+spacesUnderline.style.textDecoration = 'underline';
 ghUnderline.style.textDecoration = 'underline';
 
 const imageHolder = document.querySelector('.imageHolder');

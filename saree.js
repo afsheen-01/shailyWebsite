@@ -286,6 +286,9 @@ window.addEventListener('load', functionToDisplayGrid() );
 
 //removing underline and putting under photography
 const sareeUnderline = document.getElementById('saree');
+const peopleUnderline = document.getElementById('people');
+
+peopleUnderline.style.textDecoration = 'underline';
 sareeUnderline.style.textDecoration = 'underline';
 // sareeUnderline.style.textDecorationColor = '#e68a00';
 

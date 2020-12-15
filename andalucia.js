@@ -141,18 +141,10 @@ window.addEventListener('keydown', (e) => {
 functionalBtns();
 
 //removing underline and putting under photography
-const sareeUnderline = document.getElementById('saree');
-const domesticationUnderline = document.getElementById('domestication');
-const reflectionsUnderline = document.getElementById('reflections');
-const simUnderline = document.getElementById('sheepInMadrid');
-const ghUnderline = document.getElementById('greywoodHouse');
 const andaUnderline = document.getElementById('andalucia');
+const spacesUnderline = document.getElementById('spaces');
 
-sareeUnderline.style.textDecoration = 'none';
-domesticationUnderline.style.textDecoration = 'none';
-reflectionsUnderline.style.textDecoration = 'none';
-simUnderline.style.textDecoration = 'none';
-ghUnderline.style.textDecoration = 'none';
+spacesUnderline.style.textDecoration = 'underline';
 andaUnderline.style.textDecoration = 'underline';
 
 //artist statement

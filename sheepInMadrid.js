@@ -319,14 +319,10 @@ navBtn.addEventListener('click',() => {
 
 /*DO NOT TOUCH THIS PART */
 //removing underline and putting under photography
-const sareeUnderline = document.getElementById('saree');
-const domesticationUnderline = document.getElementById('domestication');
-const reflectionsUnderline = document.getElementById('reflections');
 const simUnderline = document.getElementById('sheepInMadrid');
+const peopleUnderline = document.getElementById('people');
 
-sareeUnderline.style.textDecoration = 'none';
-domesticationUnderline.style.textDecoration = 'none';
-reflectionsUnderline.style.textDecoration = 'none';
+peopleUnderline.style.textDecoration = 'underline';
 simUnderline.style.textDecoration = 'underline';
 
 //spaces and peopel (apparently).

@@ -217,8 +217,11 @@ crossBtn.addEventListener('click', () => {
 window.addEventListener('load', functionToDisplayGrid() );
 
 //removing underline and putting under photography
-const sareeUnderline = document.getElementById('saree');
-sareeUnderline.style.textDecoration = 'underline';
+const miscUnderline = document.getElementById('miscellaneous');
+const spacesUnderline = document.getElementById('spaces');
+
+spacesUnderline.style.textDecoration = 'underline';
+miscUnderline.style.textDecoration = 'underline';
 // sareeUnderline.style.textDecorationColor = '#e68a00';
 
 //three bars

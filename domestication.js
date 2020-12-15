@@ -332,10 +332,10 @@ navBtn.addEventListener('click',() => {
 });
 
 //removing underline and putting under photography
-const sareeUnderline = document.getElementById('saree');
 const domUnderline = document.getElementById('domestication');
+const peopleUnderline = document.getElementById('people');
 
-sareeUnderline.style.textDecoration = 'none';
+peopleUnderline.style.textDecoration = 'underline';
 domUnderline.style.textDecoration = 'underline';
 // sareeUnderline.style.textDecorationColor = '#e68a00';
 
