@@ -82,9 +82,10 @@ const functionalBtns = () => {
     // fullScreenImg.href = data[i].src;
     target.src = data[i].src;
     target.alt = data[i].alt;
+    target.id = data[i].id;
 
     rightBtn.addEventListener('click', () => {
-        if(i > length){
+        if(i >= length-1){
             i = 0;
         }
         else{
@@ -93,11 +94,12 @@ const functionalBtns = () => {
         // fullScreenImg.href = data[i].src;
         target.src = data[i].src;
         target.alt = data[i].alt;
+        target.id = data[i].id;
     });
 
     leftBtn.addEventListener('click', () => {
-        if(i < 0){
-            i = 0;
+        if(i <= 0){
+            i = length-1;
         }
         else{
             i--;
@@ -105,7 +107,7 @@ const functionalBtns = () => {
         // fullScreenImg.href = data[i].src;
         target.src = data[i].src;
         target.alt = data[i].alt;
-
+        target.id = data[i].id;
     });
 }
 
@@ -122,6 +124,7 @@ setInt = setInterval(() => {
     // fullScreenImg.href = data[i].src;
    target.src = data[i].src;
    target.alt = data[i].alt;
+   target.id = data[i].id;
 },4000);
 
     playBtn.addEventListener('click', () => {
@@ -130,6 +133,7 @@ setInt = setInterval(() => {
    
            target.src = data[i].src;
            target.alt = data[i].alt;
+           target.id = data[i].id;
        },2500);
 
     playBtn.style.display = 'none';
@@ -170,7 +174,7 @@ window.addEventListener('keydown', (e) => {
     if(keycode === 37){
         // console.log('left arrow was pressed');
         if(i <= 0){
-            i = 0;
+            i = length-1;
         }
         else{
             i--;
@@ -182,7 +186,7 @@ window.addEventListener('keydown', (e) => {
     } 
     if(keycode === 39){
         // console.log('right arrow was pressed');
-        if(i > length - 2){
+        if(i >= length - 1){
             i = 0;
         }
         else{

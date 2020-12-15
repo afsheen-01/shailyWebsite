@@ -109,9 +109,10 @@ length = sheepInMadrid.length;
 const functionalBtns = () => {
     target.src = sheepInMadrid[i].src;
     target.alt = sheepInMadrid[i].alt;
+    target.id = sheepInMadrid[i].id;
 
     rightBtn.addEventListener('click', () => {
-        if(i > length - 2){
+        if(i >= length - 1){
             i = 0;
         }
         else{
@@ -119,17 +120,19 @@ const functionalBtns = () => {
         }
         target.src = sheepInMadrid[i].src;
         target.alt = sheepInMadrid[i].alt;
+        target.id = sheepInMadrid[i].id;
     });
 
     leftBtn.addEventListener('click', () => {
-        if(i < 0){
-            i = 0;
+        if(i <= 0){
+            i = length-1;
         }
         else{
             i--;
         }
         target.src = sheepInMadrid[i].src;
         target.alt = sheepInMadrid[i].alt;
+        target.id = sheepInMadrid[i].id;
 
     });
 }
@@ -153,7 +156,7 @@ window.addEventListener('keydown', (e) => {
     if(keycode === 37){
         // console.log('left arrow was pressed');
         if(i <= 0){
-            i = 0;
+            i = length-1;
         }
         else{
             i--;
@@ -165,7 +168,7 @@ window.addEventListener('keydown', (e) => {
     } 
     if(keycode === 39){
         // console.log('right arrow was pressed');
-        if(i > length - 2){
+        if(i >= length-1){
             i = 0;
         }
         else{
