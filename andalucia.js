@@ -176,16 +176,13 @@ artistStatement.addEventListener('click', () => {
     arrowBtns.forEach(arrow => {
         arrow.style.visibility = 'hidden';
     });
-    // arrowBtns.style.visibility = 'hidden';
 });
 
 minusBtn.addEventListener('click', () => {
     if(checkBeforeAs){
         imageHolder.style.display = 'block';
-        // console.log(checkBeforeAs);
     } else{
         thumbnailContainer.style.display = 'block';
-        // console.log(checkBeforeAs);
     }
     artistStatement.style.textDecoration = 'none'; 
     imageText.style.display = 'none';

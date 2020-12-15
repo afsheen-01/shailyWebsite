@@ -190,35 +190,37 @@ const rightSide = document.querySelector('.right');
 const imageText = document.querySelector('.imageText');
 const textElement = document.querySelector('.fjost');
 const minusBtn = document.querySelector('.minus');
+let checkBeforeAs;
 
 
 artistStatement.addEventListener('click', () => {
+    if(imageHolder.style.display === 'block'){
+        checkBeforeAs = true;
+    } else{
+        checkBeforeAs = false;
+    }
     artistStatement.style.textDecoration = 'underline';
     imageHolder.style.display = 'none';
     thumbnailContainer.style.display = 'none';
     thumbnail.style.textDecoration = 'none';
     textElement.innerHTML = text;
     imageText.style.display = 'block';
-    /* please remove the 2 of us from all files :):(*/
-    // rightSide.style.margin = '17vw 0';
-    // imageHolder.style.width = '45vw';
     minusBtn.style.display = 'block';
     arrowBtns.forEach(arrow => {
         arrow.style.visibility = 'hidden';
     });
-    // arrowBtns.style.visibility = 'hidden';
 });
 
 minusBtn.addEventListener('click', () => {
-    artistStatement.style.textDecoration = 'none';
-    imageHolder.style.display = 'block';
+    if(checkBeforeAs){
+        imageHolder.style.display = 'block';
+    } else{
+        thumbnailContainer.style.display = 'block';
+    }
+    artistStatement.style.textDecoration = 'none'; 
     imageText.style.display = 'none';
-    /* please remove the 2 of us from all files :):(*/
-    // rightSide.style.margin = '0';
-    // imageHolder.style.width = '60vw';
     minusBtn.style.display = 'none';
 });
-
 //fucking asshole you hover element. you've been a big fucking pain in my ass since the beginning.
 const arrowBtns = document.querySelectorAll('.newArrow');
 imageHolder.addEventListener('mouseover', () => {

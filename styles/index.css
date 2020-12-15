@@ -177,7 +177,7 @@ a{
     flex-direction: row;
     justify-content: space-around;
     align-content: space-around;
-    /* border: none; */
+    border: none;
 }
 #imgContainer{
     width: 40%;
@@ -186,7 +186,7 @@ a{
     justify-content: flex-end;
     align-items: space-between;
     padding: 1.5em 0;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
 }
 .myImage{
     width: 50%;
@@ -195,7 +195,7 @@ a{
     object-fit: contain;
     /* position: relative;
     bottom: 2vw; */
-    border: 3px solid #000;
+    /* border: 3px solid #000; */
 }
 .infoContainer{
     margin: 7em 0;
@@ -204,12 +204,12 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
 }
 .info{ 
     width: 80%;
     padding: 5rem 0;
-    border: 3px solid #000;
+    /* border: 3px solid #000; */
 }
 .info h3{
     font-family: 'Jost light';
