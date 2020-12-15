@@ -209,7 +209,7 @@ const textElement = document.querySelector('.fjost');
 const minusBtn = document.querySelector('.minus');
 
 
-as.addEventListener('click', () => {
+artistStatement.addEventListener('click', () => {
     artistStatement.style.textDecoration = 'underline';
     imageHolder.style.display = 'none';
     thumbnailContainer.style.display = 'none';
@@ -304,8 +304,11 @@ thumbnail.addEventListener('click', () => {
 });
 
 crossBtn.addEventListener('click', () => {
-    thumbnailContainer.style.display = 'none';
-    imageHolder.style.display = 'block';
+    thumbnailContainer.style.display = 'block';
+    imageHolder.style.display = 'none';
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
     // imageText.style.display = 'block';
 });
 

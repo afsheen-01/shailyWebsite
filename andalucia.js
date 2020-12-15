@@ -157,9 +157,15 @@ const rightSide = document.querySelector('.right');
 const imageText = document.querySelector('.imageText');
 const textElement = document.querySelector('.fjost');
 const minusBtn = document.querySelector('.minus');
+let checkBeforeAs;
 
 
-as.addEventListener('click', () => {
+artistStatement.addEventListener('click', () => {
+    if(imageHolder.style.display === 'block'){
+        checkBeforeAs = true;
+    } else{
+        checkBeforeAs = false;
+    }
     artistStatement.style.textDecoration = 'underline';
     imageHolder.style.display = 'none';
     thumbnailContainer.style.display = 'none';
@@ -174,8 +180,14 @@ as.addEventListener('click', () => {
 });
 
 minusBtn.addEventListener('click', () => {
-    artistStatement.style.textDecoration = 'none';
-    imageHolder.style.display = 'block';
+    if(checkBeforeAs){
+        imageHolder.style.display = 'block';
+        // console.log(checkBeforeAs);
+    } else{
+        thumbnailContainer.style.display = 'block';
+        // console.log(checkBeforeAs);
+    }
+    artistStatement.style.textDecoration = 'none'; 
     imageText.style.display = 'none';
     minusBtn.style.display = 'none';
 });
@@ -246,8 +258,11 @@ thumbnail.addEventListener('click', () => {
 });
 
 crossBtn.addEventListener('click', () => {
-    thumbnailContainer.style.display = 'none';
-    imageHolder.style.display = 'block';
+    thumbnailContainer.style.display = 'block';
+    imageHolder.style.display = 'none';
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
     // imageText.style.display = 'block';
 });
 

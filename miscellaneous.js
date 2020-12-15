@@ -207,9 +207,12 @@ thumbnail.addEventListener('click', () => {
 });
 
 crossBtn.addEventListener('click', () => {
-    thumbnailContainer.style.display = 'none';
-    thumbnail.style.textDecoration = 'none';
-    imageHolder.style.display = 'block';
+    thumbnailContainer.style.display = 'block';
+    // thumbnail.style.textDecoration = 'none';
+    imageHolder.style.display = 'none';
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
     // imageText.style.display = 'block';
 });
 
