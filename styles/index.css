@@ -173,43 +173,31 @@ a{
 
 #inAbout{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: space-around;
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    justify-content: baseline;
     border: none;
 }
 #imgContainer{
-    width: 40%;
     height: inherit;
-    display:flex;
-    justify-content: flex-end;
-    align-items: space-between;
+    display: grid;
     padding: 1.5em 0;
-    /* border: 2px solid #000; */
 }
 .myImage{
+    justify-self: center;
     width: 50%;
     height: auto;
     border-radius: 10px;
     object-fit: contain;
-    /* position: relative;
-    bottom: 2vw; */
-    /* border: 3px solid #000; */
 }
 .infoContainer{
-    margin: 7em 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    /* border: 2px solid #000; */
+    width: inherit;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 .info{ 
     width: 80%;
     padding: 5rem 0;
-    /* border: 3px solid #000; */
 }
 .info h3{
     font-family: 'Jost light';
@@ -314,16 +302,13 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid #000; */
 }
 .crossBtn{
     width: 2rem;
     height: 2rem;
     display: flex;
     justify-content: center;
-    /* align-content: flex-end; */
     float: right;
-    /* border: 1px solid #000; */
 }
 .imgClose{
     width: 2em;
