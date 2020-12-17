@@ -176,7 +176,7 @@ imageHolder.addEventListener('mouseover', () => {
 });
 
 //thumbnail attempt 100110010010001110010
-const thumbnail = document.getElementById('thumbnail');
+// const thumbnail = document.getElementById('thumbnail');
 const thumbnailContainer = document.querySelector('.thumbnailsContainer');
 const thumbnailsGrid = document.querySelector('.thumbnailsGrid');
 const crossBtn = document.querySelector('.crossBtn');
@@ -211,7 +211,7 @@ const functionToDisplayGrid = () => {
                         // target.id = artwork[i].id;
                         imageHolder.style.display = 'block';
                         thumbnailContainer.style.display = 'none';
-                        thumbnail.style.textDecoration = 'none';
+                        // thumbnail.style.textDecoration = 'none';
                         // console.log(target);
                         imageHolder.style.display = 'flex';
                         imageHolder.style.flexDirection = 'column';
@@ -225,7 +225,7 @@ const functionToDisplayGrid = () => {
 }
 
 
-thumbnail.addEventListener('click', () => {
+/*thumbnail.addEventListener('click', () => {
     thumbnailContainer.style.display = 'block';
     imageHolder.style.display = 'none';
     // imageText.style.display = 'none';
@@ -236,7 +236,7 @@ thumbnail.addEventListener('click', () => {
     });
 
     functionToDisplayGrid();
-});
+});*/
 
 crossBtn.addEventListener('click', () => {
     thumbnailContainer.style.display = 'block';

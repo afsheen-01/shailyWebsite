@@ -27,43 +27,43 @@ const data = [
     {
         id: 5,
         src: './pictures/bestWork/2020_portfolio_206.jpg',
-        alt: 'green saree',
+        alt: 'reflections',
         best: 0,
     },
     {
         id: 6,
         src: './pictures/bestWork/2020_portfolio_207.jpg',
-        alt: 'green saree',
+        alt: 'domestication',
         best: 0,
     },
-    {
-        id: 7,
-        src: './pictures/bestWork/2020_portfolio_208.jpg',
-        alt: 'yellow saree',
-        best: 0,
-    },
+    // {
+    //     id: 7,
+    //     src: './pictures/bestWork/2020_portfolio_208.jpg',
+    //     alt: 'yellow saree',
+    //     best: 0,
+    // },
     {
         id: 8,
         src: './pictures/bestWork/2020_portfolio_209.jpg',
-        alt: 'yellow saree',
+        alt: 'sheep in madrid',
         best: 0,
     },
     {
         id: 9,
         src: './pictures/bestWork/2020_portfolio_2010.jpg',
-        alt: 'domestication1',
+        alt: 'green saree',
         best: 0,
     },
     {
         id: 10,
         src: './pictures/bestWork/2020_portfolio_2011.jpg',
-        alt: 'domestication2',
+        alt: 'photography',
         best: 0,
     },
     {
         id: 11,
         src: './pictures/bestWork/2020_portfolio_2012.jpg',
-        alt: 'domestication3',
+        alt: 'artworks',
         best: 0,
     }
 ];

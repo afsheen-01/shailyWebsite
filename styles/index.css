@@ -185,10 +185,12 @@ a{
 }
 .myImage{
     justify-self: center;
+    align-self: flex-start;
     width: 50%;
     height: auto;
-    border-radius: 10px;
     object-fit: contain;
+    /* position: relative;
+    bottom: 10px; */
 }
 .infoContainer{
     width: inherit;
@@ -197,7 +199,8 @@ a{
 }
 .info{ 
     width: 80%;
-    padding: 5rem 0;
+    padding: 1.5rem 0;
+    align-self:flex-start;
 }
 .info h3{
     font-family: 'Jost light';
@@ -232,7 +235,6 @@ a{
     flex-direction: column;
 }
 .thumbnailsGrid{
-    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px 20px;
@@ -269,16 +271,18 @@ a{
 }
 .artAndThumb{
     width: inherit;
-    height: 20%;
+    height:150px;
     position: relative;
     left: 4vw;
     display:flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+    /* border: 1px solid #000; */
 }
 .inArtAndThumb{
     width: 20%;
+    height:inherit;
     margin: .3em 0;
     padding: .3em;
     font-size: .9em;
@@ -286,6 +290,7 @@ a{
     text-transform: capitalize;
     font-family: 'Jost light';
     text-align: right;
+    /* border: 2px solid #000; */
 }
 .inArtAndThumb:hover{
     opacity: .5;

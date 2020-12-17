@@ -169,7 +169,7 @@ artistStatement.addEventListener('click', () => {
     artistStatement.style.textDecoration = 'underline';
     imageHolder.style.display = 'none';
     thumbnailContainer.style.display = 'none';
-    thumbnail.style.textDecoration = 'none';
+    // thumbnail.style.textDecoration = 'none';
     textElement.innerHTML = text;
     imageText.style.display = 'block';
     minusBtn.style.display = 'block';
@@ -200,7 +200,7 @@ imageHolder.addEventListener('mouseover', () => {
 });
 
 //thumbnail attempt 100110010010001110010
-const thumbnail = document.getElementById('thumbnail');
+// const thumbnail = document.getElementById('thumbnail');
 const thumbnailContainer = document.querySelector('.thumbnailsContainer');
 const thumbnailsGrid = document.querySelector('.thumbnailsGrid');
 const crossBtn = document.querySelector('.crossBtn');
@@ -233,7 +233,7 @@ const functionToDisplayGrid = () => {
                         target.id = andalucia[i].id;
                         imageHolder.style.display = 'block';
                         thumbnailContainer.style.display = 'none';
-                        thumbnail.style.textDecoration = 'none';
+                        // thumbnail.style.textDecoration = 'none';
                         // console.log(target);
                     }
                 });
@@ -242,7 +242,7 @@ const functionToDisplayGrid = () => {
 }
 
 
-thumbnail.addEventListener('click', () => {
+/*thumbnail.addEventListener('click', () => {
     thumbnailContainer.style.display = 'block';
     imageHolder.style.display = 'none';
     imageText.style.display = 'none';
@@ -252,7 +252,7 @@ thumbnail.addEventListener('click', () => {
         arrow.style.visibility = 'hidden';
     });
     functionToDisplayGrid();
-});
+});*/
 
 crossBtn.addEventListener('click', () => {
     thumbnailContainer.style.display = 'block';
@@ -297,6 +297,7 @@ spaces.addEventListener('click', () => {
     inPeople.style.display = 'none';
     // console.log('do something!');
 });
+inSpaces.style.display = 'block';
 
 people.addEventListener('click', () => {
     inSpaces.style.display = 'none';
