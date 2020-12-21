@@ -360,9 +360,18 @@ a{
 .link:hover{
     color:#4e4c4c;
 }
+@media only screen and (max-width : 1200px) {
+    .left{
+        width: 12em;
+    }
+    .logo{
+        text-align: center;
+    }
+}
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px){
+and (max-device-width : 1024px),
+ (-webkit-min-device-pixel-ratio: 1) {
     body{
         height: 100%;
         font-size: 1.2rem;
@@ -382,7 +391,6 @@ and (max-device-width : 1024px){
         padding: 0;
         margin: 0;
     }
-
     /* left */
     .left{
         width: inherit;
@@ -422,7 +430,6 @@ and (max-device-width : 1024px){
         width: 20rem;
         text-align: center;
     }  
-    
     /* right */
     .right{
         left: 2%;
@@ -491,5 +498,15 @@ and (max-device-width : 1024px){
     }
     
 }
-
+@media only screen 
+and (min-device-width : 280px) 
+and (max-device-width : 540px){
+    .header{
+        border: 1px solid #000;
+    }
+    .logoHolder{
+        margin: 0;
+        border: 2px solid #000;
+    }
+}
 
