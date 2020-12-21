@@ -177,6 +177,7 @@ a{
     width: 100%;
     display: grid;
     grid-template-columns: .7fr 1fr;
+    grid-template-rows: 50%;
     justify-content: baseline;
     border: none;
 }
@@ -428,39 +429,31 @@ and (max-device-width : 1024px){
         width: auto;
         height: auto;
         margin: 9rem 0;
-        /* border: 1px solid #000; */
     }
     .imageContainer{
         width: auto;
         max-height: 80%;
         margin: auto 0;
         padding: auto 0;
-        /* border: 2px solid #000; */
     }
     .imageAndContent{
         height: inherit;
-        /* border: 3px solid #000; */
-        /* overflow:scroll; */
     }
     .thumbnailsContainer{
         max-height: 70%;
-        /* overflow: scroll; */
     }
     .image{
         width: 75vw;
         height: 52vw;
         object-fit:contain;
         cursor: url('../fontAwesome/svgs/solid/plus.svg');
-        /* border: 1px solid #000; */
    }
    .imageText{
        margin: 3em 10em;
        display: block;
-       /* border: 3px solid #000; */
    }
    .arrowBtn{
        visibility: visible;
-       /* border: 3px solid #000; */
    }
    .newArrow{
         height: 4rem;
@@ -472,8 +465,22 @@ and (max-device-width : 1024px){
         position: relative;
         bottom: -2em;
     }
-    .myImage{
-        width: 70%;
+    /* about */
+    #aboutContainer{
+        /* border: 1px solid #000; */
+        margin: 5rem 0;
+        padding: 0;
+    }
+    #inAbout{
+        grid-template-rows: 30%;
+        height: auto;
+        /* border: 1px solid #000; */
+        justify-content: baseline;
+        align-items: baseline;
+    }
+    .infoContainer{
+        /* border: 2px solid #000; */
+        grid-template-rows: 70%;
     }
     .inArtAndThumb{
         width: 30%;
