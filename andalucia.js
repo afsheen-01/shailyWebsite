@@ -181,6 +181,9 @@ artistStatement.addEventListener('click', () => {
 minusBtn.addEventListener('click', () => {
     if(checkBeforeAs){
         imageHolder.style.display = 'block';
+        arrowBtns.forEach(arrow => {
+            arrow.style.visibility = 'visible';
+        });
     } else{
         thumbnailContainer.style.display = 'block';
     }
@@ -216,6 +219,9 @@ const functionToDisplayGrid = () => {
     tempArrayHolder = tempArrayHolder.join("");
 
    thumbnailsGrid.innerHTML =  tempArrayHolder;
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
 
     thumbImg = document.querySelectorAll('.thumbImg');
     // console.log(thumbImg);
@@ -233,6 +239,9 @@ const functionToDisplayGrid = () => {
                         target.id = andalucia[i].id;
                         imageHolder.style.display = 'block';
                         thumbnailContainer.style.display = 'none';
+                        arrowBtns.forEach(arrow => {
+                            arrow.style.visibility = 'visible';
+                        });
                         // thumbnail.style.textDecoration = 'none';
                         // console.log(target);
                     }

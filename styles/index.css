@@ -220,10 +220,6 @@ a{
     align-items: center;
     visibility: hidden;
 }
-.forIndex{
-    position: relative;
-    bottom: 4em;
-}
 .thumbnailsContainer{
     display: block;
     height: auto;
@@ -297,6 +293,7 @@ a{
 .imageText{
     text-align: center;
     width: 45vw;
+    display: block;
 }
 .indent{
     display: inline-block;
@@ -325,25 +322,14 @@ a{
     height: auto;
     color: #8f8f8f;
     display: flex;
-    /* justify-content: center; */
     align-items:center;
     flex-direction: column;
     text-transform: capitalize;
     font-family: 'Jost light';
     font-size: 0.9em;
-    /* border: 1px solid #000; */
-}
-.artAndThumb{
-    width: inherit;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    /* border: 2px solid #000; */
 }
 .inArtAndThumb{
     width: 20%;
-    /* height: 30px; */
-    /* border: 2px solid #000; */
     font-weight: 400;
     font-size: 1em;
     text-transform: capitalize;
@@ -365,7 +351,6 @@ a{
     align-items: flex-end;
     font-family: 'Jost light';
     font-size: 1.1em;
-    /* border: 2px solid #000; */
 }
 .link{
     color: rgb(134, 126, 126);
@@ -374,21 +359,36 @@ a{
 .link:hover{
     color:#4e4c4c;
 }
-@media only screen and (max-width: 960px){
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px){
+    body{
+        height: 100%;
+        font-size: 1.2rem;
+        overflow: scroll;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
     .container{
         display: flex;
         flex-direction: column;
         width: inherit;
-        height: 100%;
+        height: auto;
     }
     .left, .right{
         padding: 0;
         margin: 0;
-    }.left{
+    }
+
+    /* left */
+    .left{
         width: inherit;
         height: auto;
         background-color: #fff;
         z-index: 100;
+        position: fixed;
     }
     .header{
         width: 95%;
@@ -397,6 +397,7 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        /* border: 1px solid #000; */
     }
     .sideNav{
         display: none;
@@ -404,16 +405,14 @@ a{
     }
     .navBtn{
         display: block;
-    }
-    .navBtn:hover{
-        opacity: 0.5;
+        /* border: 1px solid #000; */
     }
     .navBtnContainer{
         display: flex;
         align-items: center;
     }
     .logoHolder{
-        margin: 0 13rem;
+        margin-left: 15rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -421,48 +420,69 @@ a{
     .logo{
         width: 20rem;
         text-align: center;
-    }
+    }  
+    
+    /* right */
     .right{
-        left: 5%;
+        left: 2%;
+        width: auto;
+        height: auto;
         margin: 9rem 0;
-        object-fit: contain;
+        /* border: 1px solid #000; */
     }
     .imageContainer{
-        width: 85%;
+        width: auto;
+        max-height: 80%;
+        margin: auto 0;
+        padding: auto 0;
+        /* border: 2px solid #000; */
+    }
+    .imageAndContent{
+        height: inherit;
+        /* border: 3px solid #000; */
+        /* overflow:scroll; */
+    }
+    .thumbnailsContainer{
+        max-height: 70%;
+        /* overflow: scroll; */
     }
     .image{
         width: 75vw;
         height: 52vw;
         object-fit:contain;
         cursor: url('../fontAwesome/svgs/solid/plus.svg');
+        /* border: 1px solid #000; */
    }
    .imageText{
        margin: 3em 10em;
+       display: block;
+       /* border: 3px solid #000; */
    }
-    .thumbnailsContainer{
-       margin: 3rem;
-       height: auto;
-   }
-   .thumbnailsGrid{
-        width: 70vw;
-        height: 47vw;
+   .arrowBtn{
+       visibility: visible;
+       /* border: 3px solid #000; */
    }
    .newArrow{
-    height: 4rem;
-    width: 4rem;
-    position: relative;
-    bottom: 4em;
+        height: 4rem;
+        width: 4rem;
+        position: relative;
+        bottom: 4em;
     }
-    .artAndThumb{
-        left: 15vw;
+    .forIndex{
+        position: relative;
+        bottom: -2em;
     }
     .myImage{
         width: 70%;
-        top: 14vw;
     }
-    #footerStyle{
-        left: 9em;
+    .inArtAndThumb{
+        width: 30%;
     }
+    .footer{
+        min-height: 10%;
+        /* border: 2px solid #000; */
+    }
+    
 }
 
 

@@ -159,6 +159,7 @@ const crossBtn = document.querySelector('.crossBtn');
 const functionToDisplayGrid = () => {
 
     imageHolder.style.display = 'none';
+    imageText.style.display = 'none';
 
     let tempArrayHolder = saree.map(item => {
         return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" />`
@@ -167,6 +168,9 @@ const functionToDisplayGrid = () => {
     tempArrayHolder = tempArrayHolder.join("");
 
    thumbnailsGrid.innerHTML =  tempArrayHolder;
+    arrowBtns.forEach(arrow => {
+        arrow.style.visibility = 'hidden';
+    });
 
    thumbImg = document.querySelectorAll('.thumbImg');
     // console.log(thumbImg);
@@ -184,6 +188,9 @@ const functionToDisplayGrid = () => {
                         target.id = saree[i].id;
                         imageHolder.style.display = 'block';
                         thumbnailContainer.style.display = 'none';
+                        arrowBtns.forEach(arrow => {
+                            arrow.style.visibility = 'visible';
+                        });
                         // thumbnail.style.textDecoration = 'none';
                         // console.log(target);
                     }
