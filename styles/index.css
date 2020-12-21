@@ -412,7 +412,7 @@ and (max-device-width : 1024px){
         align-items: center;
     }
     .logoHolder{
-        margin-left: 15rem;
+        margin: 0 15rem;
         display: flex;
         justify-content: center;
         align-items: center;
