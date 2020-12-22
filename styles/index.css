@@ -506,6 +506,10 @@ and (max-device-width : 1024px) {
         font-size: .8em;
         /* height: 840px; */
     }
+    .container{
+        width: 99%;
+        border: 1px solid #000;
+    }
     /* left */
     .left{
         width: inherit;
@@ -555,7 +559,14 @@ and (max-device-width : 1024px) {
     }
     /* right */
     .right{
+        width: inherit;
+        height: inherit;
         margin-top: 4rem;
+        left: 0%;
+        border: 2px solid #000;
+    }
+    .imageContainer{
+        border: 3px solid #000;
     }
     .newArrow{
         height: 3em;
@@ -570,8 +581,13 @@ and (max-device-width : 1024px) {
         grid-template-columns: 1fr 1fr;
     }
     .footer{
+        border: 2px solid #000;
         font-size: .8em;
         width: 100%;
+    }
+    .pauseBtn, .playBtn{
+        width: 3em;
+        height: 3em;
     }
     .inArtAndThumb{
         width: 40%;
@@ -582,3 +598,7 @@ and (max-device-width : 1024px) {
         font-size: .8;
     }
 }
+
+/* @media only screen and  (min-device-width: 280px) and (max-device-width: 360px) {
+
+} */
