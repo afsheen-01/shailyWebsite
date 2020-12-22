@@ -327,3 +327,8 @@ people.addEventListener('click', () => {
     inPeople.style.display = 'block';
     // console.log('do something!');
 });
+
+//additions for phone
+window.addEventListener('touchstart', () => {
+    window.alert('the screen was clicked');
+});
