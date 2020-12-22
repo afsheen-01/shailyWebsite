@@ -251,17 +251,6 @@ const functionToDisplayGrid = () => {
 }
 
 
-/*thumbnail.addEventListener('click', () => {
-    thumbnailContainer.style.display = 'block';
-    imageHolder.style.display = 'none';
-    imageText.style.display = 'none';
-    thumbnail.style.textDecoration = 'underline';
-    as.style.textDecoration = 'none';
-    arrowBtns.forEach(arrow => {
-        arrow.style.visibility = 'hidden';
-    });
-    functionToDisplayGrid();
-});*/
 
 crossBtn.addEventListener('click', () => {
     thumbnailContainer.style.display = 'block';
