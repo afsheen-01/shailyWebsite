@@ -514,7 +514,7 @@ and (max-device-width : 1024px) {
     }
     .sideNav{
         display: none;
-        margin: 0 2em;
+        /* margin: 0 2em; */
     }
     .navBtn{
         display: block;
