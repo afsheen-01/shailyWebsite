@@ -43,6 +43,7 @@
                         </li>
                         <ul class="subcategories" id = "inSpaces">
                             
+                            
                             <li class="sub">
                                 <a href = "./reflections.html" class = "inSub inLi" id = "reflections" target = "_self">reflections</a>
                             </li>
@@ -126,52 +127,41 @@
                 <div class="imageContainer">
                     <div class="arrowBtn forIndex" id = "btnLeftContainer">
                         <button class = "btn" id = "btnLeft">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class = "newArrow">
-                                <defs>
-                                    <style>.a{fill:#fff;stroke:rgb(88, 85, 85);stroke-miterlimit:10;stroke-width:2px;}
-                                    </style>
-                                </defs>
-                                <polyline class="a" points="121 65.02 79.34 107.67 121 149.34"/>
-                            </svg>
+                            <img src = "./styles/svg/prev.svg" class = "newArrow" />
                         </button>
                     </div>
                     <div class="imageHolder">
                         
                             <br />
                             <img src = "" alt = "" class = "image" />
+
+                            
                     </div>
                     <div class="arrowBtn  forIndex" id = "btnRightContainer">
                         <button class = "btn" id="btnRight">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class = "newArrow">
-                                <defs>
-                                    <style>
-                                    .a{fill:#fff;stroke:rgb(88, 85, 85);stroke-miterlimit:10;stroke-width:2px;}
-                                    </style>
-                                </defs>
-                                <polyline class="a" points="79.34 65.02 121 107.67 79.34 149.34"/>
-                            </svg>
+                            <img src = "./styles/svg/next.svg" class = "newArrow" />
                         </button>
                     </div>
                 </div>
 
                 <footer class = "footer" id = "footerStyle">
-                    
-                    <div class="btnLinks" id = "btnLinksInIndex">
+                    <div class = "btnHolder">
+                        <button class = "pause btn">
+                            <img src = "./styles/svg/pause.svg" class = "pauseBtn" />
+                        </button>
+                        <button class = "play btn">
+                            <img src = "./styles/svg/play.svg" class = "playBtn" />
+                        </button>
+                    </div>
+                    <div class="btnLinks">
                         <a class = "link" id = "prev" href = "./about.html">
                             previous page
                         </a>
-                        <div class = "btnHolder">
-                            <button class = "pause btn">
-                                <img src = "./styles/svg/pause.svg" class = "pauseBtn" />
-                            </button>
-                            <button class = "play btn">
-                                <img src = "./styles/svg/play.svg" class = "playBtn" />
-                            </button>
-                        </div>
                         <a class = "link" id = "next" href = "./reflections.html">
                             next page
                         </a>
                     </div>
+                    <br/>
                     <p>all rights reserved by shaily Nandu</p>
                     <p>all images &copy; 2018-2020 shaily nandu</p>
                 </footer>

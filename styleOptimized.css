@@ -253,3 +253,54 @@
         object-fit: contain;
     }
 }
+
+
+/* bleh bleh bleh */
+body{
+    font-size: .9em;
+}
+/* left */
+.left{
+    justify-content: flex-start;
+}
+.header{
+    border: 1px solid #000;
+    width: 90%;
+    /* border: 2px solid #000; */
+    justify-content: flex-start;
+    position: relative;
+    right: 5%;
+}
+.bars{
+    width: 5em;
+    height: 5em;
+}
+.logoHolder{
+    margin: 0;
+    /* border: 3px solid #000; */
+}
+.logo{
+    /* border: 4px solid #000; */
+    width: 18rem;
+    text-align: right;
+}
+/* right */
+/* .right{
+    border: 1px solid #000;
+}
+.imageContainer{
+    border: 2px solid #000;
+} */
+.thumbnailsGrid{
+    grid-template-columns: 1fr 1fr;
+}
+.footer{
+    font-size: .8em;
+    width: 100%;
+    /* border: 2px solid #000; */
+}
+.inArtAndThumb{
+    width: 40%;
+    text-align: center;
+}
+}
