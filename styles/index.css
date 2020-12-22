@@ -498,10 +498,11 @@ and (max-device-width : 1024px),
     
 }
 @media only screen 
-and (min-device-width : 280px) 
+and (min-device-width : 360px) 
 and (max-device-width : 540px){
     body{
         font-size: .9em;
+        height: 840px;
     }
     /* left */
     .left{
@@ -534,6 +535,15 @@ and (max-device-width : 540px){
     .imageContainer{
         border: 2px solid #000;
     } */
+    .newArrow{
+        height: 3em;
+        width: 3em;
+        bottom: 0;
+
+    }
+    .forIndex{
+        bottom: -4em;
+    }
     .thumbnailsGrid{
         grid-template-columns: 1fr 1fr;
     }
@@ -545,6 +555,10 @@ and (max-device-width : 540px){
     .inArtAndThumb{
         width: 40%;
         text-align: center;
+    }
+    /* about */
+    #inAbout{
+        font-size: .8;
     }
 }
 
