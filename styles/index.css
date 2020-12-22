@@ -246,10 +246,10 @@ a{
     width: 5rem;
 }
 .newArrow{
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     position: relative;
-    bottom: 2em;
+    bottom: 1em;
 }
 /*preventing border*/
 :focus {
@@ -367,8 +367,7 @@ a{
 }
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px),
- (-webkit-min-device-pixel-ratio: 1) {
+and (max-device-width : 1024px) {
     body{
         height: 100%;
         font-size: 1.2rem;
@@ -516,7 +515,8 @@ and (max-device-width : 540px){
     }
     .logo{
         width: 18rem;
-        text-align: center;
+        text-align: left;
+        margin-left: 3em;
         font-size: 1.5em;
     }
     /* right */
@@ -548,8 +548,8 @@ and (max-device-width : 540px){
         font-size: .8;
     }
 }
-@media only screen 
+/* @media only screen 
 and (min-device-width : 280px) 
 and (max-device-width : 360px) {
 
-}
+} */

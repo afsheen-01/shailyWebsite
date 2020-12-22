@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><style>.a{fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><polyline class="a" points="79.34 65.02 121 107.67 79.34 149.34"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <defs>
+        <style>
+        .a{fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}
+        </style>
+    </defs>
+    <polyline class="a" points="79.34 65.02 121 107.67 79.34 149.34"/>
+</svg>

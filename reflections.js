@@ -128,6 +128,13 @@ target.addEventListener('click', (e) => {
     }
 });
 
+//additions for phone
+// target.addEventListener('touchmove', (e) => {
+//     e.preventDefault();
+//     window.alert('the screen was clicked');
+//     console.log(target.width);
+// });
+
 //going back and forth with arrow keys
 window.addEventListener('keydown', (e) => {
     let keycode = e.keyCode;
@@ -328,7 +335,3 @@ people.addEventListener('click', () => {
     // console.log('do something!');
 });
 
-//additions for phone
-window.addEventListener('touchstart', () => {
-    window.alert('the screen was clicked');
-});
