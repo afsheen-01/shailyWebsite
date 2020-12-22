@@ -445,8 +445,8 @@ and (max-device-width : 1024px),
         max-height: 70%;
     }
     .image{
-        width: 75vw;
-        height: 52vw;
+        width: 90%;
+        height: 90%;
         object-fit:contain;
         cursor: url('../fontAwesome/svgs/solid/plus.svg');
    }
