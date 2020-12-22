@@ -517,7 +517,6 @@ and (max-device-width : 540px){
     .logo{
         width: 18rem;
         text-align: center;
-        /* margin-right: 6rem; */
         font-size: 1.5em;
     }
     /* right */
