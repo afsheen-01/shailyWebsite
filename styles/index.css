@@ -504,10 +504,17 @@ and (max-device-width : 1024px) {
 @media only screen and (min-device-width: 360px) and (max-device-width: 540px) {
     body{
         font-size: .8em;
-        /* height: 840px; */
+        height: auto;
+        width: 98%;
+        border: 1px solid #000;
+        /* height: 100%; */
     }
     .container{
         width: 99%;
+        height: inherit;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
         border: 1px solid #000;
     }
     /* left */
@@ -550,7 +557,7 @@ and (max-device-width : 1024px) {
     }
     .logoHolder{
         /* border: 3px solid #000; */
-        margin: 0;
+        margin-right: 15px;
     }
     .logo{
         /* border: 2px solid #000; */
@@ -560,17 +567,24 @@ and (max-device-width : 1024px) {
     /* right */
     .right{
         width: inherit;
-        height: inherit;
+        height: 100%;
         margin-top: 4rem;
         left: 0%;
         border: 2px solid #000;
+        /* display: grid;
+        grid-template-rows: 2fr .1fr;
+        grid-row-gap: 0; */
     }
     .imageContainer{
         border: 3px solid #000;
     }
+    .arrowBtn{
+       border: 4px solid #000;
+       visibility: visible;
+    }
     .newArrow{
-        height: 3em;
-        width: 3em;
+        height: 2em;
+        width: 2em;
         bottom: 0;
 
     }

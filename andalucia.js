@@ -210,6 +210,7 @@ const crossBtn = document.querySelector('.crossBtn');
 
 const functionToDisplayGrid = () => {
     imageHolder.style.display = 'none';
+    imageText.style.display = 'none';
 
     let tempArrayHolder = andalucia.map(item => {
         return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" />`
