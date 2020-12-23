@@ -534,7 +534,7 @@ and (max-device-width : 1024px) {
         height: 3rem;
         margin:0;
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
         position: relative;
@@ -599,8 +599,8 @@ and (max-device-width : 1024px) {
     }
     .arrowBtn{
         height: inherit;
-       /* border: 4px solid #000; */
-       visibility: visible;
+        /* border: 4px solid #000; */
+        visibility: visible;
     }
     .newArrow{
         height: 2em;
