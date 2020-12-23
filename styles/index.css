@@ -603,8 +603,8 @@ and (max-device-width : 1024px) {
         visibility: visible;
     }
     .newArrow{
-        height: 2em;
-        width: 2em;
+        height: 3em;
+        width: 3em;
         bottom: 0;
 
     }
