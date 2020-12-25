@@ -99,6 +99,8 @@ target.addEventListener('click', (e) => {
         target.webkitRequestFullscreen();
     } else if (target.msRequestFullscreen) { 
         target.msRequestFullscreen();
+    } else{
+        window.alert('fullscreen option not available');
     }
 });
 
@@ -263,3 +265,9 @@ people.addEventListener('click', () => {
     inPeople.style.display = 'block';
     // console.log('do something!');
 });
+
+//height of body on smaller resolutions
+const body = document.querySelector('.body');
+const deviceHeight = window.innerHeight;
+console.log(deviceHeight);
+body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
