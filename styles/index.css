@@ -659,6 +659,8 @@ and (max-device-width : 1024px) {
         /* border: 2px solid #000; */
         font-size: .8em;
         width: 100%;
+        position: relative;
+        bottom: 7vw;
     }
     .pauseBtn, .playBtn{
         width: 2em;

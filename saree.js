@@ -124,7 +124,7 @@ target.addEventListener('click', (e) => {
     } else if (target.msRequestFullscreen) { 
         target.msRequestFullscreen();
     } else{
-        window.alert('fullscreen option not available');
+        window.alert('browser doesn\'t supports fullscreen.');
     }
 });
 
