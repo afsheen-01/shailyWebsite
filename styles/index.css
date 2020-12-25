@@ -596,7 +596,7 @@ and (max-device-width : 1024px) {
     .right{
         width: inherit;
         height: inherit;
-        margin-top: 4rem;
+        margin-top: 3.5rem;
         margin-right: 0;
         left: 0%;
         /* border: 2px solid #000; */
