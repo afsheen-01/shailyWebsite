@@ -234,8 +234,8 @@ a{
     object-fit: contain;
 }
 .pauseBtn, .playBtn{
-    height: 5rem;
-    width: 5rem;
+    height: 1rem;
+    width: 1rem;
 }
 .arrowBtn{
     display: flex;
@@ -494,6 +494,10 @@ and (max-device-width : 1024px) {
         position: relative;
         bottom: -2em;
     }
+    .pauseBtn,.playBtn{
+        width: 1.5em;
+        height: 1.5em;
+    }
     /* about */
     #aboutContainer{
         margin: 5rem 0;
@@ -651,15 +655,14 @@ and (max-device-width : 1024px) {
     .forIndex{
         bottom: -4em;
     }
-    
     .footer{
         /* border: 2px solid #000; */
         font-size: .8em;
         width: 100%;
     }
     .pauseBtn, .playBtn{
-        width: 3em;
-        height: 3em;
+        width: 1em;
+        height: 1em;
     }
     .inArtAndThumb{
         width: 40%;
@@ -669,8 +672,3 @@ and (max-device-width : 1024px) {
     #inAbout{
         font-size: .8;
     }
-}
-
-/* @media only screen and  (min-device-width: 280px) and (max-device-width: 360px) {
-
-} */
