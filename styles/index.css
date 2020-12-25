@@ -661,8 +661,8 @@ and (max-device-width : 1024px) {
         width: 100%;
     }
     .pauseBtn, .playBtn{
-        width: 1em;
-        height: 1em;
+        width: 2em;
+        height: 2em;
     }
     .inArtAndThumb{
         width: 40%;
