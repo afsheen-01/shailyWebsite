@@ -65,7 +65,7 @@ const greywoodHouse = [
     },
     {
         id: 9,
-        src: './pictures/Architecture/GreywoodHouse/_SRN1266.jpg',
+        src: './pictures/Architecture/GreywoodHouse/_SRN1369.jpg',
         alt: 'gh9',
         category: 'architecture',
         subcategory: 'greywoodHouse',
@@ -73,14 +73,6 @@ const greywoodHouse = [
     },
     {
         id: 10,
-        src: './pictures/Architecture/GreywoodHouse/_SRN1261.jpg',
-        alt: 'gh10',
-        category: 'architecture',
-        subcategory: 'greywoodHouse',
-        best: 0,
-    },
-    {
-        id: 11,
         src: './pictures/Architecture/GreywoodHouse/_SRN1276-Edit.jpg',
         alt: 'gh11',
         category: 'architecture',
@@ -88,7 +80,7 @@ const greywoodHouse = [
         best: 0,
     },
     {
-        id: 12,
+        id: 11,
         src: './pictures/Architecture/GreywoodHouse/_SRN1203-Edit.jpg',
         alt: 'gh12',
         category: 'architecture',
@@ -96,7 +88,7 @@ const greywoodHouse = [
         best: 0,
     },
     {
-        id: 13,
+        id: 12,
         src: './pictures/Architecture/GreywoodHouse/_SRN1211-Edit.jpg',
         alt: 'gh13',
         category: 'architecture',
@@ -104,7 +96,7 @@ const greywoodHouse = [
         best: 0,
     },
     {
-        id: 14,
+        id: 13,
         src: './pictures/Architecture/GreywoodHouse/_SRN1208-Edit.jpg',
         alt: 'gh14',
         category: 'architecture',
@@ -112,8 +104,8 @@ const greywoodHouse = [
         best: 0,
     },
     {
-        id: 15,
-        src: './pictures/Architecture/GreywoodHouse/_SRN1369.jpg',
+        id: 14,
+        src: './pictures/Architecture/GreywoodHouse/_SRN1261.jpg',
         alt: 'gh15',
         category: 'architecture',
         subcategory: 'greywoodHouse',
@@ -334,9 +326,3 @@ people.addEventListener('click', () => {
     inPeople.style.display = 'block';
     // console.log('do something!');
 });
-
-//height of body on smaller resolutions
-const body = document.querySelector('.body');
-const deviceHeight = window.innerHeight;
-console.log(deviceHeight);
-body.style.setProperty('--heightOfBody',`${deviceHeight}px`);

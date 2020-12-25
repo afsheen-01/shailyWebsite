@@ -630,6 +630,10 @@ and (max-device-width : 1024px) {
         height: var(--heightOfBody);
         /* border: 5px solid #000; */
     }
+    .caption{
+        max-width: 50vw;
+        font-size: 0.8em;
+    }
     .thumbnailsGrid{
         grid-template-columns: 1fr 1fr;
     }

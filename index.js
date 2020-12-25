@@ -251,7 +251,7 @@ people.addEventListener('click', () => {
 });
 
 //height of body on smaller resolutions
-const body = document.querySelector('.body');
-const deviceHeight = window.innerHeight;
-console.log(deviceHeight);
-body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
+// const body = document.querySelector('.body');
+// const deviceHeight = window.innerHeight;
+// console.log(deviceHeight);
+// body.style.setProperty('--heightOfBody',`${deviceHeight}px`);

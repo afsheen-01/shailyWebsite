@@ -349,9 +349,3 @@ people.addEventListener('click', () => {
     // console.log('do something!');
 });
 inPeople.style.display = 'block';
-
-//height of body on smaller resolutions
-const body = document.querySelector('.body');
-const deviceHeight = window.innerHeight;
-console.log(deviceHeight);
-body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
