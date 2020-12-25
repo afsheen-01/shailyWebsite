@@ -304,17 +304,22 @@ a{
     font-family: 'Jost light';
 }
 .minus{
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
     float: right;
     border: none;
     position: relative;
     right: 3.7rem;
     display: none;
 }
+.minusBtn{
+    width: 1em;
+    height: 1em;
+}
 .minus :hover{
     opacity: .5;
 }
+
 .fjost{
     font-family: 'Jost light';
     text-align: left;
@@ -660,6 +665,15 @@ and (max-device-width : 1024px) {
         text-align: left;
         width: auto;
         font-size: 0.5rem;
+    }
+    .minus{
+        /* float: left; */
+        width: 1em;
+        height: 1em;
+    }
+    .minusBtn{
+        width: .9em;
+        height: .9em;
     }
     .footer{
         /* border: 2px solid #000; */
