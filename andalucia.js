@@ -9,7 +9,7 @@ const andalucia = [
     },
     {
         id: 2,
-        src: './pictures/Architecture/Arch/2020_Andalucia_architecture.jpg',
+        src: './pictures/Architecture/Arch/2020_Andalucia_goldenhour.jpg',
         alt: 'anda2',
         category: 'architecture',
         subcategory: 'andalucia',
@@ -17,7 +17,7 @@ const andalucia = [
     },
     {
         id: 3,
-        src: './pictures/Architecture/Arch/2020_Andalucia_stained-columns.jpg',
+        src: './pictures/Architecture/Arch/2020_Andalucia_connection.jpg',
         alt: 'anda3',
         category: 'architecture',
         subcategory: 'andalucia',
@@ -25,7 +25,7 @@ const andalucia = [
     },
     {
         id: 4,
-        src: './pictures/Architecture/Arch/2020_Andalucia_catreflection.jpg',
+        src: './pictures/Architecture/Arch/2020_Andalucia_architecture.jpg',
         alt: 'anda4',
         category: 'architecture',
         subcategory: 'andalucia',
@@ -33,7 +33,7 @@ const andalucia = [
     },
     {
         id: 5,
-        src: './pictures/Architecture/Arch/2020_Andalucia_connection.jpg',
+        src: './pictures/Architecture/Arch/2020_Andalucia_stained-columns.jpg',
         alt: 'anda5',
         category: 'architecture',
         subcategory: 'andalucia',
@@ -41,7 +41,7 @@ const andalucia = [
     },
     {
         id: 6,
-        src: './pictures/Architecture/Arch/2020_Andalucia_goldenhour.jpg',
+        src: './pictures/Architecture/Arch/2020_Andalucia_catreflection.jpg',
         alt: 'anda6',
         category: 'architecture',
         subcategory: 'andalucia',

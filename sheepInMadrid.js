@@ -81,7 +81,7 @@ const sheepInMadrid = [
     },
     {
         id: 11,
-        src: './pictures/Photography/SheepInMadrid/SRN03749.jpg',
+        src: './pictures/Photography/SheepInMadrid/SRN04036.jpg',
         alt: 'sheep in madrid 11',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -89,7 +89,7 @@ const sheepInMadrid = [
     },
     {
         id: 12,
-        src: './pictures/Photography/SheepInMadrid/SRN04036.jpg',
+        src: './pictures/Photography/SheepInMadrid/SRN03749.jpg',
         alt: 'sheep in madrid 12',
         category: 'photography',
         subcategory: 'sheepInMadrid',
