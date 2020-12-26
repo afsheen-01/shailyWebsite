@@ -557,7 +557,7 @@ and (max-device-width : 1024px) {
     }
     .body{
         font-size: .8em;
-        height: var(--heightOfBody);
+        height: auto;
         width: 99.3%;
         margin-left:0;
         /* border: 1px solid #000; */
@@ -645,7 +645,7 @@ and (max-device-width : 1024px) {
         margin: 0;
     }
     .imageHolder{
-        height: inherit;
+        height: var(--heightOfBody);
         /* border: 4px solid #000; */
     }
     .crossBtn{
@@ -654,7 +654,8 @@ and (max-device-width : 1024px) {
     }
     .image{
         width: 99.5%;
-        height: var(--heightOfBody);
+        /* height: calc(var(--heightOfBody) - 50%); */
+        height: inherit;
         /* border: 5px solid #000; */
     }
     .caption{
