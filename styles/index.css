@@ -558,7 +558,7 @@ and (max-device-width : 1024px) {
     .body{
         font-size: .8em;
         height: var(--heightOfBody);
-        width: 100%;
+        width: 99.5%;
         margin-left:0;
         /* border: 1px solid #000; */
         /* height: 800px; */
