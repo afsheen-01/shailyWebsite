@@ -1,4 +1,4 @@
-const saree = [
+const miscel = [
     {
         id: 1,
         src: './pictures/Architecture/miscellaneous/SRN02794.jpg',
@@ -58,11 +58,11 @@ const home = document.getElementById('bestWork');
 
 // console.log(leftBtn);
 let i = 0;
-length = saree.length;
+length = miscel.length;
 const functionalBtns = () => {
-    target.src = saree[i].src;
-    target.alt = saree[i].alt;
-    target.id = saree[i].id;
+    target.src = miscel[i].src;
+    target.alt = miscel[i].alt;
+    target.id = miscel[i].id;
 
     rightBtn.addEventListener('click', () => {
         if(i >= length - 1){
@@ -71,9 +71,9 @@ const functionalBtns = () => {
         else{
             i++;
         }
-        target.src = saree[i].src;
-        target.alt = saree[i].alt;
-        target.id = saree[i].id;
+        target.src = miscel[i].src;
+        target.alt = miscel[i].alt;
+        target.id = miscel[i].id;
     });
 
     leftBtn.addEventListener('click', () => {
@@ -83,9 +83,9 @@ const functionalBtns = () => {
         else{
             i--;
         }
-        target.src = saree[i].src;
-        target.alt = saree[i].alt;
-        target.id = saree[i].id;
+        target.src = miscel[i].src;
+        target.alt = miscel[i].alt;
+        target.id = miscel[i].id;
 
     });
 }
@@ -114,9 +114,9 @@ window.addEventListener('keydown', (e) => {
         else{
             i--;
         }
-        target.src = saree[i].src;
-        target.alt = saree[i].alt;
-        target.id = saree[i].id;
+        target.src = miscel[i].src;
+        target.alt = miscel[i].alt;
+        target.id = miscel[i].id;
 
     } 
     if(keycode === 39){
@@ -127,9 +127,9 @@ window.addEventListener('keydown', (e) => {
         else{
             i++;
         }
-        target.src = saree[i].src;
-        target.alt = saree[i].alt;
-        target.id = saree[i].id;
+        target.src = miscel[i].src;
+        target.alt = miscel[i].alt;
+        target.id = miscel[i].id;
     }
 });
 
@@ -161,7 +161,7 @@ const functionToDisplayGrid = () => {
     imageHolder.style.display = 'none';
     imageText.style.display = 'none';
 
-    let tempArrayHolder = saree.map(item => {
+    let tempArrayHolder = miscel.map(item => {
         return `<img src = "${item.src}" alt = "${item.alt}" class = "thumbImg" id = "${item.id}" />`
     });
     // console.log(tempArrayHolder);
@@ -178,14 +178,14 @@ const functionToDisplayGrid = () => {
         thumbImg.forEach(element => {
             element.addEventListener('click', () => {
                 // console.log(element.id);
-                saree.forEach(item => {
+                miscel.forEach(item => {
                     if(item.id == element.id){
                         // console.log('hey, same id');
                         i = item.id - 1;
                         // console.log(i);
-                        target.src = saree[i].src;
-                        target.alt = saree[i].alt;
-                        target.id = saree[i].id;
+                        target.src = miscel[i].src;
+                        target.alt = miscel[i].alt;
+                        target.id = miscel[i].id;
                         imageHolder.style.display = 'block';
                         thumbnailContainer.style.display = 'none';
                         arrowBtns.forEach(arrow => {
@@ -288,9 +288,9 @@ target.addEventListener('touchend',(e) => {
             i++;
             console.log(i);
         }
-        target.src = data[i].src;
-        target.alt = data[i].alt;
-        target.id = data[i].id;
+        target.src = miscel[i].src;
+        target.alt = miscel[i].alt;
+        target.id = miscel[i].id;
 
     }else if(deltaX > 0){
         if(i <= 0){
@@ -301,9 +301,9 @@ target.addEventListener('touchend',(e) => {
             i--;
             console.log(i);
         }
-        target.src = data[i].src;
-        target.alt = data[i].alt;
-        target.id = data[i].id;
+        target.src = miscel[i].src;
+        target.alt = miscel[i].alt;
+        target.id = miscel[i].id;
         
     }
     e.preventDefault();

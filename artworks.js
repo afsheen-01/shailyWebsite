@@ -306,9 +306,9 @@ target.addEventListener('touchend',(e) => {
             i++;
             console.log(i);
         }
-        target.src = data[i].src;
-        target.alt = data[i].alt;
-        target.id = data[i].id;
+        target.src = artwork[i].src;
+        target.alt = artwork[i].alt;
+        target.id = artwork[i].id;
         caption.innerHTML = artwork[i].caption;
 
     }else if(deltaX > 0){
@@ -320,9 +320,9 @@ target.addEventListener('touchend',(e) => {
             i--;
             console.log(i);
         }
-        target.src = data[i].src;
-        target.alt = data[i].alt;
-        target.id = data[i].id;
+        target.src = artwork[i].src;
+        target.alt = artwork[i].alt;
+        target.id = artwork[i].id;
         caption.innerHTML = artwork[i].caption;
         
     }

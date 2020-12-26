@@ -361,9 +361,9 @@ target.addEventListener('touchend',(e) => {
             i++;
             console.log(i);
         }
-        target.src = data[i].src;
-        target.alt = data[i].alt;
-        target.id = data[i].id;
+        target.src = saree[i].src;
+        target.alt = saree[i].alt;
+        target.id = saree[i].id;
 
     }else if(deltaX > 0){
         if(i <= 0){
@@ -374,9 +374,9 @@ target.addEventListener('touchend',(e) => {
             i--;
             console.log(i);
         }
-        target.src = data[i].src;
-        target.alt = data[i].alt;
-        target.id = data[i].id;
+        target.src = saree[i].src;
+        target.alt = saree[i].alt;
+        target.id = saree[i].id;
         
     }
     e.preventDefault();
