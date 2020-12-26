@@ -553,12 +553,13 @@ and (max-device-width : 1024px) {
 @media only screen and (min-device-width: 280px) and (max-device-width: 540px) {
     :root{
         --heightOfBody: 100%;
+        /* margin: 0; */
     }
-    body{
+    .body{
         font-size: .8em;
         height: var(--heightOfBody);
-        width: 98%;
-        margin: auto 0;
+        width: 99.5%;
+        margin-left:0;
         /* border: 1px solid #000; */
         /* height: 800px; */
     }
