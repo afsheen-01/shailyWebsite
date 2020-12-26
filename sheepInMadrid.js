@@ -263,6 +263,7 @@ const functionToDisplayGrid = () => {
         thumbImg.forEach(element => {
             element.addEventListener('click', () => {
                 // console.log(element.id);
+                
                 sheepInMadrid.forEach(item => {
                     if(item.id == element.id){
                         // console.log('hey, same id');
@@ -276,6 +277,13 @@ const functionToDisplayGrid = () => {
                         arrowBtns.forEach(arrow => {
                             arrow.style.visibility = 'visible';
                         });
+                        
+                        //height of body on smaller resolutions
+                        const body = document.querySelector('.body');
+                        const deviceHeight = window.innerHeight;
+                        console.log(deviceHeight);
+                        body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
+
                         // thumbnail.style.textDecoration = 'none';
                         // console.log(target);
                     }
@@ -393,8 +401,3 @@ target.addEventListener('touchend',(e) => {
     e.preventDefault();
 });
 
-//height of body on smaller resolutions
-const body = document.querySelector('.body');
-const deviceHeight = window.innerHeight;
-console.log(deviceHeight);
-body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
