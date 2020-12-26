@@ -238,13 +238,13 @@ const inPeople = document.getElementById('inPeople');
 spaces.addEventListener('click', () => {
     inSpaces.style.display = 'block';
     inPeople.style.display = 'none';
-    console.log('do something!');
+    // console.log('do something!');
 });
 
 people.addEventListener('click', () => {
     inSpaces.style.display = 'none';
     inPeople.style.display = 'block';
-    console.log('do something!');
+    // console.log('do something!');
 });
 
 //swipe for phone
@@ -253,22 +253,22 @@ let clientX;
 target.addEventListener('touchstart',(e) => {
     e.preventDefault();
     clientX = e.touches[0].clientX;
-    console.log('start'+clientX);
+    // console.log('start'+clientX);
     
 });
 
 target.addEventListener('touchend',(e) => {
     let deltaX;
     deltaX = e.changedTouches[0].clientX - clientX;
-    console.log('computed'+deltaX);
+    // console.log('computed'+deltaX);
     if(deltaX < 0){
         if(i >= length - 1){
             i = 0;
-            console.log(i);
+            // console.log(i);
         }
         else{
             i++;
-            console.log(i);
+            // console.log(i);
         }
         target.src = data[i].src;
         target.alt = data[i].alt;
@@ -277,11 +277,11 @@ target.addEventListener('touchend',(e) => {
     }else if(deltaX > 0){
         if(i <= 0){
             i = length-1;
-            console.log(i);
+            // console.log(i);
         }
         else{
             i--;
-            console.log(i);
+            // console.log(i);
         }
         target.src = data[i].src;
         target.alt = data[i].alt;
