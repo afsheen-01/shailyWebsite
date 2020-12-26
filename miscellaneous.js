@@ -99,8 +99,6 @@ target.addEventListener('click', (e) => {
         target.webkitRequestFullscreen();
     } else if (target.msRequestFullscreen) { 
         target.msRequestFullscreen();
-    } else{
-        window.alert('fullscreen option not available');
     }
 });
 

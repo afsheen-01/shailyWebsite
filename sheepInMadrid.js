@@ -146,9 +146,7 @@ target.addEventListener('click', (e) => {
         target.webkitRequestFullscreen();
     } else if (target.msRequestFullscreen) { 
         target.msRequestFullscreen();
-      } else{
-        window.alert('browser doesn\'t supports fullscreen.');
-    }
+    } 
 });
 
 //going back and forth with arrow keys
