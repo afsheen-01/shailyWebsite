@@ -347,3 +347,48 @@ people.addEventListener('click', () => {
     // console.log('do something!');
 });
 inPeople.style.display = 'block';
+
+
+//swipe for phone
+let clientX;
+
+target.addEventListener('touchstart',(e) => {
+    e.preventDefault();
+    clientX = e.touches[0].clientX;
+    console.log('start'+clientX);
+    
+});
+
+target.addEventListener('touchend',(e) => {
+    let deltaX;
+    deltaX = e.changedTouches[0].clientX - clientX;
+    console.log('computed'+deltaX);
+    if(deltaX < 0){
+        if(i >= length - 1){
+            i = 0;
+            console.log(i);
+        }
+        else{
+            i++;
+            console.log(i);
+        }
+        target.src = data[i].src;
+        target.alt = data[i].alt;
+        target.id = data[i].id;
+
+    }else if(deltaX > 0){
+        if(i <= 0){
+            i = length-1;
+            console.log(i);
+        }
+        else{
+            i--;
+            console.log(i);
+        }
+        target.src = data[i].src;
+        target.alt = data[i].alt;
+        target.id = data[i].id;
+        
+    }
+    e.preventDefault();
+});

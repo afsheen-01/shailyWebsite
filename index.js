@@ -213,8 +213,8 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 //on smaller screen - not working right now -.
 const navBtn = document.querySelector('.navBtn');
 const sideNav = document.querySelector('.sideNav');
-const navCloseBtn = document.querySelector('.navCloseBtn');
-const rightSection = document.querySelector('.right');
+// const navCloseBtn = document.querySelector('.navCloseBtn');
+
 
 navBtn.addEventListener('click',() => {
     if(sideNav.style.display === 'block'){
@@ -230,7 +230,6 @@ navBtn.addEventListener('click',() => {
 
 
 //spaces and peopel (apparently).
-
 const spaces = document.getElementById('spaces');
 const inSpaces = document.getElementById('inSpaces');
 const people = document.getElementById('people');
@@ -248,8 +247,46 @@ people.addEventListener('click', () => {
     console.log('do something!');
 });
 
-//height of body on smaller resolutions
-// const body = document.querySelector('.body');
-// const deviceHeight = window.innerHeight;
-// console.log(deviceHeight);
-// body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
+//swipe for phone
+let clientX;
+
+target.addEventListener('touchstart',(e) => {
+    e.preventDefault();
+    clientX = e.touches[0].clientX;
+    console.log('start'+clientX);
+    
+});
+
+target.addEventListener('touchend',(e) => {
+    let deltaX;
+    deltaX = e.changedTouches[0].clientX - clientX;
+    console.log('computed'+deltaX);
+    if(deltaX < 0){
+        if(i >= length - 1){
+            i = 0;
+            console.log(i);
+        }
+        else{
+            i++;
+            console.log(i);
+        }
+        target.src = data[i].src;
+        target.alt = data[i].alt;
+        target.id = data[i].id;
+
+    }else if(deltaX > 0){
+        if(i <= 0){
+            i = length-1;
+            console.log(i);
+        }
+        else{
+            i--;
+            console.log(i);
+        }
+        target.src = data[i].src;
+        target.alt = data[i].alt;
+        target.id = data[i].id;
+        
+    }
+    e.preventDefault();
+});
