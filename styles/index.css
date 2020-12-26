@@ -304,7 +304,11 @@ a{
 .imageText{
     text-align: center;
     width: 45vw;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* border: 1px solid #000; */
 }
 .indent{
     display: inline-block;
@@ -317,21 +321,23 @@ a{
     height: 1rem;
     float: right;
     border: none;
-    position: relative;
-    right: 3.7rem;
     display: none;
+    /* border: 2px solid #000; */
 }
 .minusBtn{
     width: 1em;
     height: 1em;
+    /* border: 3px solid #000; */
 }
 .minus :hover{
     opacity: .5;
 }
 
 .fjost{
+    /* width: 90%; */
     font-family: 'Jost light';
     text-align: left;
+    /* border: 2px solid #000; */
 }
 .footer{
     width: 80%;
@@ -672,25 +678,30 @@ and (max-device-width : 1024px) {
         bottom: -4em;
     }
     .imageText{
+        /* border: 1px solid #000; */
         text-align: left;
         width: auto;
         font-size: 0.5rem;
+        float: right;
     }
     .minus{
-        /* float: left; */
+        float: right;
         width: 1em;
         height: 1em;
+        /* border: 2px solid #000; */
     }
     .minusBtn{
         width: .9em;
         height: .9em;
+        /* border: 3px solid #000; */
     }
+    /* .fjost{
+        border: 2px solid #000;
+    } */
     .footer{
         /* border: 2px solid #000; */
         font-size: .8em;
         width: 100%;
-        /* position: relative;
-        bottom: 7vw; */
     }
     .pauseBtn, .playBtn{
         width: 1em;
@@ -702,22 +713,15 @@ and (max-device-width : 1024px) {
     }
     /* about */
     #inAbout{
-        /* display: grid; */
         min-height: 0;
         min-width: 0;
         overflow: auto;
         resize:horizontal;
-        /* height: 20%; */
-        /* grid-template-rows: 30%; */
         height: auto;
-        /* justify-content: baseline; */
-        /* align-items: baseline; */
-        font-size: .8;
-        /* border: 1px solid #000; */
     }
     #imgContainer{
         padding: 0;
-        /* border: 2px solid #000; */
+        border: 2px solid #000;
     }
     .myImage{
         width: 85%;
@@ -725,7 +729,7 @@ and (max-device-width : 1024px) {
     .infoContainer{
         width: 100%;
         font-size: 0.6rem;
-        /* border: 2px solid #000; */
+        border: 2px solid #000;
     }
     .info{
         width: 100%;
