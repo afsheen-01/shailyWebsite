@@ -103,15 +103,15 @@ const domestication = [
         subcategory: 'domestication',
         best: 0,
     },
-    {
-        id: 14,
-        src: './pictures/Photography/Domestication/IMG_9704.mp4',
-        alt: 'domestication14',
-        category: 'photography',
-        subcategory: 'domestication',
-        type: 'mp4',
-        best: 0,
-    },
+    // {
+    //     id: 14,
+    //     src: './pictures/Photography/Domestication/IMG_9704.mp4',
+    //     alt: 'domestication14',
+    //     category: 'photography',
+    //     subcategory: 'domestication',
+    //     type: 'mp4',
+    //     best: 0,
+    // },
 ];
 
 const leftBtn = document.getElementById('btnLeft');
