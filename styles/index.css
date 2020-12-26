@@ -684,6 +684,9 @@ and (max-device-width : 1024px) {
         font-size: 0.5rem;
         float: right;
     }
+    .indent{
+        margin-left: 1rem;
+    }
     .minus{
         float: right;
         width: 1em;
