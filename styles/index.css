@@ -724,6 +724,7 @@ and (max-device-width : 1024px) {
     }
     .infoContainer{
         width: 100%;
+        font-size: 0.6rem;
         /* border: 2px solid #000; */
     }
     .info{
