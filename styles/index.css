@@ -164,6 +164,12 @@ a{
     align-items: center;
     /* border: 2px solid #000; */
 }
+#moveForIndex{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
 .image{
     height: 43vw;
     padding: none;
@@ -220,11 +226,12 @@ a{
     text-decoration: underline;
 }
 .btnHolder{
-    width: auto;
+    width: inherit;
     /* padding: 1em 0; */
     display:flex;
     flex-direction:column;
     justify-content: center;
+    /* border: 2px solid #000; */
 }
 .thumbnailsContainer{
     display: block;
@@ -671,6 +678,9 @@ and (max-device-width : 1024px) {
         align-items: center;
         /* margin: 6em 0; */
         /* border: 6px solid #000; */
+    }
+    #imgHolderForIndex{
+        height: calc(var(--heightOfBody) - 20em);
     }
     .crossBtn{
         width: 100%;
