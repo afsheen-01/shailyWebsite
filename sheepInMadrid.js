@@ -282,9 +282,9 @@ const functionToDisplayGrid = () => {
                         //height of body on smaller resolutions
                         const body = document.querySelector('.body');
                         const deviceHeight = window.innerHeight;
-                        console.log(deviceHeight);
+                        // console.log(deviceHeight);
                         body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
-                        console.log(target.height);
+                        // console.log(target.height);
                         moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
 
                         // thumbnail.style.textDecoration = 'none';

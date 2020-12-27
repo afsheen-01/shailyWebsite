@@ -167,6 +167,7 @@ const rightSide = document.querySelector('.right');
 const imageText = document.querySelector('.imageText');
 const textElement = document.querySelector('.fjost');
 const minusBtn = document.querySelector('.minus');
+const moveStuff = document.querySelector('.moveStuff');
 let checkBeforeAs;
 
 
@@ -264,6 +265,14 @@ const functionToDisplayGrid = () => {
                         arrowBtns.forEach(arrow => {
                             arrow.style.visibility = 'visible';
                         });
+
+                        //height of body on smaller resolutions
+                        const body = document.querySelector('.body');
+                        const deviceHeight = window.innerHeight;
+                        // console.log(deviceHeight);
+                        body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
+                        // console.log(target.height);
+                        moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
                         // thumbnail.style.textDecoration = 'none';
                         // console.log(target);
                     }

@@ -228,6 +228,16 @@ navBtn.addEventListener('click',() => {
     
 });
 
+//height of body on smaller resolutions
+const moveStuff = document.querySelector('.moveStuff');
+
+const body = document.querySelector('.body');
+const deviceHeight = window.innerHeight;
+// console.log(deviceHeight);
+body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
+// console.log(target.height);
+moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
+
 
 //spaces and peopel (apparently).
 const spaces = document.getElementById('spaces');
