@@ -358,19 +358,33 @@ inPeople.style.display = 'block';
 
 
 //swipe for phone
-let clientX;
+let clientX, clientY;
 
 target.addEventListener('touchstart',(e) => {
     e.preventDefault();
     clientX = e.touches[0].clientX;
+    clientY = e.touches[0].clientY;
     // console.log('start'+clientX);
     
 });
 
 target.addEventListener('touchend',(e) => {
-    let deltaX;
+    let deltaX, deltaY;
+
+    e.preventDefault();
     deltaX = e.changedTouches[0].clientX - clientX;
-    // console.log('computed'+deltaX);
+    deltaY = e.changedTouches[0].clientY - clientY;
+    // console.log('computed'+deltaY);
+
+    if (deltaY < 20) {
+        // disable scroll
+        document.body.style.overflowY = "hidden";
+
+    } else {
+        // enable scroll if swipe was not intended
+        document.body.style.overflowY = "scroll";
+    }
+
     if(deltaX < 0){
         if(i >= length - 1){
             i = 0;
@@ -396,8 +410,8 @@ target.addEventListener('touchend',(e) => {
         target.src = sheepInMadrid[i].src;
         target.alt = sheepInMadrid[i].alt;
         target.id = sheepInMadrid[i].id;
-        
     }
-    e.preventDefault();
+    
+    
 });
 
