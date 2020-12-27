@@ -268,6 +268,7 @@ crossBtn.addEventListener('click', () => {
     arrowBtns.forEach(arrow => {
         arrow.style.visibility = 'hidden';
     });
+    body.style.setProperty('--heightOfBody',`100%`);
     // imageText.style.display = 'block';
 });
 

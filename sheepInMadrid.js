@@ -210,14 +210,15 @@ artistStatement.addEventListener('click', () => {
     arrowBtns.forEach(arrow => {
         arrow.style.visibility = 'hidden';
     });
-    
+
+
     //height of body on smaller resolutions
     const body = document.querySelector('.body');
     const deviceHeight = window.innerHeight;
     // console.log(deviceHeight);
     body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
     // console.log(target.height);
-    moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
+    // moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
 });
 
 minusBtn.addEventListener('click', () => {
@@ -247,6 +248,8 @@ imageHolder.addEventListener('mouseover', () => {
 // const thumbnail = document.getElementById('thumbnail');
 const thumbnailContainer = document.querySelector('.thumbnailsContainer');
 const thumbnailsGrid = document.querySelector('.thumbnailsGrid');
+const body = document.querySelector('.body');
+const deviceHeight = window.innerHeight;
 const crossBtn = document.querySelector('.crossBtn');
 
 const functionToDisplayGrid = () => {
@@ -288,8 +291,7 @@ const functionToDisplayGrid = () => {
                         });
                         
                         //height of body on smaller resolutions
-                        const body = document.querySelector('.body');
-                        const deviceHeight = window.innerHeight;
+                        
                         // console.log(deviceHeight);
                         body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
                         // console.log(target.height);
@@ -313,6 +315,9 @@ crossBtn.addEventListener('click', () => {
     arrowBtns.forEach(arrow => {
         arrow.style.visibility = 'hidden';
     });
+    body.style.setProperty('--heightOfBody',`100%`);
+    // console.log(target.height);
+    // moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
     // imageText.style.display = 'block';
 });
 
