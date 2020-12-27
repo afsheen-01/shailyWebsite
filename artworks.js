@@ -249,7 +249,7 @@ crossBtn.addEventListener('click', () => {
         arrow.style.visibility = 'hidden';
     });
     body.style.setProperty('--heightOfBody',`100%`);
-    moveStuff.style.setProperty('--heightOfStuff','inherit');
+    moveStuff.style.setProperty('--heightOfStuff','auto');
     // imageText.style.display = 'block';
 });
 
