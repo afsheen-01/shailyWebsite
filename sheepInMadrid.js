@@ -358,32 +358,30 @@ inPeople.style.display = 'block';
 
 
 //swipe for phone
-let clientX, clientY;
+let clientX; //clientY;
 
 target.addEventListener('touchstart',(e) => {
     e.preventDefault();
     clientX = e.touches[0].clientX;
-    clientY = e.touches[0].clientY;
+    // clientY = e.touches[0].clientY;
     // console.log('start'+clientX);
     
 });
 
 target.addEventListener('touchend',(e) => {
-    let deltaX, deltaY;
+    let deltaX; // deltaY;
 
     e.preventDefault();
     deltaX = e.changedTouches[0].clientX - clientX;
-    deltaY = e.changedTouches[0].clientY - clientY;
-    console.log('computed'+deltaY);
+    // deltaY = e.changedTouches[0].clientY - clientY;
+    // console.log('computed'+deltaY);
 
-    if (deltaY < 50) {
-        // disable scroll
-        target.style.overflowY = "hidden";
+    // if (deltaY < 50) {
+    //     target.style.overflowY = "hidden";
 
-    } else {
-        // enable scroll if swipe was not intended
-        target.style.overflowY = "scroll";
-    }
+    // } else {
+    //     target.style.overflowY = "scroll";
+    // }
 
     if(deltaX < 0){
         if(i >= length - 1){

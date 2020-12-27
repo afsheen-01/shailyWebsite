@@ -646,8 +646,9 @@ and (max-device-width : 1024px) {
     }
     .moveStuff{
         /* border: 4px solid #000; */
-        height: calc(var(--heightOfBody) - 50%);
-        align-items: flex-start;
+        /* height: calc(var(--heightOfBody) - 50%); */
+        height: auto;
+        align-items: center;
         /* justify-content: flex-start; */
     }
     .imageAndContent{
