@@ -226,6 +226,8 @@ imageHolder.addEventListener('mouseover', () => {
 // const thumbnail = document.getElementById('thumbnail');
 const thumbnailContainer = document.querySelector('.thumbnailsContainer');
 const thumbnailsGrid = document.querySelector('.thumbnailsGrid');
+const body = document.querySelector('.body');
+const deviceHeight = window.innerHeight;
 const crossBtn = document.querySelector('.crossBtn');
 const moveStuff = document.querySelector('.moveStuff');
 
@@ -266,8 +268,6 @@ const functionToDisplayGrid = () => {
                         });
 
                         //height of body on smaller resolutions
-                        const body = document.querySelector('.body');
-                        const deviceHeight = window.innerHeight;
                         // console.log(deviceHeight);
                         body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
                         // console.log(target.height);
