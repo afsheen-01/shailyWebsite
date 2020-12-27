@@ -374,15 +374,15 @@ target.addEventListener('touchend',(e) => {
     e.preventDefault();
     deltaX = e.changedTouches[0].clientX - clientX;
     deltaY = e.changedTouches[0].clientY - clientY;
-    // console.log('computed'+deltaY);
+    console.log('computed'+deltaY);
 
-    if (deltaY < 20) {
+    if (deltaY < 50) {
         // disable scroll
-        document.body.style.overflowY = "hidden";
+        target.style.overflowY = "hidden";
 
     } else {
         // enable scroll if swipe was not intended
-        document.body.style.overflowY = "scroll";
+        target.style.overflowY = "scroll";
     }
 
     if(deltaX < 0){
