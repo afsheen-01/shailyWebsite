@@ -190,6 +190,7 @@ const rightSide = document.querySelector('.right');
 const imageText = document.querySelector('.imageText');
 const textElement = document.querySelector('.fjost');
 const minusBtn = document.querySelector('.minus');
+const moveStuff = document.querySelector('.moveStuff');
 let checkBeforeAs;
 
 
@@ -283,6 +284,8 @@ const functionToDisplayGrid = () => {
                         const deviceHeight = window.innerHeight;
                         console.log(deviceHeight);
                         body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
+                        console.log(target.height);
+                        moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
 
                         // thumbnail.style.textDecoration = 'none';
                         // console.log(target);
@@ -409,7 +412,5 @@ target.addEventListener('touchend',(e) => {
         target.alt = sheepInMadrid[i].alt;
         target.id = sheepInMadrid[i].id;
     }
-    
-    
 });
 
