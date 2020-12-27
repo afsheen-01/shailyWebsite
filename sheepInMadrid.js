@@ -317,7 +317,7 @@ crossBtn.addEventListener('click', () => {
     });
     body.style.setProperty('--heightOfBody',`100%`);
     // console.log(target.height);
-    // moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
+    moveStuff.style.setProperty('--heightOfStuff','inherit');
     // imageText.style.display = 'block';
 });
 

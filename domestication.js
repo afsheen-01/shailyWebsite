@@ -322,6 +322,7 @@ crossBtn.addEventListener('click', () => {
         arrow.style.visibility = 'hidden';
     });
     body.style.setProperty('--heightOfBody',`100%`);
+    moveStuff.style.setProperty('--heightOfStuff','inherit');
     // imageText.style.display = 'block';
 });
 
