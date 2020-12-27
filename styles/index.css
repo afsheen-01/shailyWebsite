@@ -696,7 +696,7 @@ and (max-device-width : 1024px) {
     }
     .image{
         width: 99.5%;
-        height: calc(var(--heightOfBody) - 16em);
+        height: calc(var(--heightOfBody) - 14em);
         /* height: inherit; */
         /* border: 7px solid #000; */
     }
