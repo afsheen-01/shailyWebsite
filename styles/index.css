@@ -683,7 +683,8 @@ and (max-device-width : 1024px) {
         height: calc(var(--heightOfBody) - 20em);
     }
     #imageHolderForArtworks{
-        height: calc(var(--heightOfBody) - 25em);
+        margin-top: 3em;
+        height: calc(var(--heightOfBody) - 22em);
     }
     .crossBtn{
         width: 100%;
