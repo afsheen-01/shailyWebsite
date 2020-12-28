@@ -671,6 +671,9 @@ and (max-device-width : 1024px) {
         /* border: 5px solid #000; */
         margin: 6em 0;
     }
+    #iacForArtworks{
+        margin-top: 8em;
+    }
     .imageHolder{
         height: inherit;
         display: flex;
