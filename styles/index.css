@@ -684,6 +684,7 @@ and (max-device-width : 1024px) {
     } */
     #imageHolderForArtworks{
         /* margin: 8em 0; */
+        padding-top: 8em;
         height: calc(var(--heightOfBody) - 22em);
         justify-content: center;
         align-items: center;
