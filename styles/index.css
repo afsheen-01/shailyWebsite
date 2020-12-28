@@ -750,6 +750,9 @@ and (max-device-width : 1024px) {
         font-size: .8em;
         width: 98%;
     }
+    .btnHolder{
+        display: none;
+    }
     .pauseBtn, .playBtn{
         width: 1em;
         height: 1em;

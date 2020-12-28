@@ -125,7 +125,7 @@ setInt = setInterval(() => {
    target.src = data[i].src;
    target.alt = data[i].alt;
    target.id = data[i].id;
-},4000);
+},2500);
 
     playBtn.addEventListener('click', () => {
         setInt = setInterval(() => {
@@ -297,6 +297,28 @@ target.addEventListener('touchend',(e) => {
         target.alt = data[i].alt;
         target.id = data[i].id;
         
+    }
+    else if(deltaX === 0){
+        if(pauseBtn.style.display === 'block') {
+            setInt = setInterval(() => {
+                i > length - 2? i = 0 : i++;
+       
+               target.src = data[i].src;
+               target.alt = data[i].alt;
+               target.id = data[i].id;
+           },2500);
+        //    console.log('if block');
+            playBtn.style.display = 'block';
+            pauseBtn.style.display =  'none';
+
+        } else {
+            clearInterval(setInt);
+        //    console.log('else block');
+
+            playBtn.style.display = 'none';
+            pauseBtn.style.display =  'block';
+        }
+
     }
     e.preventDefault();
 });
