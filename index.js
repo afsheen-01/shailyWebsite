@@ -115,16 +115,21 @@ functionalBtns();
 
 // autoscroll
 const playBtn = document.querySelector('.play');
-const pauseBtn = document.querySelector('.pause');;
+const pauseBtn = document.querySelector('.pause');
+const moveStuff = document.querySelector('.moveStuff');
+
 
 let setInt;
 
 setInt = setInterval(() => {
-    i > length - 2? i = 0 : i++;
+    i >= length - 1? i = 0 : i++;
     // fullScreenImg.href = data[i].src;
    target.src = data[i].src;
    target.alt = data[i].alt;
    target.id = data[i].id;
+   moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
+//    console.log(target.style.height);
+
 },2500);
 
     playBtn.addEventListener('click', () => {
@@ -134,6 +139,7 @@ setInt = setInterval(() => {
            target.src = data[i].src;
            target.alt = data[i].alt;
            target.id = data[i].id;
+           moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
        },2500);
 
     playBtn.style.display = 'none';
@@ -229,14 +235,15 @@ navBtn.addEventListener('click',() => {
 });
 
 //height of body on smaller resolutions
-const moveStuff = document.querySelector('.moveStuff');
+const heightAdjust = () => {
 
-const body = document.querySelector('.body');
-const deviceHeight = window.innerHeight;
-// console.log(deviceHeight);
-body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
+    const body = document.querySelector('.body');
+    const deviceHeight = window.innerHeight;
+    // console.log(deviceHeight);
+    body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
 // console.log(target.height);
-moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
+}
+window.addEventListener('load', heightAdjust());
 
 
 //spaces and peopel (apparently).

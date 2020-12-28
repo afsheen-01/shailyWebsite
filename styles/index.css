@@ -660,7 +660,7 @@ and (max-device-width : 1024px) {
     }
     .moveStuff{
         /* border: 4px solid #000; */
-        height: var(--heightOfMoveStuff);
+        height: calc(var(--heightOfBody) - 40%);
         align-items: center;
         justify-content: center;
     }
@@ -679,15 +679,15 @@ and (max-device-width : 1024px) {
         /* margin: 6em 0; */
         /* border: 6px solid #000; */
     }
-    #imgHolderForIndex{
+    /* #imgHolderForIndex{
         height: calc(var(--heightOfBody) - 21em);
-    }
+    } */
     #imageHolderForArtworks{
         /* margin: 3em 0; */
         /* height: calc(var(--heightOfBody) - 22em); */
         justify-content: center;
         align-items: center;
-        border: 2px solid #000;
+        /* border: 2px solid #000; */
         /* overflow: hidden; */
     }
     .crossBtn{
@@ -699,9 +699,9 @@ and (max-device-width : 1024px) {
     }
     .image{
         width: 99.5%;
-        /* height: calc(var(--heightOfBody) - 10em); */
+        height: calc(var(--heightOfBody) - 10em);
         margin: 0;
-        height: inherit;
+        /* height: inherit; */
         /* border: 7px solid #000; */
     }
     .caption{
