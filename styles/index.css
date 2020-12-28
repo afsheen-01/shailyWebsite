@@ -173,7 +173,7 @@ a{
 .image{
     height: 43vw;
     padding: none;
-    margin: none;
+    margin-top: 1em;
     object-fit:contain;
     width: 60vw;
     cursor: url('../fontAwesome/svgs/solid/plus.svg');
@@ -699,6 +699,7 @@ and (max-device-width : 1024px) {
     .image{
         width: 99.5%;
         height: calc(var(--heightOfBody) - 10.5em);
+        margin: 0;
         /* height: inherit; */
         /* border: 7px solid #000; */
     }
