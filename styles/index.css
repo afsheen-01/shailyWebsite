@@ -669,7 +669,7 @@ and (max-device-width : 1024px) {
         /* align-items: center;
         justify-content: center; */
         /* border: 5px solid #000; */
-        margin: 6em 0;
+        /* margin: 6em 0; */
     }
     .imageHolder{
         height: inherit;
@@ -684,7 +684,7 @@ and (max-device-width : 1024px) {
     } */
     #imageHolderForArtworks{
         /* margin: 8em 0; */
-        /* height: calc(var(--heightOfBody) - 22em); */
+        height: calc(var(--heightOfBody) - 22em);
         justify-content: center;
         align-items: center;
         /* border: 2px solid #000; */
