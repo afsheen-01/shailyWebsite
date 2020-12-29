@@ -710,7 +710,7 @@ and (max-device-width : 1024px) {
     .caption{
         max-width: 50vw;
         font-size: 0.8em;
-        border: 3px solid #000
+        /* border: 3px solid #000 */
     }
     .thumbnailsGrid{
         grid-template-columns: 1fr 1fr;
