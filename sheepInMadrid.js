@@ -289,13 +289,13 @@ const functionToDisplayGrid = () => {
                         arrowBtns.forEach(arrow => {
                             arrow.style.visibility = 'visible';
                         });
-                        
+                        console.log(target.height);
                         //height of body on smaller resolutions
                         
                         console.log(deviceHeight);
                         body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
                         // console.log(target.height);
-                        moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
+                        moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
                         // console.log(target.height);
 
                         // thumbnail.style.textDecoration = 'none';
