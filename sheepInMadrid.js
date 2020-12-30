@@ -289,7 +289,7 @@ const functionToDisplayGrid = () => {
                         arrowBtns.forEach(arrow => {
                             arrow.style.visibility = 'visible';
                         });
-                        console.log(target.height);
+                        // console.log(target.height);
                         //height of body on smaller resolutions
                         
                         console.log(deviceHeight);
