@@ -251,7 +251,7 @@ const functionToDisplayGrid = () => {
                         // console.log(deviceHeight);
                         body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
                         // console.log(target.height);
-                        moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
+                        moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
                         // thumbnail.style.textDecoration = 'none';
                         // console.log(target);
                     }
@@ -269,7 +269,7 @@ crossBtn.addEventListener('click', () => {
         arrow.style.visibility = 'hidden';
     });
     body.style.setProperty('--heightOfBody',`100%`);
-    moveStuff.style.setProperty('--heightOfStuff','auto');
+    moveStuff.style.setProperty('--heightOfMoveStuff','auto');
     // imageText.style.display = 'block';
 });
 

@@ -117,6 +117,8 @@ functionalBtns();
 const playBtn = document.querySelector('.play');
 const pauseBtn = document.querySelector('.pause');
 const moveStuff = document.querySelector('.moveStuff');
+const body = document.querySelector('.body');
+const deviceHeight = window.innerHeight;
 
 
 let setInt;
@@ -127,7 +129,8 @@ setInt = setInterval(() => {
    target.src = data[i].src;
    target.alt = data[i].alt;
    target.id = data[i].id;
-   moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
+   body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
+   moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
 //    console.log(target.style.height);
 
 },2500);
@@ -139,7 +142,8 @@ setInt = setInterval(() => {
            target.src = data[i].src;
            target.alt = data[i].alt;
            target.id = data[i].id;
-           moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
+           body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
+           moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
        },2500);
 
     playBtn.style.display = 'none';
@@ -237,11 +241,10 @@ navBtn.addEventListener('click',() => {
 //height of body on smaller resolutions
 const heightAdjust = () => {
 
-    const body = document.querySelector('.body');
-    const deviceHeight = window.innerHeight;
     // console.log(deviceHeight);
     body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
-// console.log(target.height);
+    // console.log(target.height);
+    moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
 }
 window.addEventListener('load', heightAdjust());
 

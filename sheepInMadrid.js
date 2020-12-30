@@ -218,7 +218,7 @@ artistStatement.addEventListener('click', () => {
     // console.log(deviceHeight);
     body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
     // console.log(target.height);
-    // moveStuff.style.setProperty('--heightOfStuff',`${target.height}px`);
+    moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
 });
 
 minusBtn.addEventListener('click', () => {
@@ -292,11 +292,10 @@ const functionToDisplayGrid = () => {
                         // console.log(target.height);
                         //height of body on smaller resolutions
                         
-                        console.log(deviceHeight);
                         body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
-                        // console.log(target.height);
+                        console.log(deviceHeight);
                         moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
-                        // console.log(target.height);
+                        console.log(target.height);
 
                         // thumbnail.style.textDecoration = 'none';
                         // console.log(target);
@@ -318,7 +317,7 @@ crossBtn.addEventListener('click', () => {
     });
     body.style.setProperty('--heightOfBody',`100%`);
     // console.log(target.height);
-    moveStuff.style.setProperty('--heightOfStuff','auto');
+    moveStuff.style.setProperty('--heightOfMoveStuff','auto');
     // imageText.style.display = 'block';
 });
 
