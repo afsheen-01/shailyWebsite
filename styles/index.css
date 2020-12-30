@@ -571,7 +571,7 @@ and (max-device-width : 1024px) {
 @media only screen and (min-device-width: 280px) and (max-device-width: 540px) {
     :root{
         --heightOfBody: 100%;
-        --heightOfMoveStuff: 100%;
+        --heightOfMoveStuff: auto;
         /* margin: 0; */
     }
     .body{
@@ -660,7 +660,7 @@ and (max-device-width : 1024px) {
     }
     .moveStuff{
         /* border: 4px solid #000; */
-        height: calc(var(--heightOfMoveStuff) - 40%);
+        height: calc(var(--heightOfBody) - 40%);
         align-items: center;
         justify-content: center;
     }

@@ -130,7 +130,7 @@ setInt = setInterval(() => {
    target.alt = data[i].alt;
    target.id = data[i].id;
    body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
-   moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
+//    moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
 //    console.log(target.style.height);
 
 },2500);
@@ -143,7 +143,7 @@ setInt = setInterval(() => {
            target.alt = data[i].alt;
            target.id = data[i].id;
            body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
-           moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
+        //    moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
        },2500);
 
     playBtn.style.display = 'none';
@@ -244,7 +244,7 @@ const heightAdjust = () => {
     // console.log(deviceHeight);
     body.style.setProperty('--heightOfBody',`${deviceHeight}px`);
     // console.log(target.height);
-    moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
+    // moveStuff.style.setProperty('--heightOfMoveStuff',`${target.height}px`);
 }
 window.addEventListener('load', heightAdjust());
 
