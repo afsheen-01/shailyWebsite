@@ -1,7 +1,7 @@
 const sheepInMadrid = [
     {
         id: 1,
-        src: './pictures/Photography/SheepInMadrid/SRN01226.jpg',
+        src: './pictures/lowres_Website/People/sheep/1-SRN01394.jpg',
         alt: 'sheep in madrid 1',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -9,7 +9,7 @@ const sheepInMadrid = [
     },
     {
         id: 2,
-        src: './pictures/Photography/SheepInMadrid/SRN01281.jpg',
+        src: './pictures/lowres_Website/People/sheep/2-SRN01226.jpg',
         alt: 'sheep in madrid 2',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -17,7 +17,7 @@ const sheepInMadrid = [
     },
     {
         id: 3,
-        src: './pictures/Photography/SheepInMadrid/SRN01307.jpg',
+        src: './pictures/lowres_Website/People/sheep/3-SRN03258.jpg',
         alt: 'sheep in madrid 3',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -25,7 +25,7 @@ const sheepInMadrid = [
     },
     {
         id: 4,
-        src: './pictures/Photography/SheepInMadrid/SRN01330.jpg',
+        src: './pictures/lowres_Website/People/sheep/4-SRN03643.jpg',
         alt: 'sheep in madrid 4',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -33,7 +33,7 @@ const sheepInMadrid = [
     },
     {
         id: 5,
-        src: './pictures/Photography/SheepInMadrid/SRN01339.jpg',
+        src: './pictures/lowres_Website/People/sheep/5-SRN01238.jpg',
         alt: 'sheep in madrid 5',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -41,7 +41,7 @@ const sheepInMadrid = [
     },
     {
         id: 6,
-        src: './pictures/Photography/SheepInMadrid/SRN03174.jpg',
+        src: './pictures/lowres_Website/People/sheep/5.5-SRN03571.jpg',
         alt: 'sheep in madrid 6',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -49,7 +49,7 @@ const sheepInMadrid = [
     },
     {
         id: 7,
-        src: './pictures/Photography/SheepInMadrid/SRN03258.jpg',
+        src: './pictures/lowres_Website/People/sheep/6-SRN01330.jpg',
         alt: 'sheep in madrid 7',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -57,7 +57,7 @@ const sheepInMadrid = [
     },
     {
         id: 8,
-        src: './pictures/Photography/SheepInMadrid/SRN03571.jpg',
+        src: './pictures/lowres_Website/People/sheep/7-SRN01281.jpg',
         alt: 'sheep in madrid 8',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -65,7 +65,7 @@ const sheepInMadrid = [
     },
     {
         id: 9,
-        src: './pictures/Photography/SheepInMadrid/SRN03603.jpg',
+        src: './pictures/lowres_Website/People/sheep/8-SRN03007.jpg',
         alt: 'sheep in madrid 9',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -73,7 +73,7 @@ const sheepInMadrid = [
     },
     {
         id: 10,
-        src: './pictures/Photography/SheepInMadrid/SRN03643.jpg',
+        src: './pictures/lowres_Website/People/sheep/9-SRN01307.jpg',
         alt: 'sheep in madrid 10',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -81,7 +81,7 @@ const sheepInMadrid = [
     },
     {
         id: 11,
-        src: './pictures/Photography/SheepInMadrid/SRN04036.jpg',
+        src: './pictures/lowres_Website/People/sheep/10-SRN03603-Edit.jpg',
         alt: 'sheep in madrid 11',
         category: 'photography',
         subcategory: 'sheepInMadrid',
@@ -89,8 +89,24 @@ const sheepInMadrid = [
     },
     {
         id: 12,
-        src: './pictures/Photography/SheepInMadrid/SRN03749.jpg',
+        src: './pictures/lowres_Website/People/sheep/11-SRN01339.jpg',
         alt: 'sheep in madrid 12',
+        category: 'photography',
+        subcategory: 'sheepInMadrid',
+        best: 0,
+    },
+    {
+        id: 13,
+        src: './pictures/lowres_Website/People/sheep/12-SRN03749.jpg',
+        alt: 'sheep in madrid 13',
+        category: 'photography',
+        subcategory: 'sheepInMadrid',
+        best: 0,
+    },
+    {
+        id: 14,
+        src: './pictures/lowres_Website/People/sheep/13-SRN04003.jpg',
+        alt: 'sheep in madrid 14',
         category: 'photography',
         subcategory: 'sheepInMadrid',
         best: 0,

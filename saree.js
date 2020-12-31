@@ -1,7 +1,7 @@
 const saree = [
     {
         id: 1,
-        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-3.jpg',
+        src: './pictures/lowres_Website/People/Saree/2020_Saree_Presentation-3.jpg',
         alt: 'red saree',
         category: 'photography',
         subcategory: 'saree',
@@ -10,7 +10,7 @@ const saree = [
     },
     {
         id: 2,
-        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-4.jpg',
+        src: './pictures/lowres_Website/People/Saree/2020_Saree_Presentation-4.jpg',
         alt: 'red saree',
         category: 'photography',
         subcategory: 'saree',
@@ -18,7 +18,7 @@ const saree = [
     },
     {
         id: 3,
-        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-5.jpg',
+        src: './pictures/lowres_Website/People/Saree/2020_Saree_Presentation-5.jpg',
         alt: 'red saree',
         category: 'photography',
         subcategory: 'saree',
@@ -26,7 +26,7 @@ const saree = [
     },
     {
         id: 4,
-        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-6.jpg',
+        src: './pictures/lowres_Website/People/Saree/2020_Saree_Presentation-6.jpg',
         alt: 'red saree',
         category: 'photography',
         subcategory: 'saree',
@@ -34,7 +34,7 @@ const saree = [
     },
     {
         id: 5,
-        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-7.jpg',
+        src: './pictures/lowres_Website/People/Saree/2020_Saree_Presentation-7.jpg',
         alt: 'green saree',
         category: 'photography',
         subcategory: 'saree',
@@ -42,7 +42,7 @@ const saree = [
     },
     {
         id: 6,
-        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-8.jpg',
+        src: './pictures/lowres_Website/People/Saree/2020_Saree_Presentation-8.jpg',
         alt: 'green saree',
         category: 'photography',
         subcategory: 'saree',
@@ -50,7 +50,7 @@ const saree = [
     },
     {
         id: 7,
-        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-9.jpg',
+        src: './pictures/lowres_Website/People/Saree/2020_Saree_Presentation-9.jpg',
         alt: 'green saree',
         category: 'photography',
         subcategory: 'saree',
@@ -58,7 +58,7 @@ const saree = [
     },
     {
         id: 8,
-        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-10.jpg',
+        src: './pictures/lowres_Website/People/Saree/2020_Saree_Presentation-10.jpg',
         alt: 'yellow saree',
         category: 'photography',
         subcategory: 'saree',
@@ -66,7 +66,7 @@ const saree = [
     },
     {
         id: 9,
-        src: './pictures/Photography/Saree-w-border/2020_Saree_Presentation-11-50op.jpg',
+        src: './pictures/lowres_Website/People/Saree/2020_Saree_Presentation-11-50op.jpg',
         alt: 'yellow saree',
         category: 'photography',
         subcategory: 'saree',

@@ -1,7 +1,7 @@
 const miscel = [
     {
         id: 1,
-        src: './pictures/Architecture/miscellaneous/SRN02794.jpg',
+        src: './pictures/lowres_Website/Spaces/Misc/1.jpg',
         alt: 'misc1',
         category: 'architecture',
         subcategory: 'misc',
@@ -10,7 +10,7 @@ const miscel = [
     },
     {
         id: 2,
-        src: './pictures/Architecture/miscellaneous/09_SRN7153.jpg',
+        src: './pictures/lowres_Website/Spaces/Misc/2-09_SRN7153.jpg',
         alt: 'misc2',
         category: 'architecture',
         subcategory: 'misc',
@@ -18,7 +18,7 @@ const miscel = [
     },
     {
         id: 3,
-        src: './pictures/Architecture/miscellaneous/2_2.jpg',
+        src: './pictures/lowres_Website/Spaces/Misc/3.5.jpg',
         alt: 'misc3',
         category: 'architecture',
         subcategory: 'misc',
@@ -26,7 +26,7 @@ const miscel = [
     },
     {
         id: 4,
-        src: './pictures/Architecture/miscellaneous/7.jpg',
+        src: './pictures/lowres_Website/Spaces/Misc/3.jpg',
         alt: 'misc4',
         category: 'architecture',
         subcategory: 'misc',
@@ -34,7 +34,7 @@ const miscel = [
     },
     {
         id: 5,
-        src: './pictures/Architecture/miscellaneous/12.jpg',
+        src: './pictures/lowres_Website/Spaces/Misc/4.5.jpg',
         alt: 'misc5',
         category: 'architecture',
         subcategory: 'misc',
@@ -42,12 +42,36 @@ const miscel = [
     },
     {
         id: 6,
-        src: './pictures/Architecture/miscellaneous/4.jpeg',
+        src: './pictures/lowres_Website/Spaces/Misc/4.jpg',
         alt: 'misc6',
         category: 'architecture',
         subcategory: 'misc',
         best: 0,
-    }
+    },
+    {
+        id: 7,
+        src: './pictures/lowres_Website/Spaces/Misc/6.jpg',
+        alt: 'misc7',
+        category: 'architecture',
+        subcategory: 'misc',
+        best: 0,
+    },
+    {
+        id: 8,
+        src: './pictures/lowres_Website/Spaces/Misc/7.jpg',
+        alt: 'misc8',
+        category: 'architecture',
+        subcategory: 'misc',
+        best: 0,
+    },
+    {
+        id: 9,
+        src: './pictures/lowres_Website/Spaces/Misc/9.jpg',
+        alt: 'misc9',
+        category: 'architecture',
+        subcategory: 'misc',
+        best: 0,
+    },
 ];
 
 const leftBtn = document.getElementById('btnLeft');

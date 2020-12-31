@@ -1,62 +1,68 @@
 const artwork = [
     {
         id: 1,
-        src: './pictures/Artworks/Churchgate-station-mumbai.jpg',
+        src: './pictures/lowres_Website/Artworks/0-Darkroom-for-housing.jpg',
         alt: 'artworks1',
         caption:''
     },
     {
         id: 2,
-        src: './pictures/Artworks/Darkroom-for-housing.jpg',
+        src: './pictures/lowres_Website/Artworks/0.2-QueenOfSpades.jpg',
         alt: 'artworks2',
         caption:'Darkroom architecture'
     },
     {
         id: 3,
-        src: './pictures/Artworks/Ducktails.jpg',
+        src: './pictures/lowres_Website/Artworks/0.5-Exospheres.jpg',
         alt: 'artworks3',
         caption:'Getting my ducks in a row'
     },
     {
         id: 4,
-        src: './pictures/Artworks/Exospheres.jpg',
+        src: './pictures/lowres_Website/Artworks/0.8-Time-travel copy.png',
         alt: 'artworks4',
         caption:'Microscopic - macroscopic'
     },
     {
         id: 5,
-        src: './pictures/Artworks/Next-door-stangers-.jpg',
+        src: './pictures/lowres_Website/Artworks/1-Next-door-stangers-.jpg',
         alt: 'artworks5',
         caption:'Next door stangers'
     },
     {
         id: 6,
-        src: './pictures/Artworks/Postcard_of_a_figmental_biosphere.jpg',
+        src: './pictures/lowres_Website/Artworks/5-Whirlpool-mind.jpg',
         alt: 'artworks6',
         caption:'Postcards from figmental biosphere'
     },
     {
         id: 7,
-        src: './pictures/Artworks/Time-capsule-of-mumbai.jpg',
+        src: './pictures/lowres_Website/Artworks/6-Churchgate-station-mumbai.jpg',
         alt: 'artworks7',
         caption:'An exercise in time capsuling'
     },
     {
         id: 8,
-        src: './pictures/Artworks/Time-travel.png',
+        src: './pictures/lowres_Website/Artworks/7-Ducktails.jpg',
         alt: 'artworks8',
         caption:'Time-traveling tourists.'
     },
     {
         id: 9,
-        src: './pictures/Artworks/When-pigs-fly.png',
+        src: './pictures/lowres_Website/Artworks/7.5-Postcard_of_a_figmental_biosphere.jpg',
         alt: 'artworks9',
         caption:''
     },
     {
         id: 10,
-        src: './pictures/Artworks/Whirlpool-mind.jpg',
+        src: './pictures/lowres_Website/Artworks/8-Satelite-Housing.jpg',
         alt: 'artworks10',
+        caption:'Brainwashing'
+    },
+    {
+        id: 11,
+        src: './pictures/lowres_Website/Artworks/9-Time-capsule-of-mumbai.jpg',
+        alt: 'artworks11',
         caption:'Brainwashing'
     }
 ];

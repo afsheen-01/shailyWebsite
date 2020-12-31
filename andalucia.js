@@ -1,7 +1,7 @@
 const andalucia = [
     {
         id: 1,
-        src: './pictures/Architecture/Arch/2020_Andalucia_mosque-church.jpg',
+        src: './pictures/lowres_Website/Spaces/Andalucia/1-2020_Andalucia_mosque-church.jpg',
         alt: 'anda1',
         category: 'architecture',
         subcategory: 'andalucia',
@@ -9,7 +9,7 @@ const andalucia = [
     },
     {
         id: 2,
-        src: './pictures/Architecture/Arch/2020_Andalucia_goldenhour.jpg',
+        src: './pictures/lowres_Website/Spaces/Andalucia/2-2020_Andalucia_architecture.jpg',
         alt: 'anda2',
         category: 'architecture',
         subcategory: 'andalucia',
@@ -17,7 +17,7 @@ const andalucia = [
     },
     {
         id: 3,
-        src: './pictures/Architecture/Arch/2020_Andalucia_connection.jpg',
+        src: './pictures/lowres_Website/Spaces/Andalucia/3-2020_Andalucia_connection.jpg',
         alt: 'anda3',
         category: 'architecture',
         subcategory: 'andalucia',
@@ -25,7 +25,7 @@ const andalucia = [
     },
     {
         id: 4,
-        src: './pictures/Architecture/Arch/2020_Andalucia_architecture.jpg',
+        src: './pictures/lowres_Website/Spaces/Andalucia/4-2020_Andalucia_goldenhour.jpg',
         alt: 'anda4',
         category: 'architecture',
         subcategory: 'andalucia',
@@ -33,7 +33,7 @@ const andalucia = [
     },
     {
         id: 5,
-        src: './pictures/Architecture/Arch/2020_Andalucia_stained-columns.jpg',
+        src: './pictures/lowres_Website/Spaces/Andalucia/5-2020_Andalucia_horseview.jpg',
         alt: 'anda5',
         category: 'architecture',
         subcategory: 'andalucia',
@@ -41,7 +41,7 @@ const andalucia = [
     },
     {
         id: 6,
-        src: './pictures/Architecture/Arch/2020_Andalucia_catreflection.jpg',
+        src: './pictures/lowres_Website/Spaces/Andalucia/6-2020_Andalucia_horsemen.jpg',
         alt: 'anda6',
         category: 'architecture',
         subcategory: 'andalucia',
@@ -49,12 +49,36 @@ const andalucia = [
     },
     {
         id: 7,
-        src: './pictures/Architecture/Arch/2020_Andalucia_riverslopes.jpg',
+        src: './pictures/lowres_Website/Spaces/Andalucia/7-2020_Andalucia_horse.jpg',
         alt: 'anda10',
         category: 'architecture',
         subcategory: 'andalucia',
         best: 0,
     },
+    {
+        id: 8,
+        src: './pictures/lowres_Website/Spaces/Andalucia/8-2020_Andalucia_stained-columns.jpg',
+        alt: 'anda10',
+        category: 'architecture',
+        subcategory: 'andalucia',
+        best: 0,
+    },
+    {
+        id: 9,
+        src: './pictures/lowres_Website/Spaces/Andalucia/9-2020_Andalucia_catreflection.jpg',
+        alt: 'anda10',
+        category: 'architecture',
+        subcategory: 'andalucia',
+        best: 0,
+    },
+    {
+        id: 10,
+        src: './pictures/lowres_Website/Spaces/Andalucia/10-2020_Andalucia_riverslopes.jpg',
+        alt: 'anda10',
+        category: 'architecture',
+        subcategory: 'andalucia',
+        best: 0,
+    }
 ];
 
 const leftBtn = document.getElementById('btnLeft');
