@@ -3,25 +3,25 @@ const artwork = [
         id: 1,
         src: './pictures/lowres_Website/Artworks/0-Darkroom-for-housing.jpg',
         alt: 'artworks1',
-        caption:''
+        caption:'Darkroom architecture'
     },
     {
         id: 2,
         src: './pictures/lowres_Website/Artworks/0.2-QueenOfSpades.jpg',
         alt: 'artworks2',
-        caption:'Darkroom architecture'
+        caption:'Queen of Spades - Album art for musician Jose Neil Gomes'
     },
     {
         id: 3,
         src: './pictures/lowres_Website/Artworks/0.5-Exospheres.jpg',
         alt: 'artworks3',
-        caption:'Getting my ducks in a row'
+        caption:'Microscopic - macroscopic'
     },
     {
         id: 4,
         src: './pictures/lowres_Website/Artworks/0.8-Time-travel copy.png',
         alt: 'artworks4',
-        caption:'Microscopic - macroscopic'
+        caption:'Time-traveling tourists.'
     },
     {
         id: 5,
@@ -33,37 +33,37 @@ const artwork = [
         id: 6,
         src: './pictures/lowres_Website/Artworks/5-Whirlpool-mind.jpg',
         alt: 'artworks6',
-        caption:'Postcards from figmental biosphere'
+        caption:'Brainwashing'
     },
     {
         id: 7,
         src: './pictures/lowres_Website/Artworks/6-Churchgate-station-mumbai.jpg',
         alt: 'artworks7',
-        caption:'An exercise in time capsuling'
+        caption:''
     },
     {
         id: 8,
         src: './pictures/lowres_Website/Artworks/7-Ducktails.jpg',
         alt: 'artworks8',
-        caption:'Time-traveling tourists.'
+        caption:'Getting my ducks in a row'
     },
     {
         id: 9,
         src: './pictures/lowres_Website/Artworks/7.5-Postcard_of_a_figmental_biosphere.jpg',
         alt: 'artworks9',
-        caption:''
+        caption:'Postcards from a  gmental biosphere'
     },
     {
         id: 10,
         src: './pictures/lowres_Website/Artworks/8-Satelite-Housing.jpg',
         alt: 'artworks10',
-        caption:'Brainwashing'
+        caption:''
     },
     {
         id: 11,
         src: './pictures/lowres_Website/Artworks/9-Time-capsule-of-mumbai.jpg',
         alt: 'artworks11',
-        caption:'Brainwashing'
+        caption:'An exercise in time capsuling'
     }
 ];
 
